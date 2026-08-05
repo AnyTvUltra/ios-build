@@ -62,7 +62,7 @@ class XtreamApi(private val server: IptvServer) {
         return runCatching { Url("$scheme://$host$portPart") }.getOrNull() ?: base
     }
 
-    suspend fun login(): XtreamLoginResponse = withContext(Dispatchers.IO) {
+    suspend fun login(): XtreamLoginResponse = withContext(Dispatchers.Default) {
         val body = fetchJson(apiUrl())
         val userObj = body["user_info"]?.jsonObject ?: JsonObject(emptyMap())
         val serverObj = body["server_info"]?.jsonObject ?: JsonObject(emptyMap())
@@ -90,31 +90,31 @@ class XtreamApi(private val server: IptvServer) {
         )
     }
 
-    suspend fun getLiveCategories(): List<IptvCategory> = withContext(Dispatchers.IO) {
+    suspend fun getLiveCategories(): List<IptvCategory> = withContext(Dispatchers.Default) {
         parseCategories(fetchJsonArray(apiUrl("get_live_categories")), ChannelType.LIVE)
     }
 
-    suspend fun getVodCategories(): List<IptvCategory> = withContext(Dispatchers.IO) {
+    suspend fun getVodCategories(): List<IptvCategory> = withContext(Dispatchers.Default) {
         parseCategories(fetchJsonArray(apiUrl("get_vod_categories")), ChannelType.VOD)
     }
 
-    suspend fun getSeriesCategories(): List<IptvCategory> = withContext(Dispatchers.IO) {
+    suspend fun getSeriesCategories(): List<IptvCategory> = withContext(Dispatchers.Default) {
         parseCategories(fetchJsonArray(apiUrl("get_series_categories")), ChannelType.SERIES)
     }
 
-    suspend fun getLiveStreams(categoryId: String? = null): List<IptvChannel> = withContext(Dispatchers.IO) {
+    suspend fun getLiveStreams(categoryId: String? = null): List<IptvChannel> = withContext(Dispatchers.Default) {
         parseStreams(fetchJsonArray(apiUrl("get_live_streams", categoryId)), ChannelType.LIVE)
     }
 
-    suspend fun getVodStreams(categoryId: String? = null): List<IptvChannel> = withContext(Dispatchers.IO) {
+    suspend fun getVodStreams(categoryId: String? = null): List<IptvChannel> = withContext(Dispatchers.Default) {
         parseStreams(fetchJsonArray(apiUrl("get_vod_streams", categoryId)), ChannelType.VOD)
     }
 
-    suspend fun getSeriesStreams(categoryId: String? = null): List<IptvChannel> = withContext(Dispatchers.IO) {
+    suspend fun getSeriesStreams(categoryId: String? = null): List<IptvChannel> = withContext(Dispatchers.Default) {
         parseStreams(fetchJsonArray(apiUrl("get_series", categoryId)), ChannelType.SERIES)
     }
 
-    suspend fun getSeriesEpisodes(seriesId: Int): List<IptvChannel> = withContext(Dispatchers.IO) {
+    suspend fun getSeriesEpisodes(seriesId: Int): List<IptvChannel> = withContext(Dispatchers.Default) {
         val url = URLBuilder(baseHttpUrl).apply {
             path("player_api.php")
             parameters.append("username", server.username)
@@ -161,8 +161,8 @@ class XtreamApi(private val server: IptvServer) {
                     categoryName = "Season $season",
                     streamUrl = getSeriesStreamUrl(episodeId, extension),
                     type = ChannelType.VOD,
-                    plot = info?.getString("plot"),
-                    duration = info?.getString("duration"),
+                    plot = info?.getString("plot").orEmpty(),
+                    duration = info?.getString("duration").orEmpty(),
                     containerExtension = extension,
                     seriesId = seriesId
                 )

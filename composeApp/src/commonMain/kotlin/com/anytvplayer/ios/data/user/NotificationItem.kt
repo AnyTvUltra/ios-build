@@ -1,8 +1,18 @@
 package com.anytvplayer.ios.data.user
 
+import kotlinx.datetime.Instant
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+
+private fun formatTimestamp(epochMillis: Long): String {
+    if (epochMillis <= 0) return ""
+    return Instant.fromEpochMilliseconds(epochMillis)
+        .toLocalDateTime(TimeZone.currentSystemDefault())
+        .toString()
+}
 
 @Serializable
 data class NotificationItem(
@@ -13,7 +23,8 @@ data class NotificationItem(
     val itemId: String = "",
     val imageUrl: String = "",
     val receivedAt: Long = 0L,
-    val read: Boolean = false
+    val read: Boolean = false,
+    val timestamp: String = formatTimestamp(receivedAt)
 ) {
     fun toJson(): String = jsonSerializer.encodeToString(this)
 

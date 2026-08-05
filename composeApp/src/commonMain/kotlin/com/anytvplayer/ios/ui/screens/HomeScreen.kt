@@ -110,7 +110,7 @@ private fun HomeTopBar(onSearch: () -> Unit) {
 }
 
 @Composable
-private fun SectionHeader(title: String) {
+internal fun SectionHeader(title: String) {
     Text(
         text = title,
         style = MaterialTheme.typography.titleLarge,
@@ -228,7 +228,7 @@ private fun CategoryRow(
 }
 
 @Composable
-private fun ChannelRow(
+internal fun ChannelRow(
     channels: List<IptvChannel>,
     viewModel: com.anytvplayer.ios.viewmodel.IptvViewModel,
     onClick: (IptvChannel) -> Unit

@@ -22,11 +22,11 @@ object TmdbApi {
     }
 
     private suspend fun searchMovie(query: String, year: String): Int? {
-        val urlAr = "$BASE_URL/search/movie?query=${encodeURLQueryComponent(query)}&language=ar&page=1" +
+        val urlAr = "$BASE_URL/search/movie?query=${query.encodeURLQueryComponent()}&language=ar&page=1" +
                 if (year.isNotBlank()) "&year=$year" else ""
         val responseAr = getJson(urlAr)
 
-        val urlEn = "$BASE_URL/search/movie?query=${encodeURLQueryComponent(query)}&language=en-US&page=1" +
+        val urlEn = "$BASE_URL/search/movie?query=${query.encodeURLQueryComponent()}&language=en-US&page=1" +
                 if (year.isNotBlank()) "&year=$year" else ""
 
         val results = responseAr?.getSearchResults()
@@ -109,7 +109,7 @@ object TmdbApi {
             posterUrl = posterPath.toTmdbImageUrl("w500"),
             backdropUrl = backdropPath.toTmdbImageUrl("w1280"),
             year = releaseDate.take(4),
-            rating = if (voteAverage > 0) "%.1f".format(voteAverage) else "",
+            rating = if (voteAverage > 0) formatVoteAverage(voteAverage) else "",
             runtime = formatRuntime(runtimeMinutes),
             cast = cast,
             director = director,
@@ -157,6 +157,13 @@ object TmdbApi {
     }
 
     private val jsonParser = Json { ignoreUnknownKeys = true; isLenient = true }
+}
+
+private fun formatVoteAverage(value: Double): String {
+    val scaled = kotlin.math.roundToInt(value * 10)
+    val whole = scaled / 10
+    val frac = kotlin.math.abs(scaled % 10)
+    return if (frac == 0) "$whole" else "$whole.$frac"
 }
 
 private fun JsonObject.getString(key: String, default: String = ""): String {

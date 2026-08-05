@@ -73,7 +73,7 @@ fun buildXtreamM3uFallback(server: IptvServer): String? {
         return null
     }
 
-    return "$base/get.php?username=${encodeURLQueryComponent(username)}&password=${encodeURLQueryComponent(password)}&type=m3u&output=ts"
+    return "$base/get.php?username=${username.encodeURLQueryComponent()}&password=${password.encodeURLQueryComponent()}&type=m3u&output=ts"
 }
 
 @Serializable

@@ -35,7 +35,7 @@ class IptvRepository {
         return response
     }
 
-    suspend fun downloadM3u(url: String): String = withContext(Dispatchers.IO) {
+    suspend fun downloadM3u(url: String): String = withContext(Dispatchers.Default) {
         var lastError: Exception? = null
         for (ua in M3U_USER_AGENTS) {
             try {
@@ -61,7 +61,7 @@ class IptvRepository {
         throw lastError ?: Exception("Failed to load playlist")
     }
 
-    suspend fun connectM3u(url: String): Int = withContext(Dispatchers.IO) {
+    suspend fun connectM3u(url: String): Int = withContext(Dispatchers.Default) {
         disconnect()
         val body = downloadM3u(url)
         parseM3uContent(body)

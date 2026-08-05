@@ -11,17 +11,19 @@ class SecurePreferences(
     private val preferencesName: String,
     private val keyAlias: String
 ) {
-    private val settings = Settings(name = preferencesName)
+    private val settings = Settings()
+
+    private fun namespaced(key: String): String = "$preferencesName:$key"
 
     fun putString(key: String, value: String) {
         if (value.isEmpty()) {
             remove(key)
             return
         }
-        settings.putString(key, value)
+        settings.putString(namespaced(key), value)
     }
 
-    fun getString(key: String): String? = settings.getStringOrNull(key)
+    fun getString(key: String): String? = settings.getStringOrNull(namespaced(key))
 
     fun putLong(key: String, value: Long) {
         putString(key, value.toString())
@@ -32,7 +34,7 @@ class SecurePreferences(
     }
 
     fun remove(key: String) {
-        settings.remove(key)
+        settings.remove(namespaced(key))
     }
 
     fun clear() {

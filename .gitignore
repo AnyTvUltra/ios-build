@@ -30,6 +30,8 @@ iosApp/Configuration/Config.xcconfig
 
 # Local config
 local.properties
+errors.txt
+run.log
 
 # IDE
 .idea

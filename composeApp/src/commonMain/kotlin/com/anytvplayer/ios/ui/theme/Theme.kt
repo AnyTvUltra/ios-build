@@ -56,10 +56,9 @@ fun TwitiTheme(
     isCkb: Boolean = false,
     content: @Composable () -> Unit
 ) {
-    val fontFamily = if (isCkb) SpedaFontFamily else FontFamily.SansSerif
     MaterialTheme(
         colorScheme = if (darkTheme) TwitiDarkScheme else TwitiLightScheme,
-        typography = twitiTypography(fontFamily),
+        typography = twitiTypography(),
         content = content
     )
 }

@@ -5,6 +5,7 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.LiveTv
 import androidx.compose.material.icons.filled.VideoLibrary
+import androidx.compose.material.icons.filled.SmartDisplay
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.LiveTv
@@ -17,12 +18,9 @@ import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.navigator.Navigator
 import com.anytvplayer.ios.ui.screens.*
-import org.jetbrains.compose.resources.painterResource
-import com.anytvplayer.ios.resources.Res
 
 private data class BottomNavItem(
     val route: String,
@@ -47,10 +45,9 @@ fun AppBottomBar(navigator: Navigator, currentRoute: String?) {
         },
         BottomNavItem("shorts", "Twiti") { _ ->
             Icon(
-                painter = painterResource(Res.drawable.ic_launcher),
+                imageVector = Icons.Filled.SmartDisplay,
                 contentDescription = "Twiti",
-                modifier = Modifier.size(26.dp),
-                tint = Color.Unspecified
+                modifier = Modifier.size(26.dp)
             )
         },
         BottomNavItem("vod", "VOD") { selected ->

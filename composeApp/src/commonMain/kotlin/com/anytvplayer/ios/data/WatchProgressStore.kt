@@ -7,7 +7,8 @@ import com.russhwolf.settings.Settings
  */
 class WatchProgressStore {
 
-    private val settings = Settings(name = "anytv_watch_progress")
+    private val settings = Settings()
+    private val prefix = "anytv_watch_progress"
 
     data class Progress(val position: Long, val duration: Long)
     data class ProgressWithUrl(val streamUrl: String, val position: Long, val duration: Long)
@@ -42,19 +43,22 @@ class WatchProgressStore {
     }
 
     fun getAllProgress(): List<ProgressWithUrl> {
-        return settings.keys.mapNotNull { key ->
-            if (!key.endsWith("_url")) return@mapNotNull null
-            val streamUrl = settings.getStringOrNull(key) ?: return@mapNotNull null
-            val base = key.removeSuffix("_url")
-            val position = settings.getLongOrNull("${base}_position") ?: -1L
-            val duration = settings.getLongOrNull("${base}_duration") ?: -1L
-            if (position < 0) return@mapNotNull null
-            ProgressWithUrl(streamUrl, position, duration.coerceAtLeast(0L))
-        }
+        return settings.keys
+            .filter { it.startsWith(prefix) }
+            .mapNotNull { key ->
+                if (!key.endsWith("_url")) return@mapNotNull null
+                val streamUrl = settings.getStringOrNull(key) ?: return@mapNotNull null
+                val base = key.removeSuffix("_url")
+                val position = settings.getLongOrNull("${base}_position") ?: -1L
+                val duration = settings.getLongOrNull("${base}_duration") ?: -1L
+                if (position < 0) return@mapNotNull null
+                ProgressWithUrl(streamUrl, position, duration.coerceAtLeast(0L))
+            }
     }
 
     private fun keyFor(streamUrl: String): String {
         // Use a stable, URL-safe key derived from the URL.
-        return streamUrl.takeLast(240).replace("/", "_").replace(":", "_")
+        val suffix = streamUrl.takeLast(240).replace("/", "_").replace(":", "_")
+        return "$prefix:$suffix"
     }
 }

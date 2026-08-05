@@ -2,11 +2,10 @@ package com.anytvplayer.ios.ui.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import org.jetbrains.compose.ui.interop.UIKitView
+import androidx.compose.ui.viewinterop.UIKitView
 import platform.AVFoundation.AVPlayer
 import platform.AVKit.AVPlayerViewController
 import platform.Foundation.NSURL
-import platform.UIKit.UIView
 
 @Composable
 actual fun VideoPlayer(
@@ -17,13 +16,10 @@ actual fun VideoPlayer(
     UIKitView(
         factory = {
             val nsUrl = NSURL(string = url)
-            if (nsUrl == null) {
-                return@UIKitView UIView()
-            }
-            val player = AVPlayer(uRL = nsUrl)
+            val player = if (nsUrl != null) AVPlayer(uRL = nsUrl) else null
             val controller = AVPlayerViewController()
             controller.player = player
-            player.play()
+            player?.play()
             controller.view
         },
         modifier = modifier

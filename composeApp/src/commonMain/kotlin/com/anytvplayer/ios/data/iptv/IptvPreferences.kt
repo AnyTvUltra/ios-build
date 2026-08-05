@@ -4,7 +4,6 @@ import com.anytvplayer.ios.data.SecurePreferences
 
 class IptvPreferences {
 
-    private val legacySettings = com.russhwolf.settings.Settings(name = "Twiti_iptv")
     private val prefs = SecurePreferences(
         preferencesName = "anytv_iptv_secure",
         keyAlias = "anytv_iptv_credentials_key"
@@ -17,11 +16,9 @@ class IptvPreferences {
         prefs.putString("password", server.password)
         prefs.putString("api_key", server.apiKey)
         prefs.putString("server_type", server.type.name)
-        legacySettings.clear()
     }
 
     fun loadServer(): IptvServer? {
-        migrateLegacyIfNeeded()
         val url = prefs.getString("server_url") ?: return null
         if (url.isBlank()) return null
 
@@ -39,28 +36,7 @@ class IptvPreferences {
 
     fun clearServer() {
         prefs.clear()
-        legacySettings.clear()
     }
 
     fun hasServer(): Boolean = loadServer() != null
-
-    private fun migrateLegacyIfNeeded() {
-        if (prefs.getString("server_url") != null) return
-        val url = legacySettings.getStringOrNull("server_url") ?: return
-        saveServer(
-            IptvServer(
-                name = legacySettings.getStringOrNull("server_name") ?: "",
-                serverUrl = url,
-                username = legacySettings.getStringOrNull("username") ?: "",
-                password = legacySettings.getStringOrNull("password") ?: "",
-                apiKey = legacySettings.getStringOrNull("api_key") ?: "",
-                type = runCatching {
-                    ServerType.valueOf(
-                        legacySettings.getStringOrNull("server_type") ?: ServerType.XTREAM_CODES.name
-                            ?: ServerType.XTREAM_CODES.name
-                    )
-                }.getOrDefault(ServerType.XTREAM_CODES)
-            )
-        )
-    }
 }

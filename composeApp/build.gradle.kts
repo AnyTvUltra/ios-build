@@ -6,6 +6,12 @@ plugins {
 }
 
 kotlin {
+    compilerOptions {
+        optIn.add("androidx.compose.material3.ExperimentalMaterial3Api")
+        optIn.add("kotlinx.coroutines.FlowPreview")
+        optIn.add("kotlinx.cinterop.ExperimentalForeignApi")
+    }
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -22,6 +28,7 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
+            implementation(compose.materialIconsExtended)
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
