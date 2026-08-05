@@ -283,11 +283,13 @@ class XtreamApi(private val server: IptvServer) {
     }
 }
 
-private fun JsonObject.getString(key: String, default: String = ""): String {
+private fun JsonObject.getString(key: String): String = getString(key, "")
+private fun JsonObject.getString(key: String, default: String): String {
     return this[key]?.jsonPrimitive?.contentOrNull ?: default
 }
 
-private fun JsonObject.getInt(key: String, default: Int = 0): Int {
+private fun JsonObject.getInt(key: String): Int = getInt(key, 0)
+private fun JsonObject.getInt(key: String, default: Int): Int {
     return this[key]?.jsonPrimitive?.contentOrNull?.toIntOrNull() ?: default
 }
 
