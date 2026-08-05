@@ -110,16 +110,6 @@ private fun HomeTopBar(onSearch: () -> Unit) {
 }
 
 @Composable
-internal fun SectionHeader(title: String) {
-    Text(
-        text = title,
-        style = MaterialTheme.typography.titleLarge,
-        color = MaterialTheme.colorScheme.onBackground,
-        modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp)
-    )
-}
-
-@Composable
 private fun ConnectPrompt() {
     val viewModel = LocalIptvViewModel.current
     var url by remember { mutableStateOf("") }
@@ -228,27 +218,6 @@ private fun CategoryRow(
 }
 
 @Composable
-internal fun ChannelRow(
-    channels: List<IptvChannel>,
-    viewModel: com.anytvplayer.ios.viewmodel.IptvViewModel,
-    onClick: (IptvChannel) -> Unit
-) {
-    LazyRow(
-        contentPadding = PaddingValues(horizontal = 16.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp)
-    ) {
-        items(channels) { channel ->
-            ContentCard(
-                title = channel.name,
-                subtitle = channel.categoryName,
-                imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
-                onClick = { onClick(channel) }
-            )
-        }
-    }
-}
-
-@Composable
 private fun TrendingRow(items: List<ContentItem>) {
     LazyRow(
         contentPadding = PaddingValues(horizontal = 16.dp),
@@ -266,56 +235,3 @@ private fun TrendingRow(items: List<ContentItem>) {
     }
 }
 
-@Composable
-fun ContentCard(
-    title: String,
-    subtitle: String,
-    imageUrl: String,
-    gradient: List<androidx.compose.ui.graphics.Color> = emptyList(),
-    onClick: () -> Unit
-) {
-    Box(
-        modifier = Modifier
-            .width(140.dp)
-            .height(200.dp)
-            .clip(RoundedCornerShape(12.dp))
-            .background(
-                if (gradient.isNotEmpty()) Brush.linearGradient(gradient)
-                else androidx.compose.ui.graphics.SolidColor(MaterialTheme.colorScheme.surfaceVariant)
-            )
-            .clickable(onClick = onClick),
-        contentAlignment = Alignment.BottomStart
-    ) {
-        if (imageUrl.isNotBlank()) {
-            AsyncImage(
-                model = imageUrl,
-                contentDescription = title,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier.fillMaxSize()
-            )
-        }
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .background(androidx.compose.ui.graphics.Color.Black.copy(alpha = 0.6f))
-                .padding(8.dp)
-        ) {
-            Text(
-                title,
-                style = MaterialTheme.typography.titleSmall,
-                color = androidx.compose.ui.graphics.Color.White,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis
-            )
-            if (subtitle.isNotBlank()) {
-                Text(
-                    subtitle,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = androidx.compose.ui.graphics.Color.White.copy(alpha = 0.8f),
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-            }
-        }
-    }
-}

@@ -12,6 +12,8 @@ kotlin {
         optIn.add("kotlinx.cinterop.ExperimentalForeignApi")
     }
 
+    jvm("desktop")
+
     listOf(
         iosX64(),
         iosArm64(),
