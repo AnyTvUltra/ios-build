@@ -31,9 +31,6 @@ jobs:
       - name: Install XcodeGen
         run: brew install xcodegen
 
-      - name: Build KMP framework
-        run: ./gradlew :composeApp:embedAndSignAppleFrameworkForXcode -PXCODE_CONFIGURATION=Release -PXCODE_SDK_NAME=iphoneos --no-daemon
-
       - name: Generate Xcode project
         working-directory: iosApp
         run: xcodegen generate
@@ -48,7 +45,10 @@ jobs:
             -derivedDataPath iosApp/build/derived \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=NO
+            CODE_SIGNING_ALLOWED=NO \
+            ENABLE_USER_SCRIPT_SANDBOXING=NO \
+            ARCHS=arm64 \
+            ONLY_ACTIVE_ARCH=NO
 
       - name: Package IPA
         run: |

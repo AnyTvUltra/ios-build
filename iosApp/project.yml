@@ -20,10 +20,6 @@ targets:
     resources:
       - path: Assets.xcassets
         buildPhase: resources
-    dependencies:
-      - framework: ../composeApp/build/xcode-frameworks/composeApp.framework
-        embed: true
-        codeSign: false
     settings:
       base:
         INFOPLIST_FILE: Info.plist
@@ -32,13 +28,15 @@ targets:
         CODE_SIGN_IDENTITY: ""
         CODE_SIGNING_REQUIRED: NO
         CODE_SIGNING_ALLOWED: NO
-        FRAMEWORK_SEARCH_PATHS: $(inherited) $(SRCROOT)/../composeApp/build/xcode-frameworks
+        FRAMEWORK_SEARCH_PATHS: $(inherited) $(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)
+        OTHER_LDFLAGS: $(inherited) -framework composeApp
         LD_RUNPATH_SEARCH_PATHS: $(inherited) '@executable_path/Frameworks'
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1,2"
+        ENABLE_USER_SCRIPT_SANDBOXING: "NO"
     preBuildScripts:
       - name: Build KMP Framework
         script: |
           cd "$SRCROOT/.."
-          ./gradlew :composeApp:embedAndSignAppleFrameworkForXcode -PXCODE_CONFIGURATION=${CONFIGURATION} -PXCODE_SDK_NAME=${SDK_NAME} --no-daemon
+          ./gradlew :composeApp:embedAndSignAppleFrameworkForXcode --no-daemon
         basedOnDependencyAnalysis: false
