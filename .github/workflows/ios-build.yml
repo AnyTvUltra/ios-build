@@ -35,6 +35,17 @@ jobs:
         working-directory: iosApp
         run: xcodegen generate
 
+      - name: Compile KMP framework
+        run: |
+          ./gradlew :composeApp:compileKotlinIosArm64 --info --no-daemon 2>&1 | tee kmp-compile.log
+
+      - name: Upload KMP compile log
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: kmp-compile-log
+          path: kmp-compile.log
+
       - name: Build iOS app
         run: |
           xcodebuild \
