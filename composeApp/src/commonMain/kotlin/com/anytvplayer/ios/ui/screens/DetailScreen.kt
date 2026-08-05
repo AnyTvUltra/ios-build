@@ -11,7 +11,6 @@ import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
-import com.anytvplayer.ios.LocalIptvViewModel
 
 data class DetailScreen(val itemId: Int) : Screen {
     override val key = "detail/${itemId}"
@@ -19,12 +18,11 @@ data class DetailScreen(val itemId: Int) : Screen {
     @Composable
     override fun Content() {
         val navigator = LocalNavigator.currentOrThrow
-        val viewModel = LocalIptvViewModel.current
 
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Detail") },
+                    title = { Text("Details") },
                     navigationIcon = {
                         IconButton(onClick = { navigator.pop() }) {
                             Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
@@ -41,13 +39,16 @@ data class DetailScreen(val itemId: Int) : Screen {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Text("Detail screen", style = MaterialTheme.typography.headlineSmall)
-                Spacer(modifier = Modifier.height(8.dp))
-                Text("This screen is a placeholder and will be fully implemented.", style = MaterialTheme.typography.bodyMedium)
-                Spacer(modifier = Modifier.height(16.dp))
-                Button(onClick = { navigator.pop() }) {
-                    Text("Back")
-                }
+                Text(
+                    "Detail for item #${itemId}",
+                    style = MaterialTheme.typography.headlineSmall
+                )
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    "This generic detail screen will be wired to a backend item.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
             }
         }
     }

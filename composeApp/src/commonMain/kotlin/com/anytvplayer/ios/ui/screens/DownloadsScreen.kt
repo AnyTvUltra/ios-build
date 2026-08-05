@@ -1,10 +1,11 @@
 package com.anytvplayer.ios.ui.screens
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -41,12 +42,20 @@ object DownloadsScreen : Screen {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Text("Downloads screen", style = MaterialTheme.typography.headlineSmall)
-                Spacer(modifier = Modifier.height(8.dp))
-                Text("This screen is a placeholder and will be fully implemented.", style = MaterialTheme.typography.bodyMedium)
-                Spacer(modifier = Modifier.height(16.dp))
-                Button(onClick = { navigator.pop() }) {
-                    Text("Back")
+                Text(
+                    "Downloads",
+                    style = MaterialTheme.typography.headlineSmall
+                )
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    "Offline downloading will be enabled once URLSession integration is complete.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = androidx.compose.ui.text.style.TextAlign.Center
+                )
+                Spacer(Modifier.height(16.dp))
+                Button(onClick = { navigator.push(VodHubScreen()) }) {
+                    Text("Browse VOD")
                 }
             }
         }

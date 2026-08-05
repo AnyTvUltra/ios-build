@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.jetbrains.compose)
+    alias(libs.plugins.kotlin.plugin.compose)
     alias(libs.plugins.kotlinx.serialization)
 }
 
@@ -51,6 +52,4 @@ kotlin {
 
 compose.resources {
     packageOfResClass = "com.anytvplayer.ios.resources"
-    generatedResClassName = "Res"
-    generateResClass = always
 }

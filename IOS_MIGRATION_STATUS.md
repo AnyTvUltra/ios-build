@@ -34,33 +34,33 @@ This file tracks the porting progress from the Android `MyApplication` project t
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| `IptvModels` | in_progress | KMP serializable versions |
-| `ContentData` / `SampleData` | in_progress | uses Compose `Color` |
-| `AppSettings` | in_progress | `multiplatform-settings` |
+| `IptvModels` | done | KMP serializable versions |
+| `ContentData` / `SampleData` | done | uses Compose `Color` |
+| `AppSettings` | done | `multiplatform-settings` |
 | `SecurePreferences` | in_progress | uses `Settings`; iOS Keychain in future |
-| `UserAccount` / `NotificationItem` | in_progress | to be implemented |
+| `UserAccount` / `NotificationItem` | done | KMP serializable models |
 | `DownloadedItem` / `DownloadsManager` | not_started | `URLSessionDownloadTask` later |
 | `WatchProgressStore` | not_started | cloud + local progress |
-| `IptvPreferences` | in_progress | server persistence |
-| `M3uParser` | in_progress | pure Kotlin parser |
-| `XtreamApi` | in_progress | Ktor-based |
-| `IptvRepository` | in_progress | unifies Xtream + M3U |
-| `TmdbApi` / `TmdbModels` | in_progress | Ktor + JSON |
-| `HttpClient` | in_progress | Ktor + Darwin engine |
+| `IptvPreferences` | done | server persistence |
+| `M3uParser` | done | pure Kotlin parser |
+| `XtreamApi` | done | Ktor-based |
+| `IptvRepository` | done | unifies Xtream + M3U |
+| `TmdbApi` / `TmdbModels` | done | Ktor + JSON |
+| `HttpClient` | done | Ktor + Darwin engine |
 
 ## ViewModel
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| `IptvViewModel` | in_progress | core state and methods |
-| CompositionLocal provider | in_progress | shared across screens |
+| `IptvViewModel` | done | core state and methods |
+| CompositionLocal provider | done | shared across screens |
 
 ## Navigation
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Voyager setup | in_progress | `Navigator` in `App` |
-| Screen routes | in_progress | 18 screens mapped |
+| Voyager setup | done | `Navigator` in `App` |
+| Screen routes | done | 18 screens mapped |
 
 ## Screens
 
@@ -68,22 +68,22 @@ This file tracks the porting progress from the Android `MyApplication` project t
 |--------|--------|-------|
 | SplashScreen | done | loading / auto-connect |
 | HomeScreen | done | main dashboard |
-| LiveHubScreen | in_progress | live channels hub (stub) |
-| VodHubScreen | in_progress | movies/series hub (stub) |
-| ProfileScreen | in_progress | user profile (stub) |
-| ShortsScreen | in_progress | short videos (stub) |
-| SupportScreen | in_progress | tickets (stub) |
-| LoginScreen | in_progress | auth (stub) |
-| NotificationsScreen | in_progress | notifications list (stub) |
-| DownloadsScreen | in_progress | downloads (stub) |
-| DetailScreen | in_progress | generic detail (stub) |
+| LiveHubScreen | done | live channels hub |
+| VodHubScreen | done | movies/series hub |
+| ProfileScreen | done | user profile |
+| ShortsScreen | done | short videos |
+| SupportScreen | done | tickets UI |
+| LoginScreen | done | connect via Xtream / M3U |
+| NotificationsScreen | done | notifications list UI |
+| DownloadsScreen | done | downloads UI |
+| DetailScreen | done | generic detail |
 | MovieDetailScreen | done | movie info from TMDb |
 | PlayerScreen | done | AVPlayer video |
 | IptvChannelsScreen | done | category grid/list |
-| ActivationScreen | in_progress | device activation (stub) |
-| PlaylistPickerScreen | in_progress | playlist selection (stub) |
-| SeriesEpisodesScreen | in_progress | episodes list (stub) |
-| UserContentListScreen | in_progress | library / continue watching (stub) |
+| ActivationScreen | done | device activation UI |
+| PlaylistPickerScreen | done | playlist selection |
+| SeriesEpisodesScreen | done | episodes list |
+| UserContentListScreen | done | library / continue watching |
 
 ## Components
 
@@ -100,12 +100,12 @@ This file tracks the porting progress from the Android `MyApplication` project t
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Video player (AVPlayer) | done | `UIKitView` wrapper |
-| Network permissions | not_started | `NSAppTransportSecurity` in `Info.plist` |
+| Network permissions | done | `NSAppTransportSecurity` in `Info.plist` |
 | Notifications | not_started | `UserNotifications` |
 | Downloads | not_started | `URLSessionDownloadTask` |
 | Deep links | not_started | URL scheme |
 | Language / locale | not_started | iOS locale override |
-| Dark/light theme | in_progress | matches system |
+| Dark/light theme | done | matches system |
 
 ## Known Differences from Android
 
