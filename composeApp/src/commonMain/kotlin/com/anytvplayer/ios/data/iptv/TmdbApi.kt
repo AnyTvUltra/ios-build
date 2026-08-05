@@ -6,6 +6,8 @@ import io.ktor.client.request.header
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.*
 import kotlinx.serialization.json.*
+import kotlin.math.abs
+import kotlin.math.roundToInt
 
 object TmdbApi {
 
@@ -160,7 +162,7 @@ object TmdbApi {
 }
 
 private fun formatVoteAverage(value: Double): String {
-    val scaled = kotlin.math.roundToInt(value * 10)
+    val scaled = (value * 10).roundToInt()
     val whole = scaled / 10
     val frac = kotlin.math.abs(scaled % 10)
     return if (frac == 0) "$whole" else "$whole.$frac"

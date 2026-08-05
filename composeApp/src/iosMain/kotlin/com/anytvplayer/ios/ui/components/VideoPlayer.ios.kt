@@ -16,10 +16,9 @@ actual fun VideoPlayer(
     UIKitView(
         factory = {
             val nsUrl = NSURL(string = url)
-            val player = if (nsUrl != null) AVPlayer(uRL = nsUrl) else null
+            val player = nsUrl?.let { AVPlayer(uRL = it) }
             val controller = AVPlayerViewController()
             controller.player = player
-            player?.play()
             controller.view
         },
         modifier = modifier
