@@ -37,11 +37,12 @@ jobs:
 
       - name: Compile KMP framework
         run: |
+          set -o pipefail
           ./gradlew :composeApp:compileKotlinIosArm64 --info --no-daemon 2>&1 | tee kmp-compile.log
 
       - name: Upload KMP compile log
         uses: actions/upload-artifact@v4
-        if: failure()
+        if: always()
         with:
           name: kmp-compile-log
           path: kmp-compile.log
