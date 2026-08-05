@@ -1,0 +1,44 @@
+name: AnyTViOS
+options:
+  bundleIdPrefix: com.anytvplayer
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+configs:
+  Debug: debug
+  Release: release
+targets:
+  AnyTViOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: .
+        includes:
+          - "AppDelegate.swift"
+          - "LaunchScreen.storyboard"
+    resources:
+      - path: Assets.xcassets
+        buildPhase: resources
+    dependencies:
+      - framework: ../composeApp/build/xcode-frameworks/composeApp.framework
+        embed: true
+        codeSign: false
+    settings:
+      base:
+        INFOPLIST_FILE: Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.anytvplayer.ios
+        PRODUCT_NAME: AnyTViOS
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        FRAMEWORK_SEARCH_PATHS: $(inherited) $(SRCROOT)/../composeApp/build/xcode-frameworks
+        LD_RUNPATH_SEARCH_PATHS: $(inherited) '@executable_path/Frameworks'
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+    preBuildScripts:
+      - name: Build KMP Framework
+        script: |
+          cd "$SRCROOT/.."
+          ./gradlew :composeApp:embedAndSignAppleFrameworkForXcode -PXCODE_CONFIGURATION=${CONFIGURATION} -PXCODE_SDK_NAME=${SDK_NAME} --no-daemon
+        basedOnDependencyAnalysis: false
