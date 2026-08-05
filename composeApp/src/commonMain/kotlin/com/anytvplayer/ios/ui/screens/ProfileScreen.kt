@@ -142,7 +142,7 @@ object ProfileScreen : Screen {
                 Spacer(Modifier.height(8.dp))
 
                 Button(
-                    onClick = { navigator.push(DownloadsScreen()) },
+                    onClick = { navigator.push(DownloadsScreen) },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text("Downloads")
@@ -151,7 +151,7 @@ object ProfileScreen : Screen {
                 Spacer(Modifier.height(8.dp))
 
                 Button(
-                    onClick = { navigator.push(LoginScreen()) },
+                    onClick = { navigator.push(LoginScreen) },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text("Connect / Switch Server")
@@ -163,7 +163,7 @@ object ProfileScreen : Screen {
                     onClick = {
                         viewModel.signOut()
                         viewModel.disconnect()
-                        navigator.replaceAll(HomeScreen())
+                        navigator.replaceAll(HomeScreen)
                     },
                     modifier = Modifier.fillMaxWidth()
                 ) {

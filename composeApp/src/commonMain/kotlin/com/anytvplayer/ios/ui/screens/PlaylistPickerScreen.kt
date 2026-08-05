@@ -42,7 +42,7 @@ object PlaylistPickerScreen : Screen {
                 )
             },
             floatingActionButton = {
-                FloatingActionButton(onClick = { navigator.push(LoginScreen()) }) {
+                FloatingActionButton(onClick = { navigator.push(LoginScreen) }) {
                     Icon(Icons.Filled.Add, contentDescription = "Add")
                 }
             }
@@ -74,7 +74,7 @@ object PlaylistPickerScreen : Screen {
                         isActive = viewModel.currentPlaylist?.serverUrl == playlist.serverUrl,
                         onSelect = {
                             viewModel.connectToServer(playlist)
-                            navigator.replaceAll(HomeScreen())
+                            navigator.replaceAll(HomeScreen)
                         },
                         onDelete = {
                             viewModel.deletePlaylist(playlist)

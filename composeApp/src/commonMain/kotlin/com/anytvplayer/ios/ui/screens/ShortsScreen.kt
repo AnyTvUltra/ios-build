@@ -24,7 +24,7 @@ object ShortsScreen : Screen {
 
         LaunchedEffect(Unit) {
             if (!viewModel.isConnected) {
-                navigator.push(LoginScreen())
+                navigator.push(LoginScreen)
             } else {
                 viewModel.loadAllContent()
             }

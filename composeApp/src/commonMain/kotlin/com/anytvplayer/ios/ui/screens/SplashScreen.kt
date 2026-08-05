@@ -27,7 +27,7 @@ object SplashScreen : Screen {
 
         LaunchedEffect(Unit) {
             delay(1500)
-            navigator.replaceAll(HomeScreen())
+            navigator.replaceAll(HomeScreen)
         }
 
         Box(

@@ -37,7 +37,7 @@ fun App() {
 
     TwitiTheme(darkTheme = viewModel.isDarkTheme, isCkb = viewModel.languageTag == "ckb") {
         CompositionLocalProvider(LocalIptvViewModel provides viewModel) {
-            Navigator(SplashScreen()) { navigator ->
+            Navigator(SplashScreen) { navigator ->
                 val current = navigator.lastItem
                 val currentRoute = current?.key ?: ""
                 val showBottomBar = viewModel.isConnected && currentRoute in bottomBarRoutes

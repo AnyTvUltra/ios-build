@@ -77,11 +77,11 @@ fun AppBottomBar(navigator: Navigator, currentRoute: String?) {
                 onClick = {
                     if (!selected) {
                         when (item.route) {
-                            "home" -> navigator.replaceAll(HomeScreen())
-                            "live" -> navigator.push(LiveHubScreen())
-                            "shorts" -> navigator.push(ShortsScreen())
-                            "vod" -> navigator.push(VodHubScreen())
-                            "profile" -> navigator.push(ProfileScreen())
+                            "home" -> navigator.replaceAll(HomeScreen)
+                            "live" -> navigator.push(LiveHubScreen)
+                            "shorts" -> navigator.push(ShortsScreen)
+                            "vod" -> navigator.push(VodHubScreen)
+                            "profile" -> navigator.push(ProfileScreen)
                         }
                     }
                 },

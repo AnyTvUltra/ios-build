@@ -54,7 +54,7 @@ object DownloadsScreen : Screen {
                     textAlign = androidx.compose.ui.text.style.TextAlign.Center
                 )
                 Spacer(Modifier.height(16.dp))
-                Button(onClick = { navigator.push(VodHubScreen()) }) {
+                Button(onClick = { navigator.push(VodHubScreen) }) {
                     Text("Browse VOD")
                 }
             }

@@ -24,7 +24,7 @@ object VodHubScreen : Screen {
 
         LaunchedEffect(Unit) {
             if (!viewModel.isConnected) {
-                navigator.push(LoginScreen())
+                navigator.push(LoginScreen)
             } else {
                 viewModel.loadAllContent()
             }
@@ -38,7 +38,7 @@ object VodHubScreen : Screen {
                 TopAppBar(
                     title = { Text("Movies & Series") },
                     actions = {
-                        TextButton(onClick = { navigator.push(SearchScreen()) }) {
+                        TextButton(onClick = { navigator.push(SearchScreen) }) {
                             Text("Search")
                         }
                     }

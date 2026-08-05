@@ -157,7 +157,7 @@ object LoginScreen : Screen {
                 Spacer(Modifier.height(8.dp))
 
                 OutlinedButton(
-                    onClick = { navigator.push(PlaylistPickerScreen()) },
+                    onClick = { navigator.push(PlaylistPickerScreen) },
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text("Manage Playlists")
@@ -167,7 +167,7 @@ object LoginScreen : Screen {
                     Spacer(Modifier.height(16.dp))
                     Text("Connected", color = TwitiMint)
                     LaunchedEffect(Unit) {
-                        navigator.replaceAll(HomeScreen())
+                        navigator.replaceAll(HomeScreen)
                     }
                 }
             }

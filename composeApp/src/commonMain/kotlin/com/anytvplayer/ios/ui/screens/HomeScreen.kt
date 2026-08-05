@@ -44,7 +44,7 @@ object HomeScreen : Screen {
         LazyColumn(
             modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)
         ) {
-            item { HomeTopBar(onSearch = { navigator.push(SearchScreen()) }) }
+            item { HomeTopBar(onSearch = { navigator.push(SearchScreen) }) }
 
             if (!viewModel.isConnected) {
                 item { ConnectPrompt() }
