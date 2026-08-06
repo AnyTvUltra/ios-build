@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admin_appDevices_add" formatted="false">زیادکردن</string>
+    <string name="admin_appDevices_expiryDate" formatted="false">بەرواری بەسەرچوون</string>
+    <string name="admin_appDevices_m3uLink" formatted="false">بەستەری M3U</string>
+    <string name="admin_appDevices_playlistName" formatted="false">ناوی لیستە لێدان</string>
+    <string name="admin_appDevices_save" formatted="false">تۆمارکردن</string>
+    <string name="admin_db_playlists" formatted="false">لیستە لێدانەکان</string>
+    <string name="admin_giftCodes_table_statusActive" formatted="false">چالاک</string>
+    <string name="admin_giftCodes_table_statusExpired" formatted="false">بەسەرچوو</string>
+    <string name="admin_inactive" formatted="false">ناچالاک</string>
+    <string name="admin_link_email" formatted="false">ئیمەیڵ</string>
+    <string name="admin_navNotifications" formatted="false">ئاگادارکردنەوەکان</string>
+    <string name="admin_noNotifications" formatted="false">هیچ ئاگادارکردنەوەیەک نییە</string>
+    <string name="admin_packageName" formatted="false">ناو</string>
+    <string name="admin_playerSettings_enabled" formatted="false">چالاک</string>
+    <string name="admin_telegramBotSettings_cancel" formatted="false">هەڵوەشاندنەوە</string>
+    <string name="admin_telegramBotSettings_replyToUser" formatted="false">وەڵامدانەوە</string>
+    <string name="admin_telegramBotSettings_sendReply" formatted="false">ناردن</string>
+    <string name="admin_telegramBotSettings_unknown" formatted="false">نەناسراو</string>
+    <string name="download_downloadBtn" formatted="false">داگرتن</string>
+    <string name="hero_typewriterPhrases_1" formatted="false">فیلم</string>
+    <string name="hero_typewriterPhrases_2" formatted="false">زنجیرەکان</string>
+    <string name="nav_getStarted" formatted="false">دەست پێبکە</string>
+    <string name="reseller_createAccount" formatted="false">دروستکردنی هەژمار</string>
+    <string name="reseller_password" formatted="false">وشەی نهێنی</string>
+    <string name="reseller_signIn" formatted="false">چوونەژوورەوە</string>
+    <string name="u_000f9fa5" formatted="false">ناردن بەردەوامە</string>
+    <string name="u_003e9872" formatted="false">چیرۆک</string>
+    <string name="u_02621ec8" formatted="false">خێزانی</string>
+    <string name="u_037323dc" formatted="false">وەڵامی پشتگیری: ${ticket.adminReply}</string>
+    <string name="u_0531a16e" formatted="false">ناردنی بەستەری گەڕاندنەوە</string>
+    <string name="u_05dab46a" formatted="false">هیچ بەستەرێکی لێدان نییە</string>
+    <string name="u_0706d78e" formatted="false">بە ڕاستەوخۆ پەیوەندی بکە بە تیمی AnyTV</string>
+    <string name="u_083b9af0" formatted="false">ناونیشانی ئامێر</string>
+    <string name="u_0876d826" formatted="false">ناو و وێنە لە ئامێرەکەت بە شێوەی ناوخۆیی پاراستراون، لەکاتێکدا ناسنامەی ئامێر و کلیلەکەی و داتای لیستەکان لە ڕێگەی پەیوەندی نهێنییەوە پارێزراون.</string>
+    <string name="u_08b40dab" formatted="false">بەستەری گەڕاندنەوەی وشەی نهێنی بۆ ئیمەیڵەکەت نێردرا</string>
+    <string name="u_0a5aba24" formatted="false">بە ئیمەیڵەکەت بچۆ ژوورەوە</string>
+    <string name="u_0a8bf302" formatted="false">ئیمەیڵەکەت بنووسە بۆ گەڕاندنەوەی وشەی نهێنی</string>
+    <string name="u_0a9fbeda" formatted="false">مۆڵەتی ئاگادارکردنەوە رەتکرایەوە</string>
+    <string name="u_0b05472a" formatted="false">کەناڵی ڕاستەوخۆ</string>
+    <string name="u_0d24133d" formatted="false">لێدان</string>
+    <string name="u_0d61d8eb" formatted="false">سەیرکردنی بەخۆڕایی</string>
+    <string name="u_0dd73943" formatted="false">منداڵ</string>
+    <string name="u_0f1ac91e" formatted="false">ئێمە لێرەین بۆ یارمەتیت</string>
+    <string name="u_0f581dc4" formatted="false">ڕاگەیاندن</string>
+    <string name="u_11e83767" formatted="false">گەڕانەوە</string>
+    <string name="u_120a2f5e" formatted="false">چارەسەرکرا</string>
+    <string name="u_12588af5" formatted="false">کۆدی پشتڕاستکردنەوەی نێردراو بۆ ${auth.pendingEmail} بنووسە</string>
+    <string name="u_14f97be1" formatted="false">ئێستا پیشان دەدرێت</string>
+    <string name="u_1552bd0f" formatted="false">لیستەی لێدان زیاد بکە تا ناوەڕۆکەکەت لێرە دەردەکەوێت</string>
+    <string name="u_16611383" formatted="false">یارمەتی</string>
+    <string name="u_16bdc8e8" formatted="false">ڕوونکردنەوەی ئەوەی ڕوویداوە و کەی کێشەکە دەستی پێکرد…</string>
+    <string name="u_16fc7eb8" formatted="false">وردەکاری کێشە</string>
+    <string name="u_1720444e" formatted="false">ناردن بەردەوامە…</string>
+    <string name="u_1773f6a1" formatted="false">دیاریکراو</string>
+    <string name="u_17e7c1b1" formatted="false">لیستەیەک بۆ ئامێر زیاد بکە لە پانێلی کارگێڕی.</string>
+    <string name="u_182827eb" formatted="false">دەتوانرێت تیکێتی نوێ بکرێتەوە دواتر کە کارگێڕی تیکێتی ئێستا دادەخات.</string>
+    <string name="u_1a6887fc" formatted="false">${clip.views} سەیرکردن</string>
+    <string name="u_1bcfe343" formatted="false">هاوکێشانی خۆکار چالاکە</string>
+    <string name="u_1df3d4f3" formatted="false">ئەنیمی</string>
+    <string name="u_1eab5c6c" formatted="false">نیشاندانی هەموو</string>
+    <string name="u_20d886e0" formatted="false">باشە</string>
+    <string name="u_22048ddc" formatted="false">کۆمێنت زیاد بکە…</string>
+    <string name="u_234aeef5" formatted="false">$totalItems ئایتەم</string>
+    <string name="u_24ef81e6" formatted="false">لە ئامادەکردندایە</string>
+    <string name="u_2513818d" formatted="false">لیستەیەک هەڵبژێرە</string>
+    <string name="u_269168cf" formatted="false">چوونەژوورەوە</string>
+    <string name="u_26b1b2b0" formatted="false">عەرەبی</string>
+    <string name="u_27b512f5" formatted="false">ناسنامەی ئامێر</string>
+    <string name="u_2acdfd2a" formatted="false">دڵنیابە لە داناکردنی google-services.json لە ناو فۆڵدەری app/ ئینگا دووبارە بنا.</string>
+    <string name="u_2b9ec895" formatted="false">لیستەی لێدان</string>
+    <string name="u_2c23c2ab" formatted="false">چیرۆک</string>
+    <string name="u_2d5f30d1" formatted="false">هەژمارەکەی ${account.provider}</string>
+    <string name="u_2d848ec5" formatted="false">گفتوگۆ دەستپێبکە و یەکەمین کۆمێنت بنووسە</string>
+    <string name="u_2ff98c2c" formatted="false">لە یاریزانێکی دەرەکی بکەرەوە</string>
+    <string name="u_30ba3871" formatted="false">ناونیشانی کێشە</string>
+    <string name="u_3114c736" formatted="false">ناوێکی تر بنووسە</string>
+    <string name="u_31f16bf2" formatted="false">${diff / 3_600_000} کاتژمێر</string>
+    <string name="u_3276904c" formatted="false">تۆمارکردن بەردەوامە…</string>
+    <string name="u_32943efa" formatted="false">پاککردنەوەی گەڕان</string>
+    <string name="u_32ff7500" formatted="false">کۆمێنتەکەت دەستکاری بکە…</string>
+    <string name="u_338558d2" formatted="false">پەیوەندی سەرکەوتوو نەبوو</string>
+    <string name="u_355ab782" formatted="false">لەخۆکار پێکردنەوە</string>
+    <string name="u_36e9f337" formatted="false">گەڕان لە فیلمەکان…</string>
+    <string name="u_39e5e94d" formatted="false">پەیوەندیکردن…</string>
+    <string name="u_3aea4019" formatted="false">ساڵ</string>
+    <string name="u_3b9854e1" formatted="false">سڕینەوە</string>
+    <string name="u_3c06bed5" formatted="false">وەستانی کاتی</string>
+    <string name="u_3d57faea" formatted="false">ئێستا</string>
+    <string name="u_3ee251d9" formatted="false">هیچ ${tab.title} نییە</string>
+    <string name="u_3fd9a02d" formatted="false">منداڵان</string>
+    <string name="u_3feb2366" formatted="false">سەرکەوتووانە</string>
+    <string name="u_40e124f8" formatted="true">زیادکرا %s</string>
+    <string name="u_411fb6e8" formatted="false">گەڕان لە زنجیرەکان…</string>
+    <string name="u_422df4da" formatted="false">کۆمێنتەکان</string>
+    <string name="u_4252e036" formatted="false">ئاگادارکردنەوەی هەژمار و ناوەڕۆک</string>
+    <string name="u_4354ff8b" formatted="false">ئێستا ڕاستەوخۆ</string>
+    <string name="u_441d4066" formatted="false">هەڵبژاردنی وێنەی کەسی</string>
+    <string name="u_44b77dd7" formatted="false">پاککردنەوەی هەموو</string>
+    <string name="u_459870ce" formatted="false">کارتوون</string>
+    <string name="u_47f37556" formatted="false">لیستەی لێدان زیاد بکە یان هەڵبژێرە</string>
+    <string name="u_4bec6818" formatted="false">هێشتا هیچ کۆمێنتێک نییە</string>
+    <string name="u_4d8981bd" formatted="false">ناسنامەی پرۆفایل</string>
+    <string name="u_505eaf06" formatted="false">کوردیی سۆرانی</string>
+    <string name="u_5203bd2c" formatted="false">داگرتن سەرکەوتوو نەبوو</string>
+    <string name="u_520e3d39" formatted="true">دەتەوێت «%s» لە ئامێرەکەت بسڕیتەوە؟</string>
+    <string name="u_5415de1e" formatted="false">بەشە بەردەستەکان</string>
+    <string name="u_55b303b4" formatted="false">داخراو</string>
+    <string name="u_598812a6" formatted="false">بەشەکان</string>
+    <string name="u_59d83110" formatted="false">ئێستا هیچ ڤیدیۆی کورتی نییە</string>
+    <string name="u_5ab7d46e" formatted="false">لیستەی لێدان زیاد بکە و لە ناوەڕۆکەکەت خۆش بەوە</string>
+    <string name="u_5f76976d" formatted="false">${iptvViewModel.downloads.size} ئایتەم</string>
+    <string name="u_60806661" formatted="false">دەرچوون</string>
+    <string name="u_621866cf" formatted="false">فیلم و بەشە دابەزێنراوەکان لێرە دەردەکەون</string>
+    <string name="u_630d4afc" formatted="false">وەڵام بدەرەوە بۆ ${it.displayName}</string>
+    <string name="u_635b4442" formatted="false">بەکارهێنانی کۆد</string>
+    <string name="u_64ba5ec4" formatted="false">منداڵان</string>
+    <string name="u_6527e2f8" formatted="false">کەناڵەکان لێرە دەردەکەون دوای زیادکردنیان بۆ لیستەی لێدان</string>
+    <string name="u_65a65a84" formatted="false">زیادکردنی لیستەی لێدان</string>
+    <string name="u_65be96d4" formatted="false">دیزنی</string>
+    <string name="u_6600e753" formatted="false">نموونە: کەناڵەکە کار ناکات</string>
+    <string name="u_66670eff" formatted="false">ئایتەمەکان لێرە دەردەکەون دوای زیادکردنی لیستەی لێدان</string>
+    <string name="u_681690d7" formatted="false">${seconds / 86_400} ر</string>
+    <string name="u_692bd794" formatted="false">کەناڵ</string>
+    <string name="u_6a507e0a" formatted="false">دووبارەکردنەوەی وشەی نهێنی</string>
+    <string name="u_6a7b70e2" formatted="false">مێژووی تیکێت</string>
+    <string name="u_6ab2f1d7" formatted="false">ئارەزووەکان</string>
+    <string name="u_6b83541d" formatted="false">پاراستنی داتای ئامێر و لیستەکان</string>
+    <string name="u_6baba11f" formatted="false">تایبەتی و ئاسایش</string>
+    <string name="u_6cc471b6" formatted="false">چیرۆکەکان</string>
+    <string name="u_6d62ca94" formatted="false">لێدان سەرکەوتوو نەبوو</string>
+    <string name="u_7077a5d8" formatted="false">هەژمارەکەت بە ئیمەیڵ زیاد بکە</string>
+    <string name="u_72b950a9" formatted="false"> · دەستکاریکرا</string>
+    <string name="u_73c93c54" formatted="false">دەستکاریکردنی پرۆفایل</string>
+    <string name="u_755ecaf5" formatted="false">زیادکردنی لیستە لە ناو بەرنامەکەوە تەنها دوای چالاککردنی ئامێر بەردەستە. لیستەکانی کە کارگێڕی AnyTV زیادیان دەکات ئامێرەکە بە شێوەی خۆکار چالاک دەکات بەپێی بەرواری دوێنی.</string>
+    <string name="u_759fdc24" formatted="false">دەستکاریکردن</string>
+    <string name="u_765f853d" formatted="false">داتای لیستەکان تەنها بۆ پانێلی AnyTV ی پەیوەندیدار بەم بەرنامەیە دەنێردرێت.</string>
+    <string name="u_7af06836" formatted="false">ئێستا بەشداربە</string>
+    <string name="u_7b7a0b48" formatted="false">سڕینەوەی لیستەی لێدان</string>
+    <string name="u_7bb69e25" formatted="false">پەیامەکان و ئاگادارکردنەوەکانی داهاتوو لێرە دەردەکەون</string>
+    <string name="u_7ce5014f" formatted="false">بەشەیەک لە پانێلی AnyTV هەڵبژێرە یان کۆدی دیاری بەکاربهێنە. ئامێرەکە بە شێوەی خۆکار چالاک دەبێت دوای پەسەندکردنی داواکاری.</string>
+    <string name="u_7d41e5d2" formatted="false">هیچ ئەنجامێک نەدۆزرایەوە</string>
+    <string name="u_7e8e69ce" formatted="false">${seconds / 3_600} ک</string>
+    <string name="u_7eba4894" formatted="false">${seconds / 60} خ</string>
+    <string name="u_7ed3d0ce" formatted="false">دەتوانرێت لە پانێلی کارگێڕی زیاد بکرێت</string>
+    <string name="u_7f919426" formatted="false">گەڕان لە منداڵان…</string>
+    <string name="u_80ca7646" formatted="false">چاوەڕوانی چالاککردن</string>
+    <string name="u_81a50c9d" formatted="false">بڵاوکردنەوە</string>
+    <string name="u_853aaed1" formatted="false">زنجیرە</string>
+    <string name="u_85f99448" formatted="false">چیرۆکەکان</string>
+    <string name="u_8652ccf9" formatted="false">دۆخی ڕووناک</string>
+    <string name="u_885e117e" formatted="false">کۆدی دیاریت هەیە؟</string>
+    <string name="u_887fb3f4" formatted="false">نەتوانرا بث پێبکرێت</string>
+    <string name="u_890954ee" formatted="true">%d لیستە پەیوەندیدار بە ئامێر</string>
+    <string name="u_892cc419" formatted="false">وەڵامی تیمی پشتگیری</string>
+    <string name="u_8991d329" formatted="false">کەناڵەکان</string>
+    <string name="u_89ef8091" formatted="false">$channelCount کەناڵ ئامادەی سەیرکردنن</string>
+    <string name="u_8dc2a2a2" formatted="false">چالاککردنی ئامێر</string>
+    <string name="u_8e03ef3d" formatted="false">گەڕان لە هەموو ناوەڕۆک…</string>
+    <string name="u_8e18f4fd" formatted="false">ئێستا هیچ ناوەڕۆکێکی منداڵان نییە</string>
+    <string name="u_8e6cc448" formatted="false">Firebase هێشتا چالاک نەکراوە.</string>
+    <string name="u_8ffe5c38" formatted="false">دەربارەی بەرنامە</string>
+    <string name="u_90a2bfef" formatted="false">بڵاوکردنەوەی بڕگەکە</string>
+    <string name="u_913c7f01" formatted="false">${diff / 60_000} خولەک</string>
+    <string name="u_93fe7083" formatted="false">بەخێربێیت</string>
+    <string name="u_947ce320" formatted="false">ناسنامە و ئامێر</string>
+    <string name="u_962dc65b" formatted="false">بەکارهێنەری AnyTV</string>
+    <string name="u_963dc8a1" formatted="false">بچۆ ژوورەوە یان هەژمار دروست بکە بۆ بەردەوامبوون</string>
+    <string name="u_9671105a" formatted="false">هیچ ناوەڕۆکێک لە لیستەی لێدان نییە</string>
+    <string name="u_991c3517" formatted="false">ڤیدیۆ دەست پێبکە دوای کردنەوەی یاریزان</string>
+    <string name="u_9cd9dd44" formatted="false">نەتوانرێت تیکێتێکی تر بنێردرێت تا کارگێڕی تیکێتی ئێستا دادەخات.</string>
+    <string name="u_9d0613fb" formatted="false">نیشاندانی لیستەکان</string>
+    <string name="u_9d645b32" formatted="false">دووبارە ناردنی کۆد</string>
+    <string name="u_9e157e27" formatted="false">وەشان 1.0</string>
+    <string name="u_9e5cd23e" formatted="false">بثی ڕاستەوخۆ</string>
+    <string name="u_9fe6cd25" formatted="false">دابەزێنرا</string>
+    <string name="u_a12c5a8a" formatted="false">تەواو </string>
+    <string name="u_a2e6fb64" formatted="false">گەڕاندنەوەی وشەی نهێنی</string>
+    <string name="u_a334a729" formatted="false">پشتڕاستکردنەوە</string>
+    <string name="u_a5ebef8f" formatted="false">تەواو</string>
+    <string name="u_a611b453" formatted="false">گەڕانەوە بۆ چوونەژوورەوە</string>
+    <string name="u_a6c0e512" formatted="false">هەژمارت نییە؟ تۆمار بکە</string>
+    <string name="u_a8755683" formatted="false">یاریزانی Android ی ڕەسەن بۆ بثی ڕاستەوخۆ و فیلم و زنجیرەکان. وەشان 1.0</string>
+    <string name="u_a9ce4fd0" formatted="false">کەناڵ و فیلم و زنجیرەکانی دڵخۆش بۆ منداڵان لێرە دەردەکەون</string>
+    <string name="u_aa637711" formatted="false">هەموو ناوەڕۆک</string>
+    <string name="u_ae343fca" formatted="false">لیستەی لێدان</string>
+    <string name="u_aeca7d47" formatted="false">زمانی بەرنامە</string>
+    <string name="u_afb19bc7" formatted="false">بەرواری دەستپێک</string>
+    <string name="u_afb2686c" formatted="false">گەڕان لە کەناڵەکان…</string>
+    <string name="u_b1363b25" formatted="false">${item.durationDays} ڕۆژ</string>
+    <string name="u_b6b865d6" formatted="false">بۆشایی کراوە</string>
+    <string name="u_b72469e9" formatted="false">چاوەڕوانی دابەزاندن</string>
+    <string name="u_b773195f" formatted="false">کەناڵ و فیلم و زنجیرەکان لە کتێبخانەیەکدا</string>
+    <string name="u_b7919916" formatted="false">وردەکاری کێشەکە بنووسە و ئێمە لە پانێلی کارگێڕی وەڵامتانەوە دەدەینەوە.</string>
+    <string name="u_b99d7e32" formatted="false">زنجیرەکە</string>
+    <string name="u_bbb716e9" formatted="false">سەیربکە</string>
+    <string name="u_be4a3539" formatted="false">هەژماری چالاک</string>
+    <string name="u_c0f5269a" formatted="false">هەژمارەکەم</string>
+    <string name="u_c20473a4" formatted="false">ئەمڕازەکانی کۆمێنت</string>
+    <string name="u_c3d649e9" formatted="false">هەڵبژاردنی فایلی M3U / M3U8</string>
+    <string name="u_c5d1ca4a" formatted="false">پاڵاوتنی ناوەڕۆک</string>
+    <string name="u_c658d504" formatted="false">ئەنیمیشن</string>
+    <string name="u_c6be60f8" formatted="false">تۆ</string>
+    <string name="u_c7b31397" formatted="false">تویتی</string>
+    <string name="u_c9e75a71" formatted="false">بەستەری Server یان get.php</string>
+    <string name="u_ca834e9a" formatted="false">کەناڵە بەردەستەکان</string>
+    <string name="u_cb09665d" formatted="false">وا دیارە پەیوەندیت بە ئینتەرنێت نییە. تکایە تۆڕەکەت پشکنە و دووبارە هەوڵبدەرەوە.</string>
+    <string name="u_cc026c34" formatted="false">هیچ فایلێک هەڵنەبژێردراوە</string>
+    <string name="u_cc1c4eb9" formatted="false">● ڕاستەوخۆ</string>
+    <string name="u_cc2f99ad" formatted="false">کۆدەکە بنووسە</string>
+    <string name="u_cc44786b" formatted="false">دروستکردنی هەژمار</string>
+    <string name="u_ccd73c47" formatted="false">تیکێتە دواییەکانت</string>
+    <string name="u_ccf95e3f" formatted="false">دۆخی تاریک</string>
+    <string name="u_ce1a8d89" formatted="false">تیکێتەکەت لە پەیگیریدایە</string>
+    <string name="u_cf143297" formatted="false">پۆل</string>
+    <string name="u_d0139687" formatted="false">گۆڕین</string>
+    <string name="u_d152a492" formatted="false">هیچ داگرتنێک نییە</string>
+    <string name="u_d1626170" formatted="false">کێشەکە ڕوونبکەرەوە</string>
+    <string name="u_d2cf2bbb" formatted="false">هیچ تیکێتی پێشووی نییە</string>
+    <string name="u_d581fe7e" formatted="false">داگرتن بەردەوامە ${(item.progress * 100).toInt()}%</string>
+    <string name="u_d59e2762" formatted="false">کتێبخانەکە بەتاڵە</string>
+    <string name="u_d8ad200f" formatted="false">ناوەڕۆک و پەیوەندی</string>
+    <string name="u_d93cc3a9" formatted="false">هەژمارێکی نوێ بە ئیمەیڵ دروست بکە</string>
+    <string name="u_d9d93bb1" formatted="false">${channels.size} ئایتەم</string>
+    <string name="u_d9e2ee08" formatted="false">خەو</string>
+    <string name="u_d9e423c5" formatted="false">ڕاستەوخۆ</string>
+    <string name="u_da480207" formatted="false">یارمەتی و پشتگیری</string>
+    <string name="u_da99c425" formatted="false">پاڵاوتن</string>
+    <string name="u_dc003ed8" formatted="false">بۆشایی کراوە بەپێی پۆل</string>
+    <string name="u_dc0066df" formatted="false">کارگێڕی دەتوانێت لیستەیەک زیاد بکات و ئامێرەکەت چالاک بکات</string>
+    <string name="u_dcabb2ef" formatted="false">هیچ ئەمڕازێک نییە</string>
+    <string name="u_e0d96234" formatted="false">کەناڵی ڕاستەوخۆ نییە</string>
+    <string name="u_e0efcd03" formatted="false">هەڵسەنگاندن</string>
+    <string name="u_e51a2b1b" formatted="false">زیادکردن دابەسە تا لیستەیەکی نوێ بپەیوەندیت</string>
+    <string name="u_e5483507" formatted="false">پارێزراو</string>
+    <string name="u_e5cd3417" formatted="false">دڵنیایت؟ هەژمارەکەت بە شێوەی هەمیشەیی دەسڕێتەوە و نەتوانرێت بگەڕێنرێتەوە. ناسنامەی ئامێر کاریگەر نابێت.</string>
+    <string name="u_e83cb961" formatted="false">${compactCount(clip.views + social.viewsCount)} سەیرکردن</string>
+    <string name="u_e88b4a41" formatted="false">پێویستی بە چالاککردنی ئامێر هەیە</string>
+    <string name="u_ea9523d9" formatted="false">دابەسە بۆ سەیرکردن ئێستا</string>
+    <string name="u_ea9b1abf" formatted="false">کۆمێنتەکەت دەستکاری بکە</string>
+    <string name="u_eb32f766" formatted="false">کۆپیکردن</string>
+    <string name="u_ec2ce8be" formatted="false">پاککردنەوە</string>
+    <string name="u_ed3629e4" formatted="false">پاراستراوەکانم</string>
+    <string name="u_ed766792" formatted="false">تیکێت بە ڕاستەوخۆ بنێرە بۆ پانێلی کارگێڕی</string>
+    <string name="u_ef1a69ed" formatted="false">کۆدی پشتڕاستکردنەوە (6 ژمارە)</string>
+    <string name="u_efdc1740" formatted="false">وشەی نهێنیت لەبیر کردووە؟</string>
+    <string name="u_f0e389eb" formatted="false">سڕینەوەی هەمیشەیی</string>
+    <string name="u_f1014e36" formatted="false">ناردنی تیکێت</string>
+    <string name="u_f348cdc8" formatted="false">خەیاڵ</string>
+    <string name="u_f37de749" formatted="false">بەشداریی ئێستا</string>
+    <string name="u_f38bf16a" formatted="false">کراوە</string>
+    <string name="u_f54e8dab" formatted="false">نیک</string>
+    <string name="u_f7323f74" formatted="false">هیچ بەشێک بەردەست نییە</string>
+    <string name="u_f79020dc" formatted="false">کردنەوەی تیکێتی نوێ</string>
+    <string name="u_f798a163" formatted="false">تیکێتی ئێستا</string>
+    <string name="u_fb452d30" formatted="false">دووبارە هەوڵدان</string>
+    <string name="u_fcd3894a" formatted="false">سڕینەوەی هەژمار و هەموو داتاکەی بە شێوەی هەمیشەیی</string>
+    <string name="u_fced2e28" formatted="false">هەژمارت هەیە؟ بچۆ ژوورەوە</string>
+    <string name="u_fd674343" formatted="false">${channels.size} ئەنجام</string>
+    <string name="u_fdff2ce3" formatted="false">$season  •  $count بەش</string>
+    <string name="u_fe6c10b3" formatted="false">سڕینەوەی هەژمار</string>
+    <string name="u_feeddfd4" formatted="false">هیچ لیستەی لێدانێک نییە</string>
+    <string name="upload_file" formatted="false">فایل</string>
+    <string name="webplayer_carousel_watchNow" formatted="false">ئێستا سەیربکە</string>
+    <string name="webplayer_downloads_movie" formatted="false">فیلم</string>
+    <string name="webplayer_home_latestMovies" formatted="false">نوێترین فیلمەکان</string>
+    <string name="webplayer_layout_all" formatted="false">هەموو</string>
+    <string name="webplayer_layout_closeSection" formatted="false">داخستن</string>
+    <string name="webplayer_nav_home" formatted="false">ماڵەوە</string>
+    <string name="webplayer_nav_live" formatted="false">ڕاستەوخۆ</string>
+    <string name="webplayer_nav_series" formatted="false">زنجیرە</string>
+    <string name="app_name" formatted="false">Twiti</string>
+    <string name="u_now" formatted="false">ئێستا</string>
+    <string name="u_minutes_ago" formatted="false">${diff / 60_000} خوڵەک</string>
+    <string name="u_hours_ago" formatted="false">${diff / 3_600_000} کاتژمێڕ</string>
+    <string name="u_connection_failed" formatted="false">پەیوەندی سەرکەوتوو نەبوو</string>
+    <string name="u_file_link_invalid" formatted="false">بەستەری فایل دروست نییە</string>
+    <string name="u_m3u_read_failed" formatted="false">نەتوانرا فایلی M3U بخوێندرێت</string>
+    <string name="u_device_register_failed" formatted="false">تۆمارکردنی ئامێڕ سەرکەوتوو نەبوو</string>
+    <string name="u_no_device_key" formatted="false">خادەم کڵیلی ئامێڕی نەگەڕاندەوە</string>
+    <string name="u_stalker_unsupported" formatted="false">Stalker / MAG Portal لەم ژیریکریتە لەم ژیریکریتە</string>
+    <string name="u_xtream_hint" formatted="false">گەر ئەمە بەستەری Xtreamە، دەستی Auto Detect یان Xtream Codes بکەرەوە</string>
+    <string name="u_admin_panel_unavailable" formatted="false">پەیوەندی بە پانێلی کارگێڕی بەردەست نییە</string>
+    <string name="u_activate_first" formatted="false">پێویستی بە چالاککردنی بەرنامە هەیە بەرەو لیستەی دەرەکی زیاد بکەیت</string>
+    <string name="u_invalid_name_url" formatted="false">ناوێک و بەستەری دروستی M3U بنووسە</string>
+    <string name="u_playlist_add_failed" formatted="false">زیادکردنی لیستەکە سەرکەوتوو نەبوو</string>
+    <string name="u_playlist_added" formatted="false">لیستەی لێدان زیادکرا</string>
+    <string name="u_playlist_delete_failed" formatted="false">سۜینەوەی لیستەکە سەرکەوتوو نەبوو</string>
+    <string name="u_playlist_deleted" formatted="false">لیستەی لێدان سۜرا</string>
+    <string name="u_playlist_url_invalid" formatted="false">بەستەری لیستەی لێدان دروست نییە</string>
+    <string name="u_content_load_failed" formatted="false">داگرتنی لیستەی لێدان سەرکەوتوو نەبوو</string>
+    <string name="u_enter_gift_code" formatted="false">کۆدی دیاری بنووسە</string>
+    <string name="u_subscription_activated" formatted="false">بەشداریی بە سەرکەوتی چالاککرا</string>
+    <string name="u_gift_code_invalid" formatted="false">کۆدی دیاری دروست نییە</string>
+    <string name="u_avatar_too_large" formatted="false">وێنەی کەسی دەبێت بچوکتر بێت لە 5 MB</string>
+    <string name="u_avatar_read_failed" formatted="false">نەتوانرا وێنەی کەسی بخوێندرێت</string>
+    <string name="u_admin_unavailable_ticket" formatted="false">پەیوەندی بە پانێلی کارگێڕی بەردەست نییە</string>
+    <string name="u_fill_ticket_fields" formatted="false">ناونیشانی کێشەکە و وردەکارییەکەی بنووسە</string>
+    <string name="u_ticket_active" formatted="false">تیکێتی چالاکت هەیە. چاوەۜوان تا کارگێڕی دادەخات بەرەو کردنی تیکێتی نوێ</string>
+    <string name="u_ticket_sent" formatted="false">تیکێت بە تیمی پشتگیڕی نێردرا</string>
+    <string name="u_ticket_send_failed" formatted="false">نەتوانرا تیکێت بنێردرێت</string>
+    <string name="u_category_other" formatted="false">دیکە</string>
+    <string name="u_series_loading_failed" formatted="false">هیچ بەشێک بەردەست نییە</string>
+    <string name="u_no_name" formatted="false">بەی ناو</string>
+    <string name="u_profile_my_account" formatted="false">هەژمارەکەم</string>
+    <string name="u_profile_default_name" formatted="false">بەکارهێنەری AnyTV</string>
+    <string name="u_section_content" formatted="false">نەخشە و پەیوەندی</string>
+    <string name="u_playlists_title" formatted="false">لیستەکانی لێدان</string>
+    <string name="u_add_playlist" formatted="false">زیادکردن یان هەڵبژاردنی لیستەی لێدان</string>
+    <string name="u_requires_activation" formatted="false">چالاككردنی ئامێر پێویستە</string>
+    <string name="u_my_downloads" formatted="false">داگرتنەکانم</string>
+    <string name="u_no_downloads" formatted="false">هیچ داگرتنێک نییە</string>
+    <string name="u_section_prefs" formatted="false">ریکخراوەکان</string>
+    <string name="u_app_language" formatted="false">زمانی بەرنامەکە</string>
+    <string name="u_notif_subtitle" formatted="false">ئاگادارکردنەوەی هەژمار و نەخشە</string>
+    <string name="u_autoplay_title" formatted="false">خۆکار لێدان</string>
+    <string name="u_autoplay_subtitle" formatted="false">ڤیدیۆکە وەرهەنکئینەوە بداو لاخەرەوە</string>
+    <string name="u_dark_mode" formatted="false">ڕەگەزی</string>
+    <string name="u_enabled" formatted="false">چالاككراوە</string>
+    <string name="u_day_mode" formatted="false">ڕۆژنایی</string>
+    <string name="u_section_identity" formatted="false">ناسنامە و ئامێر</string>
+    <string name="u_account_prefix" formatted="false">هەژمار</string>
+    <string name="u_sign_out" formatted="false">دەرچوون</string>
+    <string name="u_sign_in" formatted="false">چوونەوە</string>
+    <string name="u_sign_in_subtitle" formatted="false">هەژمارەکەت بە ئیمێل زیادبکە</string>
+    <string name="u_profile_id_title" formatted="false">ناسنامەی شخصی</string>
+    <string name="u_copy" formatted="false">کۆپیکردن</string>
+    <string name="u_device_id_title" formatted="false">ناسنامەی ئامێر</string>
+    <string name="u_privacy_title" formatted="false">خوسووزی و بەزئەتی</string>
+    <string name="u_privacy_subtitle" formatted="false">حیزاندانی زیانی ئامێر و لیستەکان</string>
+    <string name="u_privacy_body" formatted="false">ناو و وێنە لەگەڵی ئامێرەکەت دادەمێژرێت، بەڵام ناسنامەی ئامێر و کڵیلەکەی و زیانی لیستەکان بەرگریکردنی شیفرەکراو دەکرێت.</string>
+    <string name="u_delete_account" formatted="false">سڕینەوەی هەژمار</string>
+    <string name="u_delete_account_subtitle" formatted="false">هەژمار و هەموو زیانەکانی بە داخاتی سڕبکە</string>
+    <string name="u_section_help" formatted="false">یارمەتی</string>
+    <string name="u_support_title" formatted="false">یارمەتی و پشتگیڕی</string>
+    <string name="u_support_subtitle" formatted="false">تیکێتەکەت بەراستەکەی پانێلی کارگێڕی بکەرەوە</string>
+    <string name="u_about_app" formatted="false">دەربارەی بەرنامە</string>
+    <string name="u_version" formatted="false">گەشانەکە 1.0</string>
+    <string name="u_about_body" formatted="false">لێدەری Androidیی ئەسلی بۆ ڕاستەوخۆ، فلم و زنجیرە. گەشانەکە 1.0</string>
+    <string name="u_welcome" formatted="false">خۆشێت هات</string>
+    <string name="u_login_prompt" formatted="false">بڵچوونەوە یا هەژمارەکەی دروستکەی بینێژبیرەوە</string>
+    <string name="u_create_account" formatted="false">هەژمارێکی دروستکردن</string>
+    <string name="u_account_active" formatted="false">هەژمارێکی چالاک</string>
+    <string name="u_pending_activation" formatted="false">چاوەڕوانی چالاككردن</string>
+    <string name="u_edit" formatted="false">دەسکارگێڕان</string>
+    <string name="u_active_subscription" formatted="false">بەشداریی ئەکتیڤ</string>
+    <string name="u_status_active" formatted="false">چالاک</string>
+    <string name="u_status_expired" formatted="false">بەسەرچووو</string>
+    <string name="u_status_inactive" formatted="false">ناچالاک</string>
+    <string name="u_start_date" formatted="false">بەرواری ریکخستن</string>
+    <string name="u_end_date" formatted="false">بەرواری هەنگاوەکان</string>
+    <string name="u_edit_profile_title" formatted="false">دەسکارگێڕانی ناسنامەی شخصی</string>
+    <string name="u_name_label" formatted="false">ناو</string>
+    <string name="u_pick_photo" formatted="false">هەڵبژاردنی وێنەی شخصی</string>
+    <string name="u_save" formatted="false">ژەماوەکەی</string>
+    <string name="u_cancel" formatted="false">دەستبەرداری</string>
+    <string name="u_ticket_subject" formatted="false">ناونیشانی کێشەکە</string>
+    <string name="u_ticket_message" formatted="false">کێشەکەکەت شێ بە</string>
+    <string name="u_recent_tickets" formatted="false">تیکێتە ڕابردەکانت</string>
+    <string name="u_sending" formatted="false">نێردەکرێت...</string>
+    <string name="u_send_ticket" formatted="false">نێردنی تیکێت</string>
+    <string name="u_close" formatted="false">داخستنەوە</string>
+    <string name="u_support_reply" formatted="false">وەڵامی پشتگیڕی</string>
+    <string name="u_ok" formatted="false">باشە</string>
+    <string name="u_delete_account_confirm" formatted="false">ئایا راستیتە؟ هەژمارەکەت بە داخاتی سڕینەوەکاتو و ناتوانرا دەستبینرێت. ناسنامەی ئامێر کەفشینەبوو.</string>
+    <string name="u_delete_permanent" formatted="false">سڕینەوەی داخاتی</string>
+    <string name="u_eadd01aa" formatted="false">دۆزینەوە</string>
+    <string name="u_4e37a1ca" formatted="false">چەنەل، فلم و زنجیرە لە کتێبخانەیەکدا</string>
+    <string name="u_ea23be01" formatted="false">دانە</string>
+    <string name="u_1c36adec" formatted="false">لە هەموو نەخشەکەدا بگەڕێ...</string>
+    <string name="u_aae29ee2" formatted="false">سڕینەوەی گەڕان</string>
+    <string name="u_0ba11e37" formatted="false">هەموو نەخشەکان</string>
+    <string name="u_e58d39f7" formatted="false">ئەنجام</string>
+    <string name="u_1cb3e14d" formatted="false">هیچ ئەنجامێک نەدۆزرایەوە</string>
+    <string name="u_d31d7a08" formatted="false">کتێبخانە بەتاڵە</string>
+    <string name="u_2f8d94f4" formatted="false">ناوێکی دیکە بنووسە</string>
+    <string name="u_3f5f5879" formatted="false">لیستەی لێدان زیادبکە بۆ نیشاندانی نەخشەکەت</string>
+    <string name="u_74a78cfe" formatted="false">بەپێی پۆل دۆزینەوە</string>
+    <string name="u_b08b8d72" formatted="false">چەنەلە بەردەستەکان</string>
+    <string name="u_4d8bb0e3" formatted="false">ئێستا ڕاستەوخۆیە</string>
+    <string name="u_7afe2e62" formatted="false">چەنەل ئامادەی سەیرکردنە</string>
+    <string name="u_b5a2fe3b" formatted="false">ڕاستەوخۆ</string>
+    <string name="u_60e87cdb" formatted="false">بکە بۆ سەیرکردن ئێستا</string>
+    <string name="u_54f0f3ef" formatted="false">نەتوانرا لێبدرێت</string>
+    <string name="u_82ef26d8" formatted="false">دووبارە هەوڵبدە</string>
+    <string name="u_a47b5a77" formatted="false">لە لێدەرێکی دەرەکی بکەرەوە</string>
+    <string name="u_b09cb0f1" formatted="false">هیچ بەستەری لێدانێک نییە</string>
+    <string name="u_cf50a8c2" formatted="false">هەموو</string>
+    <string name="u_f47fde3b" formatted="false">بەشێک</string>
+    <string name="u_shorts_empty" formatted="false">ئێستا هیچ ڤیدیۆی کورتێک نییە</string>
+    <string name="u_shorts_empty_sub" formatted="false">دەتوانرێت لە پانێلی کارگێڕیدا زیادبکرێت</string>
+    <string name="u_shorts_views" formatted="false">بینین</string>
+    <string name="u_shorts_share" formatted="false">هاوبەشکردن</string>
+    <string name="u_shorts_comments" formatted="false">کۆمێنتەکان</string>
+    <string name="u_shorts_no_comments" formatted="false">هێشتا هیچ کۆمێنتێک نییە</string>
+    <string name="u_shorts_be_first" formatted="false">گفتوگۆکە دەست پێبکە و یەکەمین بە کۆمێنتکار</string>
+    <string name="u_shorts_reply_to" formatted="false">وەڵامی</string>
+    <string name="u_shorts_edit_comment" formatted="false">دەسکارگێڕانی کۆمێنتەکەت</string>
+    <string name="u_shorts_edit_placeholder" formatted="false">کۆمێنتەکەت دەسکار بکەرەوە…</string>
+    <string name="u_shorts_comment_placeholder" formatted="false">کۆمێنتێک زیادبکە…</string>
+    <string name="u_shorts_send" formatted="false">نێردن</string>
+    <string name="u_shorts_you" formatted="false">تۆ</string>
+    <string name="u_shorts_edited" formatted="false">دەسکارگێڕاوە</string>
+    <string name="u_shorts_reply_btn" formatted="false">وەڵام</string>
+    <string name="u_shorts_comment_options" formatted="false">هەڵبژاردنەکانی کۆمێنت</string>
+    <string name="u_shorts_now" formatted="false">ئێستا</string>
+    <string name="u_shorts_min" formatted="false"> خ</string>
+    <string name="u_shorts_hour" formatted="false"> س</string>
+    <string name="u_shorts_day" formatted="false"> ر</string>
+    <string name="u_activate_device" formatted="false">ئامێرەکەت چالاکبکە</string>
+    <string name="u_activate_desc" formatted="false">پاکێجێک لە پانێلی AnyTV هەڵبژێرە یاخود کۆدی دیاری بەکارهێنە. ئامێرەکە بە خۆی دەچالاکبێت دوای پەسەندکردنی داواکارییەکە.</string>
+    <string name="u_available_packages" formatted="false">پاکێجە بەردەستەکان</string>
+    <string name="u_have_gift_code" formatted="false">کۆدی دیاریت هەیە؟</string>
+    <string name="u_enter_code" formatted="false">کۆدەکە داخڵبکە</string>
+    <string name="u_use_code" formatted="false">بەکارهێنانی کۆد</string>
+    <string name="u_auto_sync_active" formatted="false">ئاوڕدانەوەی خۆکار چالاکە</string>
+    <string name="u_device_address" formatted="false">ناونیشانی ئامێر</string>
+    <string name="u_registering" formatted="false">تۆمارکردن...</string>
+    <string name="u_day_unit" formatted="false">ڕۆژ</string>
+    <string name="u_hub_sort_name" formatted="false">ناو</string>
+    <string name="u_hub_sort_category" formatted="false">پۆل</string>
+    <string name="u_hub_sort_year" formatted="false">ساڵ</string>
+    <string name="u_hub_sort_rating" formatted="false">هەڵسەنگاندن</string>
+    <string name="u_hub_search_channels" formatted="false">لە چەنەلەکاندا بگەڕێ…</string>
+    <string name="u_hub_search_movies" formatted="false">لە فلمەکاندا بگەڕێ…</string>
+    <string name="u_hub_search_series" formatted="false">لە زنجیرەکاندا بگەڕێ…</string>
+    <string name="u_hub_filter" formatted="false">فلتەر</string>
+    <string name="u_hub_downloaded" formatted="false">داگیراوە</string>
+    <string name="u_hub_download" formatted="false">داگرتن</string>
+    <string name="u_hub_no_prefix" formatted="false">هیچ</string>
+    <string name="u_hub_filter_content" formatted="false">فلتەری نەخشە</string>
+    <string name="u_hub_no_options" formatted="false">هیچ هەڵبژاردنێک نییە</string>
+    <string name="u_home_ad" formatted="false">ئاگاداری</string>
+    <string name="u_home_choose_playlist" formatted="false">لیستێک هەڵبژێرە</string>
+    <string name="u_home_change" formatted="false">گۆڕین</string>
+    <string name="u_home_trending" formatted="false">ئێستا پیشاندەدرێت</string>
+    <string name="u_home_live" formatted="false">پەخشی ڕاستەوخۆ</string>
+    <string name="u_home_latest_movies" formatted="false">نوێترین فیلمەکان</string>
+    <string name="u_home_series" formatted="false">زنجیرەکان</string>
+    <string name="u_home_subscribe" formatted="false">ئێستا بەشداربە</string>
+    <string name="u_home_free_watch" formatted="false">بینینی بەخۆڕایی</string>
+    <string name="u_home_start_now" formatted="false">ئێستا دەست پێبکە</string>
+    <string name="u_home_add_playlist_prompt" formatted="false">لیستی پەخشکردن زیادبکە و چێژ لە ناوەڕۆکەکەت وەربگرە</string>
+    <string name="u_home_watch_now" formatted="false">ئێستا سەیربکە</string>
+    <string name="u_home_view_all" formatted="false">هەمووی ببینە</string>
+    <string name="u_home_live_badge" formatted="false">ڕاستەوخۆ</string>
+    <string name="u_home_connecting" formatted="false">پەیوەندیکردن...</string>
+    <string name="u_home_network_error" formatted="false">وادیارە پەیوەندیت بە ئینتەرنێتەوە نییە. تۆڕەکە بپشکنە و دووبارە هەوڵبدەوە.</string>
+    <string name="u_home_conn_failed" formatted="false">پەیوەندیکردن سەرنەکەوت</string>
+    <string name="u_home_retry" formatted="false">دووبارە هەوڵبدەوە</string>
+    <string name="u_home_no_content" formatted="false">هیچ ناوەڕۆکێک لە لیستی پەخشکردندا نییە</string>
+    <string name="u_home_add_admin" formatted="false">لە پانێلی کارگێڕییەوە لیستێک بۆ ئامێرەکە زیادبکە.</string>
+    <string name="u_home_view_playlists" formatted="false">لیستەکان ببینە</string>
+    <string name="u_hub_live_broadcast" formatted="false">پەخشی ڕاستەوخۆ</string>
+    <string name="u_hub_clear" formatted="false">سڕینەوە</string>
+    <string name="u_hub_all" formatted="false">هەمووی</string>
+    <string name="u_hub_items_appear" formatted="false">دوای زیادکردنی لیستی پەخشکردن دانەکان لێرە دەردەکەون</string>
+    <string name="u_my_library" formatted="false">کتێبخانەم</string>
+    <string name="u_continue_watching" formatted="false">بەردەوام بوون لە سەیرکردن</string>
+    <string name="u_my_subscriptions" formatted="false">ئەندامێتییەکانم</string>
+    <string name="u_add_to_library" formatted="false">زیادکردن بۆ کتێبخانە</string>
+    <string name="u_library_empty" formatted="false">هیچ دانەیەکی پاشەکەوتکراو نییە. فیلم و زنجیرەکان لە بەشی VOD زیادبکە.</string>
+    <string name="u_continue_watching_empty" formatted="false">هیچ ناوەڕۆکێک لە پێشەنگیدا نییە.</string>
+    <string name="u_subscriptions_empty" formatted="false">هیچ ئەندامێتییەک بەردەست نییە.</string>
+    <string name="u_dl_title" formatted="false">داگرتنەکانم</string>
+    <string name="u_back" formatted="false">گەڕانەوە</string>
+    <string name="u_dl_play" formatted="false">پەخشکردن</string>
+    <string name="u_dl_delete" formatted="false">سڕینەوە</string>
+    <string name="u_dl_empty" formatted="false">هیچ داگرتنێک نییە</string>
+    <string name="u_dl_empty_sub" formatted="false">فیلم و زنجیرەکانی داگیراو لێرە دەردەکەون</string>
+    <string name="u_dl_complete" formatted="false">داگیراوە</string>
+    <string name="u_dl_pending" formatted="false">چاوەڕوانی داگرتن</string>
+    <string name="u_dl_downloading" formatted="false">داگرتن</string>
+    <string name="u_dl_paused" formatted="false">وەستێنراوە</string>
+    <string name="u_dl_failed" formatted="false">داگرتن سەرنەکەوت</string>
+    <string name="u_dl_unknown" formatted="false">نەناسراو</string>
+    <string name="u_setup_file" formatted="false">فایل</string>
+    <string name="u_setup_auto_label" formatted="false">لینکی Server یان get.php</string>
+    <string name="u_setup_no_file" formatted="false">هیچ فایلێک هەڵنەبژێردراوە</string>
+    <string name="u_setup_choose_file" formatted="false">فایلی M3U / M3U8 هەڵبژێرە</string>
+    <string name="nav_home" formatted="false">سەرەکی</string>
+    <string name="nav_vod" formatted="false">VOD</string>
+    <string name="nav_twiti" formatted="false">تویتی</string>
+    <string name="nav_profile" formatted="false">هەژمارم</string>
+    <string name="u_vm_conn_fail" formatted="false">پەیوەندیکردن سەرنەکەوت</string>
+    <string name="u_vm_conn_fail_detail" formatted="false">پەیوەندیکردن سەرنەکەوت:\nXtream: %1s\nM3U: %2s</string>
+    <string name="u_vm_invalid_file_link" formatted="false">لینکی فایلەکە نادروستە</string>
+    <string name="u_vm_cannot_read_m3u" formatted="false">خوێندنەوەی فایلی M3U سەرنەکەوت</string>
+    <string name="u_vm_stalker_unsupported" formatted="false">Stalker / MAG Portal لەم وەشانەدا پشتگیری ناکرێت</string>
+    <string name="u_vm_xtream_hint" formatted="false">\n\nئەگەر ئەمە لینکی Xtream ە، Auto Detect یان Xtream Codes تاقیبکەوە</string>
+    <string name="u_vm_register_fail" formatted="false">تۆمارکردنی ئامێر سەرنەکەوت</string>
+    <string name="u_vm_no_device_key" formatted="false">سێرڤەرەکە کلیلی ئامێری نەنارد</string>
+    <string name="u_vm_admin_unavailable" formatted="false">پەیوەندی بە پانێلی کارگێڕییەوە بەردەست نییە</string>
+    <string name="u_vm_activate_first" formatted="false">پێشتر دەبێت ئەپەکە چالاکبکرێت بۆ زیادکردنی لیستی دەرەکی</string>
+    <string name="u_vm_invalid_name_url" formatted="false">ناوێک و لینکی M3U ی دروست بنووسە</string>
+    <string name="u_vm_add_fail" formatted="false">زیادکردنی لیستەکە سەرنەکەوت</string>
+    <string name="u_vm_add_success" formatted="false">لیستی پەخشکردن زیادکرا</string>
+    <string name="u_vm_del_fail" formatted="false">سڕینەوەی لیستەکە سەرنەکەوت</string>
+    <string name="u_vm_del_success" formatted="false">لیستی پەخشکردن سڕایەوە</string>
+    <string name="u_vm_invalid_url" formatted="false">لینکی لیستەکە نادروستە</string>
+    <string name="u_vm_load_fail" formatted="false">ناوەڕۆکی لیستەکە بار نەکرا</string>
+    <string name="u_vm_default_cat" formatted="false">جۆراوجۆر</string>
+    <string name="u_vm_gift_invalid" formatted="false">کۆدێکی دروست بنووسە</string>
+    <string name="u_vm_gift_success" formatted="false">بەشداریکردن بە سەرکەوتوویی چالاککرا</string>
+    <string name="u_vm_gift_fail" formatted="false">پشکنینی کۆدەکە سەرنەکەوت</string>
+    <string name="u_vm_file_too_big" formatted="false">تکایە فایلێک هەڵبژێرە کە قەبارەکەی لە 5 MB زیاتر نەبێت</string>
+    <string name="u_vm_file_read_fail" formatted="false">خوێندنەوەی فایلە هەڵبژێردراوەکە سەرنەکەوت</string>
+    <string name="u_vm_support_unavailable" formatted="false">پەیوەندی بە پانێلی کارگێڕییەوە بەردەست نییە</string>
+    <string name="u_vm_support_need_activate" formatted="false">بۆ ناردن دەبێت ئەپەکە چالاکبکرێت</string>
+    <string name="u_vm_support_no_msg" formatted="false">نامەی سکاڵا بنووسە. هەوڵت دا نامەیەکی بەتاڵ بنێریت بەبێ نووسین</string>
+    <string name="u_vm_support_sent" formatted="false">سکاڵاکە بە سەرکەوتوویی نێردرا و وەڵامی دەدرێتەوە</string>
+    <string name="u_vm_support_fail" formatted="false">ناردنی سکاڵاکە سەرنەکەوت</string>
+    <string name="u_vm_support_error" formatted="false">ناردنی سکاڵاکە سەرنەکەوت</string>
+    <string name="u_auth_firebase_err" formatted="false">Firebase ڕێکنەخراوە. دڵنیابەوە لە فایلی google-services.json لە بوخچەی app/</string>
+    <string name="u_auth_invalid_phone" formatted="false">ژمارەیەکی تەلەفۆنی دروست بنووسە</string>
+    <string name="u_auth_sms_fail" formatted="false">پشکنینی کۆدەکە سەرنەکەوت</string>
+    <string name="u_auth_firebase_down" formatted="false">Firebase بەردەست نییە.</string>
+    <string name="u_auth_verify_fail" formatted="false">هەڵەیەک ڕوویدا لە کاتی پشکنین</string>
+    <string name="u_auth_code_fail" formatted="false">پشکنینی کۆدەکە سەرنەکەوت</string>
+    <string name="u_auth_wait_resend" formatted="false">کەمێک چاوەڕوانبە بۆ دووبارە ناردنەوە</string>
+    <string name="u_auth_conn_err" formatted="false">هەڵەی پەیوەندی لە پشکنین</string>
+    <string name="u_auth_token_fail" formatted="false">ناردنی کۆدەکە سەرنەکەوت</string>
+    <string name="u_auth_token_err" formatted="false">هەڵەی پەیوەندی لە پشکنین</string>
+    <string name="u_auth_token_missing" formatted="false">WHATSAPP_TOKEN و WHATSAPP_PHONE_NUMBER_ID زیادبکە لە local.properties</string>
+    <string name="u_auth_verify_code" formatted="false">کۆدی پشتڕاستکردنەوەت ئەمەیە:</string>
+    <string name="u_auth_whatsapp_fail" formatted="false">ناردنەکە سەرنەکەوت</string>
+    <string name="u_auth_whatsapp_err" formatted="false">هەڵە لە پەیوەندی بە واتسئەپەوە</string>
+    <string name="u_auth_firebase_url_err" formatted="false">FIREBASE_FUNCTIONS_BASE_URL نەدۆزرایەوە</string>
+    <string name="u_auth_server_err" formatted="false">هەڵە لە سێرڤەر</string>
+    <string name="u_auth_default_name" formatted="false">بەکارهێنەر</string>
+    <string name="u_api_gift_err" formatted="false">پەیوەندی بە سێرڤەری دیاریەکانەوە سەرنەکەوت</string>
+    <string name="u_api_server_err" formatted="false">هەڵە لە سێرڤەر</string>
+    <string name="u_api_empty_body" formatted="false">وەڵامی بەتاڵ لە سێرڤەر</string>
+    <string name="u_api_invalid_url" formatted="false">لینکی سێرڤەرەکە نادروستە</string>
+    <string name="u_xtream_err" formatted="false">هەڵەی Xtream</string>
+    <string name="u_xtream_empty" formatted="false">وەڵامی Xtream بەتاڵە</string>
+    <string name="nav_live" formatted="false">ڕاستەوخۆ</string>
+    <string name="nav_movies" formatted="false">فیلمەکان</string>
+    <string name="nav_series" formatted="false">زنجیرەکان</string>
+    <string name="nav_notifications" formatted="false">ئاگادارییەکان</string>
+    <string name="nav_live_tv" formatted="false">پەخشی ڕاستەوخۆ</string>
+    <string name="u_shorts_copy_link" formatted="false">کۆپی کردنی لینکی ڤیدیۆ</string>
+    <string name="u_shorts_link_copied" formatted="false">لینکی ڤیدیۆ کۆپی کرا</string>
+    <string name="u_shorts_copy_title" formatted="false">کۆپی کردنی ناونیشان</string>
+    <string name="u_shorts_title_copied" formatted="false">ناونیشان کۆپی کرا</string>
+    <string name="u_plot" formatted="false">چیرۆک</string>
+    <string name="u_cast" formatted="false">ئەکتەران</string>
+    <string name="u_director" formatted="false">دەرهێنەر</string>
+    <string name="u_genre" formatted="false">چەشن</string>
+    <string name="u_play" formatted="false">پەخش کردن</string>
+</resources>

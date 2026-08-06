@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admin_appDevices_add" formatted="false">Add</string>
+    <string name="admin_appDevices_expiryDate" formatted="false">Expiry Date</string>
+    <string name="admin_appDevices_m3uLink" formatted="false">M3U Link</string>
+    <string name="admin_appDevices_playlistName" formatted="false">Playlist Name</string>
+    <string name="admin_appDevices_save" formatted="false">Save</string>
+    <string name="admin_db_playlists" formatted="false">Playlists</string>
+    <string name="admin_giftCodes_table_statusActive" formatted="false">Active</string>
+    <string name="admin_giftCodes_table_statusExpired" formatted="false">Expired</string>
+    <string name="admin_inactive" formatted="false">Inactive</string>
+    <string name="admin_link_email" formatted="false">Email</string>
+    <string name="admin_navNotifications" formatted="false">Notifications</string>
+    <string name="admin_noNotifications" formatted="false">No notifications</string>
+    <string name="admin_packageName" formatted="false">Name</string>
+    <string name="admin_playerSettings_enabled" formatted="false">Enabled</string>
+    <string name="admin_telegramBotSettings_cancel" formatted="false">Cancel</string>
+    <string name="admin_telegramBotSettings_replyToUser" formatted="false">Reply</string>
+    <string name="admin_telegramBotSettings_sendReply" formatted="false">Send</string>
+    <string name="admin_telegramBotSettings_unknown" formatted="false">Unknown</string>
+    <string name="download_downloadBtn" formatted="false">Download</string>
+    <string name="hero_typewriterPhrases_1" formatted="false">Movies</string>
+    <string name="hero_typewriterPhrases_2" formatted="false">TV Shows</string>
+    <string name="nav_getStarted" formatted="false">Get Started</string>
+    <string name="reseller_createAccount" formatted="false">Create Account</string>
+    <string name="reseller_password" formatted="false">Password</string>
+    <string name="reseller_signIn" formatted="false">Sign In</string>
+    <string name="u_000f9fa5" formatted="false">Sending</string>
+    <string name="u_003e9872" formatted="false">Story</string>
+    <string name="u_02621ec8" formatted="false">Family</string>
+    <string name="u_037323dc" formatted="false">Support reply: ${ticket.adminReply}</string>
+    <string name="u_0531a16e" formatted="false">Send recovery link</string>
+    <string name="u_05dab46a" formatted="false">No playback link</string>
+    <string name="u_0706d78e" formatted="false">Contact the AnyTV team directly</string>
+    <string name="u_083b9af0" formatted="false">Device address</string>
+    <string name="u_0876d826" formatted="false">Your name and photo are stored locally on your device, while the device identity, key, and playlist data are protected via encrypted connection.</string>
+    <string name="u_08b40dab" formatted="false">Password recovery link sent to your email</string>
+    <string name="u_0a5aba24" formatted="false">Sign in with your email</string>
+    <string name="u_0a8bf302" formatted="false">Enter your email to recover your password</string>
+    <string name="u_0a9fbeda" formatted="false">Notification permission denied</string>
+    <string name="u_0b05472a" formatted="false">Live Channels</string>
+    <string name="u_0d24133d" formatted="false">Play</string>
+    <string name="u_0d61d8eb" formatted="false">Free watch</string>
+    <string name="u_0dd73943" formatted="false">Child</string>
+    <string name="u_0f1ac91e" formatted="false">We are here to help you</string>
+    <string name="u_0f581dc4" formatted="false">Ad</string>
+    <string name="u_11e83767" formatted="false">Back</string>
+    <string name="u_120a2f5e" formatted="false">Resolved</string>
+    <string name="u_12588af5" formatted="false">Enter the verification code sent to ${auth.pendingEmail}</string>
+    <string name="u_14f97be1" formatted="false">Now showing</string>
+    <string name="u_1552bd0f" formatted="false">Add a playlist for your content to appear here</string>
+    <string name="u_16611383" formatted="false">Help</string>
+    <string name="u_16bdc8e8" formatted="false">Describe what happened and when the problem started…</string>
+    <string name="u_16fc7eb8" formatted="false">Problem details</string>
+    <string name="u_1720444e" formatted="false">Sending…</string>
+    <string name="u_1773f6a1" formatted="false">Specific</string>
+    <string name="u_17e7c1b1" formatted="false">Add a playlist for the device from the admin panel.</string>
+    <string name="u_182827eb" formatted="false">A new ticket can be opened after the admin closes the current one.</string>
+    <string name="u_1a6887fc" formatted="false">${clip.views} views</string>
+    <string name="u_1bcfe343" formatted="false">Auto-sync enabled</string>
+    <string name="u_1df3d4f3" formatted="false">Anime</string>
+    <string name="u_1eab5c6c" formatted="false">Show all</string>
+    <string name="u_20d886e0" formatted="false">OK</string>
+    <string name="u_22048ddc" formatted="false">Add a comment…</string>
+    <string name="u_234aeef5" formatted="false">$totalItems items</string>
+    <string name="u_24ef81e6" formatted="false">Processing</string>
+    <string name="u_2513818d" formatted="false">Choose a playlist</string>
+    <string name="u_269168cf" formatted="false">Sign in</string>
+    <string name="u_26b1b2b0" formatted="false">Arabic</string>
+    <string name="u_27b512f5" formatted="false">Device ID</string>
+    <string name="u_2acdfd2a" formatted="false">Make sure google-services.json is placed in the app/ folder then rebuild.</string>
+    <string name="u_2b9ec895" formatted="false">Playlist</string>
+    <string name="u_2c23c2ab" formatted="false">Story</string>
+    <string name="u_2d5f30d1" formatted="false">${account.provider} account</string>
+    <string name="u_2d848ec5" formatted="false">Start the conversation and be the first to comment</string>
+    <string name="u_2ff98c2c" formatted="false">Open in external player</string>
+    <string name="u_30ba3871" formatted="false">Problem title</string>
+    <string name="u_3114c736" formatted="false">Try a different name</string>
+    <string name="u_31f16bf2" formatted="false">${diff / 3_600_000} hours</string>
+    <string name="u_3276904c" formatted="false">Signing up…</string>
+    <string name="u_32943efa" formatted="false">Clear search</string>
+    <string name="u_32ff7500" formatted="false">Edit your comment…</string>
+    <string name="u_338558d2" formatted="false">Connection failed</string>
+    <string name="u_355ab782" formatted="false">Autoplay</string>
+    <string name="u_36e9f337" formatted="false">Search movies…</string>
+    <string name="u_39e5e94d" formatted="false">Connecting…</string>
+    <string name="u_3aea4019" formatted="false">Year</string>
+    <string name="u_3b9854e1" formatted="false">Delete</string>
+    <string name="u_3c06bed5" formatted="false">Paused</string>
+    <string name="u_3d57faea" formatted="false">Now</string>
+    <string name="u_3ee251d9" formatted="false">No ${tab.title}</string>
+    <string name="u_3fd9a02d" formatted="false">Kids</string>
+    <string name="u_3feb2366" formatted="false">Successfully</string>
+    <string name="u_40e124f8" formatted="true">Added %s</string>
+    <string name="u_411fb6e8" formatted="false">Search series…</string>
+    <string name="u_422df4da" formatted="false">Comments</string>
+    <string name="u_4252e036" formatted="false">Account and content notifications</string>
+    <string name="u_4354ff8b" formatted="false">Live now</string>
+    <string name="u_441d4066" formatted="false">Choose profile picture</string>
+    <string name="u_44b77dd7" formatted="false">Clear all</string>
+    <string name="u_459870ce" formatted="false">Cartoon</string>
+    <string name="u_47f37556" formatted="false">Add or choose a playlist</string>
+    <string name="u_4bec6818" formatted="false">No comments yet</string>
+    <string name="u_4d8981bd" formatted="false">Profile ID</string>
+    <string name="u_505eaf06" formatted="false">Kurdish Sorani</string>
+    <string name="u_5203bd2c" formatted="false">Download failed</string>
+    <string name="u_520e3d39" formatted="true">Do you want to delete «%s» from your device?</string>
+    <string name="u_5415de1e" formatted="false">Available packages</string>
+    <string name="u_55b303b4" formatted="false">Closed</string>
+    <string name="u_598812a6" formatted="false">Episodes</string>
+    <string name="u_59d83110" formatted="false">No short clips available</string>
+    <string name="u_5ab7d46e" formatted="false">Add a playlist and enjoy your content</string>
+    <string name="u_5f76976d" formatted="false">${iptvViewModel.downloads.size} items</string>
+    <string name="u_60806661" formatted="false">Logout</string>
+    <string name="u_621866cf" formatted="false">Downloaded movies &amp; episodes will appear here</string>
+    <string name="u_630d4afc" formatted="false">Reply to ${it.displayName}</string>
+    <string name="u_635b4442" formatted="false">Use code</string>
+    <string name="u_64ba5ec4" formatted="false">Kids</string>
+    <string name="u_6527e2f8" formatted="false">Channels will appear here as soon as they are added to the playlist</string>
+    <string name="u_65a65a84" formatted="false">Add playlist</string>
+    <string name="u_65be96d4" formatted="false">Disney</string>
+    <string name="u_6600e753" formatted="false">Example: Channel not working</string>
+    <string name="u_66670eff" formatted="false">Items will appear here after adding a playlist</string>
+    <string name="u_681690d7" formatted="false">${seconds / 86_400} d</string>
+    <string name="u_692bd794" formatted="false">Channel</string>
+    <string name="u_6a507e0a" formatted="false">Confirm password</string>
+    <string name="u_6a7b70e2" formatted="false">Ticket history</string>
+    <string name="u_6ab2f1d7" formatted="false">Preferences</string>
+    <string name="u_6b83541d" formatted="false">Device and playlist data protection</string>
+    <string name="u_6baba11f" formatted="false">Privacy &amp; security</string>
+    <string name="u_6cc471b6" formatted="false">Stories</string>
+    <string name="u_6d62ca94" formatted="false">Playback failed</string>
+    <string name="u_7077a5d8" formatted="false">Add your account by email</string>
+    <string name="u_72b950a9" formatted="false"> · Edited</string>
+    <string name="u_73c93c54" formatted="false">Edit profile</string>
+    <string name="u_755ecaf5" formatted="false">Adding a playlist from within the app is available only after device activation. Playlists added by the AnyTV manager automatically activate the device based on their expiry date.</string>
+    <string name="u_759fdc24" formatted="false">Edit</string>
+    <string name="u_765f853d" formatted="false">Playlist data is sent only to the AnyTV panel linked to this app.</string>
+    <string name="u_7af06836" formatted="false">Subscribe now</string>
+    <string name="u_7b7a0b48" formatted="false">Delete playlist</string>
+    <string name="u_7bb69e25" formatted="false">Upcoming messages and alerts will appear here</string>
+    <string name="u_7ce5014f" formatted="false">Choose a package from the AnyTV panel or use a gift code. The device will activate automatically once the request is approved.</string>
+    <string name="u_7d41e5d2" formatted="false">No results found</string>
+    <string name="u_7e8e69ce" formatted="false">${seconds / 3_600} h</string>
+    <string name="u_7eba4894" formatted="false">${seconds / 60} m</string>
+    <string name="u_7ed3d0ce" formatted="false">Can be added from the admin panel</string>
+    <string name="u_7f919426" formatted="false">Search kids…</string>
+    <string name="u_80ca7646" formatted="false">Awaiting activation</string>
+    <string name="u_81a50c9d" formatted="false">Share</string>
+    <string name="u_853aaed1" formatted="false">Series</string>
+    <string name="u_85f99448" formatted="false">Tales</string>
+    <string name="u_8652ccf9" formatted="false">Light mode</string>
+    <string name="u_885e117e" formatted="false">Have a gift code?</string>
+    <string name="u_887fb3f4" formatted="false">Could not play stream</string>
+    <string name="u_890954ee" formatted="true">%d playlists linked to device</string>
+    <string name="u_892cc419" formatted="false">Support team reply</string>
+    <string name="u_8991d329" formatted="false">Channels</string>
+    <string name="u_89ef8091" formatted="false">$channelCount channels ready to watch</string>
+    <string name="u_8dc2a2a2" formatted="false">Activate device</string>
+    <string name="u_8e03ef3d" formatted="false">Search all content…</string>
+    <string name="u_8e18f4fd" formatted="false">No kids content available</string>
+    <string name="u_8e6cc448" formatted="false">Firebase has not been activated yet.</string>
+    <string name="u_8ffe5c38" formatted="false">About app</string>
+    <string name="u_90a2bfef" formatted="false">Share clip</string>
+    <string name="u_913c7f01" formatted="false">${diff / 60_000} minutes</string>
+    <string name="u_93fe7083" formatted="false">Welcome</string>
+    <string name="u_947ce320" formatted="false">Identity &amp; device</string>
+    <string name="u_962dc65b" formatted="false">AnyTV user</string>
+    <string name="u_963dc8a1" formatted="false">Sign in or create an account to continue</string>
+    <string name="u_9671105a" formatted="false">No content in playlist</string>
+    <string name="u_991c3517" formatted="false">Start video when player opens</string>
+    <string name="u_9cd9dd44" formatted="false">Another ticket cannot be sent until the admin closes the current one.</string>
+    <string name="u_9d0613fb" formatted="false">Show lists</string>
+    <string name="u_9d645b32" formatted="false">Resend code</string>
+    <string name="u_9e157e27" formatted="false">Version 1.0</string>
+    <string name="u_9e5cd23e" formatted="false">Live stream</string>
+    <string name="u_9fe6cd25" formatted="false">Downloaded</string>
+    <string name="u_a12c5a8a" formatted="false">Done </string>
+    <string name="u_a2e6fb64" formatted="false">Password recovery</string>
+    <string name="u_a334a729" formatted="false">Confirm</string>
+    <string name="u_a5ebef8f" formatted="false">Done</string>
+    <string name="u_a611b453" formatted="false">Back to sign in</string>
+    <string name="u_a6c0e512" formatted="false">Don\'t have an account? Sign up</string>
+    <string name="u_a8755683" formatted="false">Native Android player for live streaming, movies and series. Version 1.0</string>
+    <string name="u_a9ce4fd0" formatted="false">Kid-friendly channels, movies and series will appear here</string>
+    <string name="u_aa637711" formatted="false">All content</string>
+    <string name="u_ae343fca" formatted="false">Playlist</string>
+    <string name="u_aeca7d47" formatted="false">App language</string>
+    <string name="u_afb19bc7" formatted="false">Start date</string>
+    <string name="u_afb2686c" formatted="false">Search channels…</string>
+    <string name="u_b1363b25" formatted="false">${item.durationDays} days</string>
+    <string name="u_b6b865d6" formatted="false">Explore</string>
+    <string name="u_b72469e9" formatted="false">Waiting to load</string>
+    <string name="u_b773195f" formatted="false">Channels, movies and series in one library</string>
+    <string name="u_b7919916" formatted="false">Write problem details and we will reply from the admin panel.</string>
+    <string name="u_b99d7e32" formatted="false">The series</string>
+    <string name="u_bbb716e9" formatted="false">Watch</string>
+    <string name="u_be4a3539" formatted="false">Active account</string>
+    <string name="u_c0f5269a" formatted="false">My account</string>
+    <string name="u_c20473a4" formatted="false">Comment options</string>
+    <string name="u_c3d649e9" formatted="false">Choose M3U / M3U8 file</string>
+    <string name="u_c5d1ca4a" formatted="false">Filter content</string>
+    <string name="u_c658d504" formatted="false">Animation</string>
+    <string name="u_c6be60f8" formatted="false">You</string>
+    <string name="u_c7b31397" formatted="false">Twiti</string>
+    <string name="u_c9e75a71" formatted="false">Server or get.php link</string>
+    <string name="u_ca834e9a" formatted="false">Available channels</string>
+    <string name="u_cb09665d" formatted="false">You appear to be offline. Check your network and try again.</string>
+    <string name="u_cc026c34" formatted="false">No file selected</string>
+    <string name="u_cc1c4eb9" formatted="false">● Live</string>
+    <string name="u_cc2f99ad" formatted="false">Enter the code</string>
+    <string name="u_cc44786b" formatted="false">Create account</string>
+    <string name="u_ccd73c47" formatted="false">Your recent tickets</string>
+    <string name="u_ccf95e3f" formatted="false">Dark mode</string>
+    <string name="u_ce1a8d89" formatted="false">Your ticket is being followed up</string>
+    <string name="u_cf143297" formatted="false">Category</string>
+    <string name="u_d0139687" formatted="false">Change</string>
+    <string name="u_d152a492" formatted="false">No downloads</string>
+    <string name="u_d1626170" formatted="false">Describe the problem</string>
+    <string name="u_d2cf2bbb" formatted="false">No previous tickets</string>
+    <string name="u_d581fe7e" formatted="false">Downloading ${(item.progress * 100).toInt()}%</string>
+    <string name="u_d59e2762" formatted="false">Library is empty</string>
+    <string name="u_d8ad200f" formatted="false">Content &amp; connection</string>
+    <string name="u_d93cc3a9" formatted="false">Create a new account by email</string>
+    <string name="u_d9d93bb1" formatted="false">${channels.size} items</string>
+    <string name="u_d9e2ee08" formatted="false">Sleep</string>
+    <string name="u_d9e423c5" formatted="false">Live</string>
+    <string name="u_da480207" formatted="false">Help &amp; support</string>
+    <string name="u_da99c425" formatted="false">Filter</string>
+    <string name="u_dc003ed8" formatted="false">Explore by category</string>
+    <string name="u_dc0066df" formatted="false">Admin can add a playlist and activate your device</string>
+    <string name="u_dcabb2ef" formatted="false">No options</string>
+    <string name="u_e0d96234" formatted="false">No live channels</string>
+    <string name="u_e0efcd03" formatted="false">Rating</string>
+    <string name="u_e51a2b1b" formatted="false">Tap Add to link a new playlist</string>
+    <string name="u_e5483507" formatted="false">Protected</string>
+    <string name="u_e5cd3417" formatted="false">Are you sure? Your account will be permanently deleted and cannot be recovered. Device ID will not be affected.</string>
+    <string name="u_e83cb961" formatted="false">${compactCount(clip.views + social.viewsCount)} views</string>
+    <string name="u_e88b4a41" formatted="false">Requires device activation</string>
+    <string name="u_ea9523d9" formatted="false">Tap to watch now</string>
+    <string name="u_ea9b1abf" formatted="false">Edit your comment</string>
+    <string name="u_eb32f766" formatted="false">Copy</string>
+    <string name="u_ec2ce8be" formatted="false">Clear</string>
+    <string name="u_ed3629e4" formatted="false">My saved</string>
+    <string name="u_ed766792" formatted="false">Submit a ticket directly to the admin panel</string>
+    <string name="u_ef1a69ed" formatted="false">Verification code (6 digits)</string>
+    <string name="u_efdc1740" formatted="false">Forgot password?</string>
+    <string name="u_f0e389eb" formatted="false">Permanent delete</string>
+    <string name="u_f1014e36" formatted="false">Submit ticket</string>
+    <string name="u_f348cdc8" formatted="false">Fantasy</string>
+    <string name="u_f37de749" formatted="false">Current subscription</string>
+    <string name="u_f38bf16a" formatted="false">Open</string>
+    <string name="u_f54e8dab" formatted="false">Nick</string>
+    <string name="u_f7323f74" formatted="false">No episodes available</string>
+    <string name="u_f79020dc" formatted="false">Open new ticket</string>
+    <string name="u_f798a163" formatted="false">Current ticket</string>
+    <string name="u_fb452d30" formatted="false">Retry</string>
+    <string name="u_fcd3894a" formatted="false">Permanently delete your account and all its data</string>
+    <string name="u_fced2e28" formatted="false">Have an account? Sign in</string>
+    <string name="u_fd674343" formatted="false">${channels.size} results</string>
+    <string name="u_fdff2ce3" formatted="false">$season  •  $count episodes</string>
+    <string name="u_fe6c10b3" formatted="false">Delete account</string>
+    <string name="u_feeddfd4" formatted="false">No playlists</string>
+    <string name="upload_file" formatted="false">File</string>
+    <string name="webplayer_carousel_watchNow" formatted="false">Watch Now</string>
+    <string name="webplayer_downloads_movie" formatted="false">Movie</string>
+    <string name="webplayer_home_latestMovies" formatted="false">Latest Movies</string>
+    <string name="webplayer_layout_all" formatted="false">All</string>
+    <string name="webplayer_layout_closeSection" formatted="false">Close</string>
+    <string name="webplayer_nav_home" formatted="false">Home</string>
+    <string name="webplayer_nav_live" formatted="false">Live TV</string>
+    <string name="webplayer_nav_series" formatted="false">TV Series</string>
+    <string name="app_name" formatted="false">Twiti</string>
+    <string name="u_now" formatted="false">Now</string>
+    <string name="u_minutes_ago" formatted="false">${diff / 60_000} minutes ago</string>
+    <string name="u_hours_ago" formatted="false">${diff / 3_600_000} hours ago</string>
+    <string name="u_connection_failed" formatted="false">Connection failed</string>
+    <string name="u_file_link_invalid" formatted="false">File link is invalid</string>
+    <string name="u_m3u_read_failed" formatted="false">Could not read M3U file</string>
+    <string name="u_device_register_failed" formatted="false">Could not register device</string>
+    <string name="u_no_device_key" formatted="false">Server did not return device key</string>
+    <string name="u_stalker_unsupported" formatted="false">Stalker / MAG Portal is not supported in this version</string>
+    <string name="u_xtream_hint" formatted="false">If this is an Xtream link, try Auto Detect or Xtream Codes mode</string>
+    <string name="u_admin_panel_unavailable" formatted="false">Admin panel connection is not available</string>
+    <string name="u_activate_first" formatted="false">Device must be activated before adding an external playlist</string>
+    <string name="u_invalid_name_url" formatted="false">Enter a valid name and M3U link</string>
+    <string name="u_playlist_add_failed" formatted="false">Could not add playlist</string>
+    <string name="u_playlist_added" formatted="false">Playlist added successfully</string>
+    <string name="u_playlist_delete_failed" formatted="false">Could not delete playlist</string>
+    <string name="u_playlist_deleted" formatted="false">Playlist deleted</string>
+    <string name="u_playlist_url_invalid" formatted="false">Playlist URL is invalid</string>
+    <string name="u_content_load_failed" formatted="false">Could not load playlist</string>
+    <string name="u_enter_gift_code" formatted="false">Enter gift code</string>
+    <string name="u_subscription_activated" formatted="false">Subscription activated successfully</string>
+    <string name="u_gift_code_invalid" formatted="false">Gift code is invalid</string>
+    <string name="u_avatar_too_large" formatted="false">Profile picture must be smaller than 5 MB</string>
+    <string name="u_avatar_read_failed" formatted="false">Could not read profile picture</string>
+    <string name="u_admin_unavailable_ticket" formatted="false">Admin panel connection is not available</string>
+    <string name="u_fill_ticket_fields" formatted="false">Write the problem title and details</string>
+    <string name="u_ticket_active" formatted="false">You have an active ticket. Wait for admin to close it before opening a new one</string>
+    <string name="u_ticket_sent" formatted="false">Ticket sent to support team</string>
+    <string name="u_ticket_send_failed" formatted="false">Could not send ticket</string>
+    <string name="u_category_other" formatted="false">Other</string>
+    <string name="u_series_loading_failed" formatted="false">No episodes available</string>
+    <string name="u_no_name" formatted="false">No name</string>
+    <string name="u_profile_my_account" formatted="false">My Account</string>
+    <string name="u_profile_default_name" formatted="false">AnyTV User</string>
+    <string name="u_section_content" formatted="false">Content and Connection</string>
+    <string name="u_playlists_title" formatted="false">Playlists</string>
+    <string name="u_add_playlist" formatted="false">Add or select a playlist</string>
+    <string name="u_requires_activation" formatted="false">Requires device activation</string>
+    <string name="u_my_downloads" formatted="false">My Downloads</string>
+    <string name="u_no_downloads" formatted="false">No downloads</string>
+    <string name="u_section_prefs" formatted="false">Preferences</string>
+    <string name="u_app_language" formatted="false">App Language</string>
+    <string name="u_notif_subtitle" formatted="false">Account and content notifications</string>
+    <string name="u_autoplay_title" formatted="false">Autoplay</string>
+    <string name="u_autoplay_subtitle" formatted="false">Start video immediately when opening player</string>
+    <string name="u_dark_mode" formatted="false">Dark Mode</string>
+    <string name="u_enabled" formatted="false">Enabled</string>
+    <string name="u_day_mode" formatted="false">Light mode</string>
+    <string name="u_section_identity" formatted="false">Identity and Device</string>
+    <string name="u_account_prefix" formatted="false">Account</string>
+    <string name="u_sign_out" formatted="false">Sign Out</string>
+    <string name="u_sign_in" formatted="false">Sign In</string>
+    <string name="u_sign_in_subtitle" formatted="false">Add your account with email</string>
+    <string name="u_profile_id_title" formatted="false">Profile ID</string>
+    <string name="u_copy" formatted="false">Copy</string>
+    <string name="u_device_id_title" formatted="false">Device ID</string>
+    <string name="u_privacy_title" formatted="false">Privacy and Security</string>
+    <string name="u_privacy_subtitle" formatted="false">Protect device data and playlists</string>
+    <string name="u_privacy_body" formatted="false">Name and photo are stored locally on your device, while device identity, key, and playlist data are protected via encrypted connection.</string>
+    <string name="u_delete_account" formatted="false">Delete Account</string>
+    <string name="u_delete_account_subtitle" formatted="false">Permanently delete your account and all data</string>
+    <string name="u_section_help" formatted="false">Help</string>
+    <string name="u_support_title" formatted="false">Help and Support</string>
+    <string name="u_support_subtitle" formatted="false">Submit a ticket directly to admin panel</string>
+    <string name="u_about_app" formatted="false">About App</string>
+    <string name="u_version" formatted="false">Version 1.0</string>
+    <string name="u_about_body" formatted="false">Native Android player for live TV, movies, and series. Version 1.0</string>
+    <string name="u_welcome" formatted="false">Welcome</string>
+    <string name="u_login_prompt" formatted="false">Sign in or create an account to continue</string>
+    <string name="u_create_account" formatted="false">Create Account</string>
+    <string name="u_account_active" formatted="false">Active Account</string>
+    <string name="u_pending_activation" formatted="false">Pending Activation</string>
+    <string name="u_edit" formatted="false">Edit</string>
+    <string name="u_active_subscription" formatted="false">Active Subscription</string>
+    <string name="u_status_active" formatted="false">Active</string>
+    <string name="u_status_expired" formatted="false">Expired</string>
+    <string name="u_status_inactive" formatted="false">Inactive</string>
+    <string name="u_start_date" formatted="false">Start Date</string>
+    <string name="u_end_date" formatted="false">End Date</string>
+    <string name="u_edit_profile_title" formatted="false">Edit Profile</string>
+    <string name="u_name_label" formatted="false">Name</string>
+    <string name="u_pick_photo" formatted="false">Choose profile photo</string>
+    <string name="u_save" formatted="false">Save</string>
+    <string name="u_cancel" formatted="false">Cancel</string>
+    <string name="u_ticket_subject" formatted="false">Problem title</string>
+    <string name="u_ticket_message" formatted="false">Describe the problem</string>
+    <string name="u_recent_tickets" formatted="false">Your recent tickets</string>
+    <string name="u_sending" formatted="false">Sending...</string>
+    <string name="u_send_ticket" formatted="false">Send Ticket</string>
+    <string name="u_close" formatted="false">Close</string>
+    <string name="u_support_reply" formatted="false">Support reply</string>
+    <string name="u_ok" formatted="false">OK</string>
+    <string name="u_delete_account_confirm" formatted="false">Are you sure? Your account will be permanently deleted and cannot be recovered. Device ID will not be affected.</string>
+    <string name="u_delete_permanent" formatted="false">Delete Permanently</string>
+    <string name="u_eadd01aa" formatted="false">Explore</string>
+    <string name="u_4e37a1ca" formatted="false">Channels, movies, and series in one library</string>
+    <string name="u_ea23be01" formatted="false">items</string>
+    <string name="u_1c36adec" formatted="false">Search all content...</string>
+    <string name="u_aae29ee2" formatted="false">Clear search</string>
+    <string name="u_0ba11e37" formatted="false">All content</string>
+    <string name="u_e58d39f7" formatted="false">results</string>
+    <string name="u_1cb3e14d" formatted="false">No results found</string>
+    <string name="u_d31d7a08" formatted="false">Library is empty</string>
+    <string name="u_2f8d94f4" formatted="false">Try searching another name</string>
+    <string name="u_3f5f5879" formatted="false">Add a playlist to see your content here</string>
+    <string name="u_74a78cfe" formatted="false">Explore by category</string>
+    <string name="u_b08b8d72" formatted="false">Available channels</string>
+    <string name="u_4d8bb0e3" formatted="false">Live Now</string>
+    <string name="u_7afe2e62" formatted="false">channel ready to watch</string>
+    <string name="u_b5a2fe3b" formatted="false">Live</string>
+    <string name="u_60e87cdb" formatted="false">Tap to watch now</string>
+    <string name="u_54f0f3ef" formatted="false">Playback failed</string>
+    <string name="u_82ef26d8" formatted="false">Retry</string>
+    <string name="u_a47b5a77" formatted="false">Open in external player</string>
+    <string name="u_b09cb0f1" formatted="false">No stream URL</string>
+    <string name="u_cf50a8c2" formatted="false">All</string>
+    <string name="u_f47fde3b" formatted="false">episode</string>
+    <string name="u_shorts_empty" formatted="false">No short clips available</string>
+    <string name="u_shorts_empty_sub" formatted="false">They can be added from the admin panel</string>
+    <string name="u_shorts_views" formatted="false">views</string>
+    <string name="u_shorts_share" formatted="false">Share</string>
+    <string name="u_shorts_comments" formatted="false">Comments</string>
+    <string name="u_shorts_no_comments" formatted="false">No comments yet</string>
+    <string name="u_shorts_be_first" formatted="false">Start the conversation and be first to comment</string>
+    <string name="u_shorts_reply_to" formatted="false">Reply to</string>
+    <string name="u_shorts_edit_comment" formatted="false">Edit your comment</string>
+    <string name="u_shorts_edit_placeholder" formatted="false">Edit your comment…</string>
+    <string name="u_shorts_comment_placeholder" formatted="false">Add a comment…</string>
+    <string name="u_shorts_send" formatted="false">Send</string>
+    <string name="u_shorts_you" formatted="false">You</string>
+    <string name="u_shorts_edited" formatted="false">edited</string>
+    <string name="u_shorts_reply_btn" formatted="false">Reply</string>
+    <string name="u_shorts_comment_options" formatted="false">Comment options</string>
+    <string name="u_shorts_now" formatted="false">Now</string>
+    <string name="u_shorts_min" formatted="false">m</string>
+    <string name="u_shorts_hour" formatted="false">h</string>
+    <string name="u_shorts_day" formatted="false">d</string>
+    <string name="u_activate_device" formatted="false">Activate Your Device</string>
+    <string name="u_activate_desc" formatted="false">Choose a package from the AnyTV panel or use a gift code. Device will activate automatically once the request is approved.</string>
+    <string name="u_available_packages" formatted="false">Available Packages</string>
+    <string name="u_have_gift_code" formatted="false">Have a gift code?</string>
+    <string name="u_enter_code" formatted="false">Enter code</string>
+    <string name="u_use_code" formatted="false">Redeem Code</string>
+    <string name="u_auto_sync_active" formatted="false">Auto-sync is active</string>
+    <string name="u_device_address" formatted="false">Device Address</string>
+    <string name="u_registering" formatted="false">Registering…</string>
+    <string name="u_day_unit" formatted="false">day</string>
+    <string name="u_hub_sort_name" formatted="false">Name</string>
+    <string name="u_hub_sort_category" formatted="false">Category</string>
+    <string name="u_hub_sort_year" formatted="false">Year</string>
+    <string name="u_hub_sort_rating" formatted="false">Rating</string>
+    <string name="u_hub_search_channels" formatted="false">Search channels…</string>
+    <string name="u_hub_search_movies" formatted="false">Search movies…</string>
+    <string name="u_hub_search_series" formatted="false">Search series…</string>
+    <string name="u_hub_filter" formatted="false">Filter</string>
+    <string name="u_hub_downloaded" formatted="false">Downloaded</string>
+    <string name="u_hub_download" formatted="false">Download</string>
+    <string name="u_hub_no_prefix" formatted="false">No</string>
+    <string name="u_hub_filter_content" formatted="false">Filter Content</string>
+    <string name="u_hub_no_options" formatted="false">No options</string>
+    <string name="u_home_ad" formatted="false">Ad</string>
+    <string name="u_home_choose_playlist" formatted="false">Choose playlist</string>
+    <string name="u_home_change" formatted="false">Change</string>
+    <string name="u_home_trending" formatted="false">Trending Now</string>
+    <string name="u_home_live" formatted="false">Live Broadcast</string>
+    <string name="u_home_latest_movies" formatted="false">Latest Movies</string>
+    <string name="u_home_series" formatted="false">Series</string>
+    <string name="u_home_subscribe" formatted="false">Subscribe Now</string>
+    <string name="u_home_free_watch" formatted="false">Free to Watch</string>
+    <string name="u_home_start_now" formatted="false">Get Started</string>
+    <string name="u_home_add_playlist_prompt" formatted="false">Add your playlist and enjoy your content</string>
+    <string name="u_home_watch_now" formatted="false">Watch Now</string>
+    <string name="u_home_view_all" formatted="false">View All</string>
+    <string name="u_home_live_badge" formatted="false">LIVE</string>
+    <string name="u_home_connecting" formatted="false">Connecting…</string>
+    <string name="u_home_network_error" formatted="false">You seem to be offline. Check your connection and try again.</string>
+    <string name="u_home_conn_failed" formatted="false">Connection Failed</string>
+    <string name="u_home_retry" formatted="false">Retry</string>
+    <string name="u_home_no_content" formatted="false">No content in playlist</string>
+    <string name="u_home_add_admin" formatted="false">Add a playlist for this device from the admin panel.</string>
+    <string name="u_home_view_playlists" formatted="false">View Playlists</string>
+    <string name="u_hub_live_broadcast" formatted="false">Live Broadcast</string>
+    <string name="u_hub_clear" formatted="false">Clear</string>
+    <string name="u_hub_all" formatted="false">All</string>
+    <string name="u_hub_items_appear" formatted="false">Items will appear here after adding a playlist</string>
+    <string name="u_my_library" formatted="false">My Library</string>
+    <string name="u_continue_watching" formatted="false">Continue Watching</string>
+    <string name="u_my_subscriptions" formatted="false">My Subscriptions</string>
+    <string name="u_add_to_library" formatted="false">Add to Library</string>
+    <string name="u_library_empty" formatted="false">No saved items yet. Add movies and series from VOD.</string>
+    <string name="u_continue_watching_empty" formatted="false">No content in progress.</string>
+    <string name="u_subscriptions_empty" formatted="false">No subscriptions available.</string>
+    <string name="u_dl_title" formatted="false">My Downloads</string>
+    <string name="u_back" formatted="false">Back</string>
+    <string name="u_dl_play" formatted="false">Play</string>
+    <string name="u_dl_delete" formatted="false">Delete</string>
+    <string name="u_dl_empty" formatted="false">No downloads</string>
+    <string name="u_dl_empty_sub" formatted="false">Movies and episodes you download will appear here</string>
+    <string name="u_dl_complete" formatted="false">Downloaded</string>
+    <string name="u_dl_pending" formatted="false">Pending download</string>
+    <string name="u_dl_downloading" formatted="false">Downloading</string>
+    <string name="u_dl_paused" formatted="false">Paused</string>
+    <string name="u_dl_failed" formatted="false">Download failed</string>
+    <string name="u_dl_unknown" formatted="false">Unknown</string>
+    <string name="u_setup_file" formatted="false">File</string>
+    <string name="u_setup_auto_label" formatted="false">Server or get.php link</string>
+    <string name="u_setup_no_file" formatted="false">No file selected</string>
+    <string name="u_setup_choose_file" formatted="false">Choose M3U / M3U8 File</string>
+    <string name="nav_home" formatted="false">Home</string>
+    <string name="nav_vod" formatted="false">VOD</string>
+    <string name="nav_twiti" formatted="false">Twiti</string>
+    <string name="nav_profile" formatted="false">Profile</string>
+    <string name="u_vm_conn_fail" formatted="false">Connection failed</string>
+    <string name="u_vm_conn_fail_detail" formatted="false">Connection failed:\nXtream: %1s\nM3U: %2s</string>
+    <string name="u_vm_invalid_file_link" formatted="false">Invalid file link</string>
+    <string name="u_vm_cannot_read_m3u" formatted="false">Unable to read M3U file</string>
+    <string name="u_vm_stalker_unsupported" formatted="false">Stalker / MAG Portal not supported in this version</string>
+    <string name="u_vm_xtream_hint" formatted="false">\n\nIf this is an Xtream link, try Auto Detect or Xtream Codes mode</string>
+    <string name="u_vm_register_fail" formatted="false">Failed to register device</string>
+    <string name="u_vm_no_device_key" formatted="false">Server did not return device key</string>
+    <string name="u_vm_admin_unavailable" formatted="false">Admin panel connection unavailable</string>
+    <string name="u_vm_activate_first" formatted="false">App must be activated first before adding external playlist</string>
+    <string name="u_vm_invalid_name_url" formatted="false">Enter a valid name and M3U URL</string>
+    <string name="u_vm_add_fail" formatted="false">Failed to add playlist</string>
+    <string name="u_vm_add_success" formatted="false">Playlist added successfully</string>
+    <string name="u_vm_del_fail" formatted="false">Failed to delete playlist</string>
+    <string name="u_vm_del_success" formatted="false">Playlist deleted successfully</string>
+    <string name="u_vm_invalid_url" formatted="false">Invalid playlist URL</string>
+    <string name="u_vm_load_fail" formatted="false">Failed to load playlist content</string>
+    <string name="u_vm_default_cat" formatted="false">Miscellaneous</string>
+    <string name="u_vm_gift_invalid" formatted="false">Enter a valid code</string>
+    <string name="u_vm_gift_success" formatted="false">Subscription activated successfully</string>
+    <string name="u_vm_gift_fail" formatted="false">Code verification failed</string>
+    <string name="u_vm_file_too_big" formatted="false">Please select a file no larger than 5 MB</string>
+    <string name="u_vm_file_read_fail" formatted="false">Unable to read selected file</string>
+    <string name="u_vm_support_unavailable" formatted="false">Admin panel connection unavailable</string>
+    <string name="u_vm_support_need_activate" formatted="false">App must be activated to send</string>
+    <string name="u_vm_support_no_msg" formatted="false">Enter a complaint message. You tried to send an empty message</string>
+    <string name="u_vm_support_sent" formatted="false">Complaint sent successfully and will be responded to</string>
+    <string name="u_vm_support_fail" formatted="false">Failed to send complaint</string>
+    <string name="u_vm_support_error" formatted="false">Failed to send complaint</string>
+    <string name="u_auth_firebase_err" formatted="false">Firebase not configured. Check google-services.json in app/ folder</string>
+    <string name="u_auth_invalid_phone" formatted="false">Enter a valid phone number</string>
+    <string name="u_auth_sms_fail" formatted="false">Code verification failed</string>
+    <string name="u_auth_firebase_down" formatted="false">Firebase unavailable.</string>
+    <string name="u_auth_verify_fail" formatted="false">Verification error occurred</string>
+    <string name="u_auth_code_fail" formatted="false">Code verification failed</string>
+    <string name="u_auth_wait_resend" formatted="false">Wait a moment before resending</string>
+    <string name="u_auth_conn_err" formatted="false">Connection error during verification</string>
+    <string name="u_auth_token_fail" formatted="false">Failed to send code</string>
+    <string name="u_auth_token_err" formatted="false">Connection error during verification</string>
+    <string name="u_auth_token_missing" formatted="false">Add WHATSAPP_TOKEN and WHATSAPP_PHONE_NUMBER_ID to local.properties</string>
+    <string name="u_auth_verify_code" formatted="false">Your verification code is:</string>
+    <string name="u_auth_whatsapp_fail" formatted="false">Send failed</string>
+    <string name="u_auth_whatsapp_err" formatted="false">WhatsApp connection error</string>
+    <string name="u_auth_firebase_url_err" formatted="false">FIREBASE_FUNCTIONS_BASE_URL not found</string>
+    <string name="u_auth_server_err" formatted="false">Server error</string>
+    <string name="u_auth_default_name" formatted="false">User</string>
+    <string name="u_api_gift_err" formatted="false">Unable to connect to gift server</string>
+    <string name="u_api_server_err" formatted="false">Server error</string>
+    <string name="u_api_empty_body" formatted="false">Empty response from server</string>
+    <string name="u_api_invalid_url" formatted="false">Invalid server URL</string>
+    <string name="u_xtream_err" formatted="false">Xtream error</string>
+    <string name="u_xtream_empty" formatted="false">Empty Xtream response</string>
+    <string name="nav_live" formatted="false">Live</string>
+    <string name="nav_movies" formatted="false">Movies</string>
+    <string name="nav_series" formatted="false">Series</string>
+    <string name="nav_notifications" formatted="false">Notifications</string>
+    <string name="nav_live_tv" formatted="false">Live TV</string>
+    <string name="u_shorts_copy_link" formatted="false">Copy video link</string>
+    <string name="u_shorts_link_copied" formatted="false">Video link copied</string>
+    <string name="u_shorts_copy_title" formatted="false">Copy title</string>
+    <string name="u_shorts_title_copied" formatted="false">Title copied</string>
+    <string name="u_plot" formatted="false">Plot</string>
+    <string name="u_cast" formatted="false">Cast</string>
+    <string name="u_director" formatted="false">Director</string>
+    <string name="u_genre" formatted="false">Genre</string>
+    <string name="u_play" formatted="false">Play</string>
+</resources>

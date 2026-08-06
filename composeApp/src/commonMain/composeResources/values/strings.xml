@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admin_appDevices_add" formatted="false">إضافة</string>
+    <string name="admin_appDevices_expiryDate" formatted="false">تاريخ الانتهاء</string>
+    <string name="admin_appDevices_m3uLink" formatted="false">رابط M3U</string>
+    <string name="admin_appDevices_playlistName" formatted="false">اسم القائمة</string>
+    <string name="admin_appDevices_save" formatted="false">حفظ</string>
+    <string name="admin_db_playlists" formatted="false">قوائم التشغيل</string>
+    <string name="admin_giftCodes_table_statusActive" formatted="false">نشط</string>
+    <string name="admin_giftCodes_table_statusExpired" formatted="false">منتهي</string>
+    <string name="admin_inactive" formatted="false">غير نشط</string>
+    <string name="admin_link_email" formatted="false">البريد الإلكتروني</string>
+    <string name="admin_navNotifications" formatted="false">الإشعارات</string>
+    <string name="admin_noNotifications" formatted="false">لا توجد إشعارات</string>
+    <string name="admin_packageName" formatted="false">الاسم</string>
+    <string name="admin_playerSettings_enabled" formatted="false">مفعّل</string>
+    <string name="admin_telegramBotSettings_cancel" formatted="false">إلغاء</string>
+    <string name="admin_telegramBotSettings_replyToUser" formatted="false">رد</string>
+    <string name="admin_telegramBotSettings_sendReply" formatted="false">إرسال</string>
+    <string name="admin_telegramBotSettings_unknown" formatted="false">غير معروف</string>
+    <string name="download_downloadBtn" formatted="false">تحميل</string>
+    <string name="hero_typewriterPhrases_1" formatted="false">أفلام</string>
+    <string name="hero_typewriterPhrases_2" formatted="false">مسلسلات</string>
+    <string name="nav_getStarted" formatted="false">ابدأ الآن</string>
+    <string name="reseller_createAccount" formatted="false">إنشاء حساب</string>
+    <string name="reseller_password" formatted="false">كلمة المرور</string>
+    <string name="reseller_signIn" formatted="false">تسجيل الدخول</string>
+    <string name="u_000f9fa5" formatted="false">جارٍ الإرسال</string>
+    <string name="u_003e9872" formatted="false">قصة</string>
+    <string name="u_02621ec8" formatted="false">عائلي</string>
+    <string name="u_037323dc" formatted="false">رد الدعم: ${ticket.adminReply}</string>
+    <string name="u_0531a16e" formatted="false">إرسال رابط الاستعادة</string>
+    <string name="u_05dab46a" formatted="false">لا يوجد رابط تشغيل</string>
+    <string name="u_0706d78e" formatted="false">تواصل مباشرة مع فريق AnyTV</string>
+    <string name="u_083b9af0" formatted="false">عنوان الجهاز</string>
+    <string name="u_0876d826" formatted="false">يُحفظ الاسم والصورة محليًا على جهازك، بينما تُحمى هوية الجهاز ومفتاحه وبيانات القوائم عبر الاتصال المشفّر.</string>
+    <string name="u_08b40dab" formatted="false">تم إرسال رابط استعادة كلمة المرور إلى بريدك</string>
+    <string name="u_0a5aba24" formatted="false">سجّل دخولك بالبريد الإلكتروني</string>
+    <string name="u_0a8bf302" formatted="false">أدخل بريدك لاستعادة كلمة المرور</string>
+    <string name="u_0a9fbeda" formatted="false">إذن الإشعارات مرفوض</string>
+    <string name="u_0b05472a" formatted="false">قنوات مباشرة</string>
+    <string name="u_0d24133d" formatted="false">تشغيل</string>
+    <string name="u_0d61d8eb" formatted="false">مشاهدة مجانية</string>
+    <string name="u_0dd73943" formatted="false">طفل</string>
+    <string name="u_0f1ac91e" formatted="false">نحن هنا لمساعدتك</string>
+    <string name="u_0f581dc4" formatted="false">إعلان</string>
+    <string name="u_11e83767" formatted="false">رجوع</string>
+    <string name="u_120a2f5e" formatted="false">تم الحل</string>
+    <string name="u_12588af5" formatted="false">أدخل رمز التحقق المُرسل إلى ${auth.pendingEmail}</string>
+    <string name="u_14f97be1" formatted="false">يعرض الآن</string>
+    <string name="u_1552bd0f" formatted="false">أضف قائمة تشغيل ليظهر محتواك هنا</string>
+    <string name="u_16611383" formatted="false">المساعدة</string>
+    <string name="u_16bdc8e8" formatted="false">اشرح ما حدث ومتى بدأت المشكلة…</string>
+    <string name="u_16fc7eb8" formatted="false">تفاصيل المشكلة</string>
+    <string name="u_1720444e" formatted="false">جارٍ الإرسال…</string>
+    <string name="u_1773f6a1" formatted="false">محددة</string>
+    <string name="u_17e7c1b1" formatted="false">أضف قائمة للجهاز من لوحة الإدارة.</string>
+    <string name="u_182827eb" formatted="false">يمكن فتح تذكرة جديدة بعد أن تغلق الإدارة التذكرة الحالية.</string>
+    <string name="u_1a6887fc" formatted="false">${clip.views} مشاهدة</string>
+    <string name="u_1bcfe343" formatted="false">المزامنة التلقائية مفعّلة</string>
+    <string name="u_1df3d4f3" formatted="false">أنمي</string>
+    <string name="u_1eab5c6c" formatted="false">عرض الكل</string>
+    <string name="u_20d886e0" formatted="false">حسنًا</string>
+    <string name="u_22048ddc" formatted="false">أضف تعليقًا…</string>
+    <string name="u_234aeef5" formatted="false">$totalItems عنصر</string>
+    <string name="u_24ef81e6" formatted="false">قيد المعالجة</string>
+    <string name="u_2513818d" formatted="false">اختر قائمة</string>
+    <string name="u_269168cf" formatted="false">دخول</string>
+    <string name="u_26b1b2b0" formatted="false">العربية</string>
+    <string name="u_27b512f5" formatted="false">معرّف الجهاز</string>
+    <string name="u_2acdfd2a" formatted="false">تأكد من وضع google-services.json داخل مجلد app/ ثم أعد البناء.</string>
+    <string name="u_2b9ec895" formatted="false">قائمة تشغيل</string>
+    <string name="u_2c23c2ab" formatted="false">حكاية</string>
+    <string name="u_2d5f30d1" formatted="false">حساب ${account.provider}</string>
+    <string name="u_2d848ec5" formatted="false">ابدأ المحادثة وكن أول من يعلّق</string>
+    <string name="u_2ff98c2c" formatted="false">فتح بمشغل خارجي</string>
+    <string name="u_30ba3871" formatted="false">عنوان المشكلة</string>
+    <string name="u_3114c736" formatted="false">جرّب كتابة اسم آخر</string>
+    <string name="u_31f16bf2" formatted="false">${diff / 3_600_000} ساعة</string>
+    <string name="u_3276904c" formatted="false">جارٍ التسجيل…</string>
+    <string name="u_32943efa" formatted="false">مسح البحث</string>
+    <string name="u_32ff7500" formatted="false">عدّل تعليقك…</string>
+    <string name="u_338558d2" formatted="false">تعذر الاتصال</string>
+    <string name="u_355ab782" formatted="false">التشغيل التلقائي</string>
+    <string name="u_36e9f337" formatted="false">ابحث في الأفلام…</string>
+    <string name="u_39e5e94d" formatted="false">جارٍ الاتصال…</string>
+    <string name="u_3aea4019" formatted="false">السنة</string>
+    <string name="u_3b9854e1" formatted="false">حذف</string>
+    <string name="u_3c06bed5" formatted="false">متوقف مؤقتاً</string>
+    <string name="u_3d57faea" formatted="false">الآن</string>
+    <string name="u_3ee251d9" formatted="false">لا يوجد ${tab.title}</string>
+    <string name="u_3fd9a02d" formatted="false">اطفال</string>
+    <string name="u_3feb2366" formatted="false">بنجاح</string>
+    <string name="u_40e124f8" formatted="true">أضيفت %s</string>
+    <string name="u_411fb6e8" formatted="false">ابحث في المسلسلات…</string>
+    <string name="u_422df4da" formatted="false">التعليقات</string>
+    <string name="u_4252e036" formatted="false">إشعارات الحساب والمحتوى</string>
+    <string name="u_4354ff8b" formatted="false">مباشر الآن</string>
+    <string name="u_441d4066" formatted="false">اختيار صورة شخصية</string>
+    <string name="u_44b77dd7" formatted="false">مسح الكل</string>
+    <string name="u_459870ce" formatted="false">كرتون</string>
+    <string name="u_47f37556" formatted="false">أضف أو اختر قائمة تشغيل</string>
+    <string name="u_4bec6818" formatted="false">لا توجد تعليقات بعد</string>
+    <string name="u_4d8981bd" formatted="false">معرّف الملف الشخصي</string>
+    <string name="u_505eaf06" formatted="false">کوردیی سۆرانی</string>
+    <string name="u_5203bd2c" formatted="false">فشل التحميل</string>
+    <string name="u_520e3d39" formatted="true">هل تريد حذف «%s» من جهازك؟</string>
+    <string name="u_5415de1e" formatted="false">الباقات المتاحة</string>
+    <string name="u_55b303b4" formatted="false">مغلقة</string>
+    <string name="u_598812a6" formatted="false">حلقات</string>
+    <string name="u_59d83110" formatted="false">لا توجد مقاطع قصيرة حاليًا</string>
+    <string name="u_5ab7d46e" formatted="false">أضف قائمة التشغيل واستمتع بمحتواك</string>
+    <string name="u_5f76976d" formatted="false">${iptvViewModel.downloads.size} عنصر</string>
+    <string name="u_60806661" formatted="false">خروج</string>
+    <string name="u_621866cf" formatted="false">ستظهر الأفلام والحلقات التي تحمّلها هنا</string>
+    <string name="u_630d4afc" formatted="false">رد على ${it.displayName}</string>
+    <string name="u_635b4442" formatted="false">استخدام الرمز</string>
+    <string name="u_64ba5ec4" formatted="false">أطفال</string>
+    <string name="u_6527e2f8" formatted="false">ستظهر القنوات هنا فور إضافتها إلى قائمة التشغيل</string>
+    <string name="u_65a65a84" formatted="false">إضافة قائمة تشغيل</string>
+    <string name="u_65be96d4" formatted="false">ديزني</string>
+    <string name="u_6600e753" formatted="false">مثال: القناة لا تعمل</string>
+    <string name="u_66670eff" formatted="false">ستظهر العناصر هنا بعد إضافة قائمة التشغيل</string>
+    <string name="u_681690d7" formatted="false">${seconds / 86_400} ي</string>
+    <string name="u_692bd794" formatted="false">قناة</string>
+    <string name="u_6a507e0a" formatted="false">تأكيد كلمة المرور</string>
+    <string name="u_6a7b70e2" formatted="false">سجل التذاكر</string>
+    <string name="u_6ab2f1d7" formatted="false">التفضيلات</string>
+    <string name="u_6b83541d" formatted="false">حماية بيانات الجهاز والقوائم</string>
+    <string name="u_6baba11f" formatted="false">الخصوصية والأمان</string>
+    <string name="u_6cc471b6" formatted="false">قصص</string>
+    <string name="u_6d62ca94" formatted="false">تعذر التشغيل</string>
+    <string name="u_7077a5d8" formatted="false">أضف حسابك بالبريد</string>
+    <string name="u_72b950a9" formatted="false"> · تم التعديل</string>
+    <string name="u_73c93c54" formatted="false">تعديل الملف الشخصي</string>
+    <string name="u_755ecaf5" formatted="false">إضافة قائمة من داخل التطبيق متاحة بعد تفعيل الجهاز فقط. القوائم التي يضيفها مدير AnyTV تُفعّل الجهاز تلقائيًا حسب تاريخ صلاحيتها.</string>
+    <string name="u_759fdc24" formatted="false">تعديل</string>
+    <string name="u_765f853d" formatted="false">لا تُرسل بيانات القائمة إلا إلى لوحة AnyTV المرتبطة بهذا التطبيق.</string>
+    <string name="u_7af06836" formatted="false">اشترك الآن</string>
+    <string name="u_7b7a0b48" formatted="false">حذف قائمة التشغيل</string>
+    <string name="u_7bb69e25" formatted="false">ستظهر هنا الرسائل والتنبيهات القادمة</string>
+    <string name="u_7ce5014f" formatted="false">اختر باقة من لوحة AnyTV أو استخدم رمز هدية. سيتفعّل الجهاز تلقائياً فور اعتماد الطلب.</string>
+    <string name="u_7d41e5d2" formatted="false">لم نعثر على نتائج</string>
+    <string name="u_7e8e69ce" formatted="false">${seconds / 3_600} س</string>
+    <string name="u_7eba4894" formatted="false">${seconds / 60} د</string>
+    <string name="u_7ed3d0ce" formatted="false">يمكن إضافتها من لوحة الإدارة</string>
+    <string name="u_7f919426" formatted="false">ابحث في الأطفال…</string>
+    <string name="u_80ca7646" formatted="false">بانتظار التفعيل</string>
+    <string name="u_81a50c9d" formatted="false">مشاركة</string>
+    <string name="u_853aaed1" formatted="false">مسلسل</string>
+    <string name="u_85f99448" formatted="false">حكايات</string>
+    <string name="u_8652ccf9" formatted="false">وضع نهاري</string>
+    <string name="u_885e117e" formatted="false">لديك رمز هدية؟</string>
+    <string name="u_887fb3f4" formatted="false">تعذر تشغيل البث</string>
+    <string name="u_890954ee" formatted="true">%d قائمة مرتبطة بالجهاز</string>
+    <string name="u_892cc419" formatted="false">رد فريق الدعم</string>
+    <string name="u_8991d329" formatted="false">قنوات</string>
+    <string name="u_89ef8091" formatted="false">$channelCount قناة جاهزة للمشاهدة</string>
+    <string name="u_8dc2a2a2" formatted="false">فعّل جهازك</string>
+    <string name="u_8e03ef3d" formatted="false">ابحث في كل المحتوى…</string>
+    <string name="u_8e18f4fd" formatted="false">لا يوجد محتوى للأطفال حاليًا</string>
+    <string name="u_8e6cc448" formatted="false">Firebase لم يتم تفعيله بعد.</string>
+    <string name="u_8ffe5c38" formatted="false">حول التطبيق</string>
+    <string name="u_90a2bfef" formatted="false">مشاركة المقطع</string>
+    <string name="u_913c7f01" formatted="false">${diff / 60_000} دقيقة</string>
+    <string name="u_93fe7083" formatted="false">أهلاً بك</string>
+    <string name="u_947ce320" formatted="false">الهوية والجهاز</string>
+    <string name="u_962dc65b" formatted="false">مستخدم AnyTV</string>
+    <string name="u_963dc8a1" formatted="false">سجّل دخول أو أنشئ حساباً للاستمرار</string>
+    <string name="u_9671105a" formatted="false">لا يوجد محتوى في قائمة التشغيل</string>
+    <string name="u_991c3517" formatted="false">ابدأ الفيديو فور فتح المشغل</string>
+    <string name="u_9cd9dd44" formatted="false">لا يمكن إرسال تذكرة أخرى حتى تغلق الإدارة التذكرة الحالية.</string>
+    <string name="u_9d0613fb" formatted="false">عرض القوائم</string>
+    <string name="u_9d645b32" formatted="false">إعادة إرسال الرمز</string>
+    <string name="u_9e157e27" formatted="false">الإصدار 1.0</string>
+    <string name="u_9e5cd23e" formatted="false">بث مباشر</string>
+    <string name="u_9fe6cd25" formatted="false">تم التحميل</string>
+    <string name="u_a12c5a8a" formatted="false">تم </string>
+    <string name="u_a2e6fb64" formatted="false">استعادة كلمة المرور</string>
+    <string name="u_a334a729" formatted="false">تأكيد</string>
+    <string name="u_a5ebef8f" formatted="false">تم</string>
+    <string name="u_a611b453" formatted="false">رجوع لتسجيل الدخول</string>
+    <string name="u_a6c0e512" formatted="false">ليس لديك حساب؟ سجّل</string>
+    <string name="u_a8755683" formatted="false">مشغل Android أصلي للبث المباشر والأفلام والمسلسلات. الإصدار 1.0</string>
+    <string name="u_a9ce4fd0" formatted="false">ستظهر هنا القنوات والأفلام والمسلسلات الممتعة للأطفال</string>
+    <string name="u_aa637711" formatted="false">كل المحتوى</string>
+    <string name="u_ae343fca" formatted="false">قائمة التشغيل</string>
+    <string name="u_aeca7d47" formatted="false">لغة التطبيق</string>
+    <string name="u_afb19bc7" formatted="false">تاريخ البدء</string>
+    <string name="u_afb2686c" formatted="false">ابحث في القنوات…</string>
+    <string name="u_b1363b25" formatted="false">${item.durationDays} يوم</string>
+    <string name="u_b6b865d6" formatted="false">استكشف</string>
+    <string name="u_b72469e9" formatted="false">بانتظار التحميل</string>
+    <string name="u_b773195f" formatted="false">القنوات والأفلام والمسلسلات في مكتبة واحدة</string>
+    <string name="u_b7919916" formatted="false">اكتب تفاصيل المشكلة وسنرد عليك من لوحة الإدارة.</string>
+    <string name="u_b99d7e32" formatted="false">المسلسل</string>
+    <string name="u_bbb716e9" formatted="false">شاهد</string>
+    <string name="u_be4a3539" formatted="false">حساب نشط</string>
+    <string name="u_c0f5269a" formatted="false">حسابي</string>
+    <string name="u_c20473a4" formatted="false">خيارات التعليق</string>
+    <string name="u_c3d649e9" formatted="false">اختيار ملف M3U / M3U8</string>
+    <string name="u_c5d1ca4a" formatted="false">فلتر المحتوى</string>
+    <string name="u_c658d504" formatted="false">رسوم متحركة</string>
+    <string name="u_c6be60f8" formatted="false">أنت</string>
+    <string name="u_c7b31397" formatted="false">تويتي</string>
+    <string name="u_c9e75a71" formatted="false">Server أو get.php رابط</string>
+    <string name="u_ca834e9a" formatted="false">القنوات المتاحة</string>
+    <string name="u_cb09665d" formatted="false">يبدو أنك غير متصل بالإنترنت. تأكد من الشبكة وحاول مجددًا.</string>
+    <string name="u_cc026c34" formatted="false">لم يتم اختيار ملف</string>
+    <string name="u_cc1c4eb9" formatted="false">● مباشر</string>
+    <string name="u_cc2f99ad" formatted="false">أدخل الرمز</string>
+    <string name="u_cc44786b" formatted="false">إنشاء الحساب</string>
+    <string name="u_ccd73c47" formatted="false">تذاكرك الأخيرة</string>
+    <string name="u_ccf95e3f" formatted="false">الوضع الليلي</string>
+    <string name="u_ce1a8d89" formatted="false">تذكرتك قيد المتابعة</string>
+    <string name="u_cf143297" formatted="false">التصنيف</string>
+    <string name="u_d0139687" formatted="false">تغيير</string>
+    <string name="u_d152a492" formatted="false">لا توجد تحميلات</string>
+    <string name="u_d1626170" formatted="false">اشرح المشكلة</string>
+    <string name="u_d2cf2bbb" formatted="false">لا توجد تذاكر سابقة</string>
+    <string name="u_d581fe7e" formatted="false">جارٍ التحميل ${(item.progress * 100).toInt()}%</string>
+    <string name="u_d59e2762" formatted="false">المكتبة فارغة</string>
+    <string name="u_d8ad200f" formatted="false">المحتوى والاتصال</string>
+    <string name="u_d93cc3a9" formatted="false">أنشئ حساباً جديداً بالبريد</string>
+    <string name="u_d9d93bb1" formatted="false">${channels.size} عنصر</string>
+    <string name="u_d9e2ee08" formatted="false">نوم</string>
+    <string name="u_d9e423c5" formatted="false">مباشر</string>
+    <string name="u_da480207" formatted="false">المساعدة والدعم</string>
+    <string name="u_da99c425" formatted="false">فلتر</string>
+    <string name="u_dc003ed8" formatted="false">استكشف حسب التصنيف</string>
+    <string name="u_dc0066df" formatted="false">يمكن للمدير إضافة قائمة وتفعيل جهازك</string>
+    <string name="u_dcabb2ef" formatted="false">لا توجد خيارات</string>
+    <string name="u_e0d96234" formatted="false">لا توجد قنوات مباشرة</string>
+    <string name="u_e0efcd03" formatted="false">التقييم</string>
+    <string name="u_e51a2b1b" formatted="false">اضغط إضافة لربط قائمة جديدة</string>
+    <string name="u_e5483507" formatted="false">محمية</string>
+    <string name="u_e5cd3417" formatted="false">هل أنت متأكد؟ سيتم حذف حسابك بشكل نهائي ولا يمكن استرجاعه. معرّف الجهاز لن يتأثر.</string>
+    <string name="u_e83cb961" formatted="false">${compactCount(clip.views + social.viewsCount)} مشاهدة</string>
+    <string name="u_e88b4a41" formatted="false">يتطلب تفعيل الجهاز</string>
+    <string name="u_ea9523d9" formatted="false">اضغط للمشاهدة الآن</string>
+    <string name="u_ea9b1abf" formatted="false">تعديل تعليقك</string>
+    <string name="u_eb32f766" formatted="false">نسخ</string>
+    <string name="u_ec2ce8be" formatted="false">مسح</string>
+    <string name="u_ed3629e4" formatted="false">محفوظاتي</string>
+    <string name="u_ed766792" formatted="false">ارفع تذكرة مباشرة إلى لوحة الإدارة</string>
+    <string name="u_ef1a69ed" formatted="false">رمز التحقق (6 أرقام)</string>
+    <string name="u_efdc1740" formatted="false">نسيت كلمة المرور؟</string>
+    <string name="u_f0e389eb" formatted="false">حذف نهائي</string>
+    <string name="u_f1014e36" formatted="false">إرسال التذكرة</string>
+    <string name="u_f348cdc8" formatted="false">خيال</string>
+    <string name="u_f37de749" formatted="false">الاشتراك الفعلي</string>
+    <string name="u_f38bf16a" formatted="false">مفتوحة</string>
+    <string name="u_f54e8dab" formatted="false">نيك</string>
+    <string name="u_f7323f74" formatted="false">لا توجد حلقات متاحة</string>
+    <string name="u_f79020dc" formatted="false">فتح تذكرة جديدة</string>
+    <string name="u_f798a163" formatted="false">التذكرة الحالية</string>
+    <string name="u_fb452d30" formatted="false">إعادة المحاولة</string>
+    <string name="u_fcd3894a" formatted="false">حذف حسابك وكل بياناته نهائيًا</string>
+    <string name="u_fced2e28" formatted="false">لديك حساب؟ سجّل دخول</string>
+    <string name="u_fd674343" formatted="false">${channels.size} نتيجة</string>
+    <string name="u_fdff2ce3" formatted="false">$season  •  $count حلقة</string>
+    <string name="u_fe6c10b3" formatted="false">حذف الحساب</string>
+    <string name="u_feeddfd4" formatted="false">لا توجد قوائم تشغيل</string>
+    <string name="upload_file" formatted="false">ملف</string>
+    <string name="webplayer_carousel_watchNow" formatted="false">شاهد الآن</string>
+    <string name="webplayer_downloads_movie" formatted="false">فيلم</string>
+    <string name="webplayer_home_latestMovies" formatted="false">أحدث الأفلام</string>
+    <string name="webplayer_layout_all" formatted="false">الكل</string>
+    <string name="webplayer_layout_closeSection" formatted="false">إغلاق</string>
+    <string name="webplayer_nav_home" formatted="false">الرئيسية</string>
+    <string name="webplayer_nav_live" formatted="false">البث المباشر</string>
+    <string name="webplayer_nav_series" formatted="false">المسلسلات</string>
+    <string name="app_name" formatted="false">Twiti</string>
+    <string name="u_now" formatted="false">الآن</string>
+    <string name="u_minutes_ago" formatted="false">${diff / 60_000} دقيقة</string>
+    <string name="u_hours_ago" formatted="false">${diff / 3_600_000} ساعة</string>
+    <string name="u_connection_failed" formatted="false">فشل الاتصال</string>
+    <string name="u_file_link_invalid" formatted="false">رابط الملف غير صالح</string>
+    <string name="u_m3u_read_failed" formatted="false">تعذر قراءة ملف M3U</string>
+    <string name="u_device_register_failed" formatted="false">تعذر تسجيل الجهاز</string>
+    <string name="u_no_device_key" formatted="false">لم يُرجع الخادم مفتاح الجهاز</string>
+    <string name="u_stalker_unsupported" formatted="false">Stalker / MAG Portal غير مدعوم في هذا الإصدار</string>
+    <string name="u_xtream_hint" formatted="false">إذا كان هذا رابط Xtream، جرب وضع Auto Detect أو Xtream Codes</string>
+    <string name="u_admin_panel_unavailable" formatted="false">الاتصال بلوحة الإدارة غير متاح</string>
+    <string name="u_activate_first" formatted="false">يجب تفعيل التطبيق أولاً قبل إضافة قائمة خارجية</string>
+    <string name="u_invalid_name_url" formatted="false">أدخل اسمًا ورابط M3U صالحًا</string>
+    <string name="u_playlist_add_failed" formatted="false">تعذرت إضافة القائمة</string>
+    <string name="u_playlist_added" formatted="false">تمت إضافة قائمة التشغيل</string>
+    <string name="u_playlist_delete_failed" formatted="false">تعذر حذف القائمة</string>
+    <string name="u_playlist_deleted" formatted="false">تم حذف قائمة التشغيل</string>
+    <string name="u_playlist_url_invalid" formatted="false">رابط قائمة التشغيل غير صالح</string>
+    <string name="u_content_load_failed" formatted="false">تعذر تحميل قائمة التشغيل</string>
+    <string name="u_enter_gift_code" formatted="false">أدخل رمز الهدية</string>
+    <string name="u_subscription_activated" formatted="false">تم تفعيل الاشتراك بنجاح</string>
+    <string name="u_gift_code_invalid" formatted="false">رمز الهدية غير صالح</string>
+    <string name="u_avatar_too_large" formatted="false">الصورة الشخصية يجب أن تكون أصغر من 5 MB</string>
+    <string name="u_avatar_read_failed" formatted="false">تعذر قراءة الصورة الشخصية</string>
+    <string name="u_admin_unavailable_ticket" formatted="false">الاتصال بلوحة الإدارة غير متاح</string>
+    <string name="u_fill_ticket_fields" formatted="false">اكتب عنوان المشكلة وتفاصيلها</string>
+    <string name="u_ticket_active" formatted="false">لديك تذكرة نشطة. انتظر حتى تغلقها الإدارة قبل فتح تذكرة جديدة</string>
+    <string name="u_ticket_sent" formatted="false">تم إرسال التذكرة إلى فريق الدعم</string>
+    <string name="u_ticket_send_failed" formatted="false">تعذر إرسال التذكرة</string>
+    <string name="u_category_other" formatted="false">أخرى</string>
+    <string name="u_series_loading_failed" formatted="false">لا توجد حلقات للعرض</string>
+    <string name="u_no_name" formatted="false">بدون اسم</string>
+    <string name="u_profile_my_account" formatted="false">حسابي</string>
+    <string name="u_profile_default_name" formatted="false">مستخدم AnyTV</string>
+    <string name="u_section_content" formatted="false">المحتوى والاتصال</string>
+    <string name="u_playlists_title" formatted="false">قوائم التشغيل</string>
+    <string name="u_add_playlist" formatted="false">أضف أو اختر قائمة تشغيل</string>
+    <string name="u_requires_activation" formatted="false">يتطلب تفعيل الجهاز</string>
+    <string name="u_my_downloads" formatted="false">محفوظاتي</string>
+    <string name="u_no_downloads" formatted="false">لا توجد تحميلات</string>
+    <string name="u_section_prefs" formatted="false">التفضيلات</string>
+    <string name="u_app_language" formatted="false">لغة التطبيق</string>
+    <string name="u_notif_subtitle" formatted="false">إشعارات الحساب والمحتوى</string>
+    <string name="u_autoplay_title" formatted="false">التشغيل التلقائي</string>
+    <string name="u_autoplay_subtitle" formatted="false">ابدأ الفيديو فور فتح المشغل</string>
+    <string name="u_dark_mode" formatted="false">الوضع الليلي</string>
+    <string name="u_enabled" formatted="false">مفعّل</string>
+    <string name="u_day_mode" formatted="false">وضع نهاري</string>
+    <string name="u_section_identity" formatted="false">الهوية والجهاز</string>
+    <string name="u_account_prefix" formatted="false">حساب</string>
+    <string name="u_sign_out" formatted="false">خروج</string>
+    <string name="u_sign_in" formatted="false">تسجيل الدخول</string>
+    <string name="u_sign_in_subtitle" formatted="false">أضف حسابك بالبريد</string>
+    <string name="u_profile_id_title" formatted="false">معرّف الملف الشخصي</string>
+    <string name="u_copy" formatted="false">نسخ</string>
+    <string name="u_device_id_title" formatted="false">معرّف الجهاز</string>
+    <string name="u_privacy_title" formatted="false">الخصوصية والأمان</string>
+    <string name="u_privacy_subtitle" formatted="false">حماية بيانات الجهاز والقوائم</string>
+    <string name="u_privacy_body" formatted="false">يُحفظ الاسم والصورة محليًا على جهازك، بينما تُحمى هوية الجهاز ومفتاحه وبيانات القوائم عبر الاتصال المشفّر.</string>
+    <string name="u_delete_account" formatted="false">حذف الحساب</string>
+    <string name="u_delete_account_subtitle" formatted="false">حذف حسابك وكل بياناته نهائيًا</string>
+    <string name="u_section_help" formatted="false">المساعدة</string>
+    <string name="u_support_title" formatted="false">المساعدة والدعم</string>
+    <string name="u_support_subtitle" formatted="false">ارفع تذكرة مباشرة إلى لوحة الإدارة</string>
+    <string name="u_about_app" formatted="false">حول التطبيق</string>
+    <string name="u_version" formatted="false">الإصدار 1.0</string>
+    <string name="u_about_body" formatted="false">مشغل Android أصلي للبث المباشر والأفلام والمسلسلات. الإصدار 1.0</string>
+    <string name="u_welcome" formatted="false">أهلاً بك</string>
+    <string name="u_login_prompt" formatted="false">سجّل دخول أو أنشئ حسابًا للاستمرار</string>
+    <string name="u_create_account" formatted="false">إنشاء حساب</string>
+    <string name="u_account_active" formatted="false">حساب نشط</string>
+    <string name="u_pending_activation" formatted="false">بانتظار التفعيل</string>
+    <string name="u_edit" formatted="false">تعديل</string>
+    <string name="u_active_subscription" formatted="false">الاشتراك الفعلي</string>
+    <string name="u_status_active" formatted="false">نشط</string>
+    <string name="u_status_expired" formatted="false">منتهي</string>
+    <string name="u_status_inactive" formatted="false">غير نشط</string>
+    <string name="u_start_date" formatted="false">تاريخ البدء</string>
+    <string name="u_end_date" formatted="false">تاريخ الانتهاء</string>
+    <string name="u_edit_profile_title" formatted="false">تعديل الملف الشخصي</string>
+    <string name="u_name_label" formatted="false">الاسم</string>
+    <string name="u_pick_photo" formatted="false">اختيار صورة شخصية</string>
+    <string name="u_save" formatted="false">حفظ</string>
+    <string name="u_cancel" formatted="false">إلغاء</string>
+    <string name="u_ticket_subject" formatted="false">عنوان المشكلة</string>
+    <string name="u_ticket_message" formatted="false">اشرح المشكلة</string>
+    <string name="u_recent_tickets" formatted="false">تذاكرك الأخيرة</string>
+    <string name="u_sending" formatted="false">جارٍّ الإرسال</string>
+    <string name="u_send_ticket" formatted="false">إرسال التذكرة</string>
+    <string name="u_close" formatted="false">إغلاق</string>
+    <string name="u_support_reply" formatted="false">رد الدعم</string>
+    <string name="u_ok" formatted="false">حسنًا</string>
+    <string name="u_delete_account_confirm" formatted="false">هل أنت متأكد؟ سيتم حذف حسابك بشكل نهائي ولا يمكن استرجاعه. معرّف الجهاز لن يتأثر.</string>
+    <string name="u_delete_permanent" formatted="false">حذف نهائي</string>
+    <string name="u_eadd01aa" formatted="false">استكشف</string>
+    <string name="u_4e37a1ca" formatted="false">القنوات والأفلام والمسلسلات في مكتبة واحدة</string>
+    <string name="u_ea23be01" formatted="false">عنصر</string>
+    <string name="u_1c36adec" formatted="false">ابحث في كل المحتوى...</string>
+    <string name="u_aae29ee2" formatted="false">مسح البحث</string>
+    <string name="u_0ba11e37" formatted="false">كل المحتوى</string>
+    <string name="u_e58d39f7" formatted="false">نتيجة</string>
+    <string name="u_1cb3e14d" formatted="false">لم نعثر على نتائج</string>
+    <string name="u_d31d7a08" formatted="false">المكتبة فارغة</string>
+    <string name="u_2f8d94f4" formatted="false">جرّب كتابة اسم آخر</string>
+    <string name="u_3f5f5879" formatted="false">أضف قائمة تشغيل ليظهر محتواك هنا</string>
+    <string name="u_74a78cfe" formatted="false">استكشف حسب التصنيف</string>
+    <string name="u_b08b8d72" formatted="false">القنوات المتاحة</string>
+    <string name="u_4d8bb0e3" formatted="false">مباشر الآن</string>
+    <string name="u_7afe2e62" formatted="false">قناة جاهزة للمشاهدة</string>
+    <string name="u_b5a2fe3b" formatted="false">مباشر</string>
+    <string name="u_60e87cdb" formatted="false">اضغط للمشاهدة الآن</string>
+    <string name="u_54f0f3ef" formatted="false">تعذر التشغيل</string>
+    <string name="u_82ef26d8" formatted="false">إعادة المحاولة</string>
+    <string name="u_a47b5a77" formatted="false">فتح بمشغل خارجي</string>
+    <string name="u_b09cb0f1" formatted="false">لا يوجد رابط تشغيل</string>
+    <string name="u_cf50a8c2" formatted="false">الكل</string>
+    <string name="u_f47fde3b" formatted="false">حلقة</string>
+    <string name="u_shorts_empty" formatted="false">لا توجد مقاطع قصيرة حاليًا</string>
+    <string name="u_shorts_empty_sub" formatted="false">يمكن إضافتها من لوحة الإدارة</string>
+    <string name="u_shorts_views" formatted="false">مشاهدة</string>
+    <string name="u_shorts_share" formatted="false">مشاركة</string>
+    <string name="u_shorts_comments" formatted="false">التعليقات</string>
+    <string name="u_shorts_no_comments" formatted="false">لا توجد تعليقات بعد</string>
+    <string name="u_shorts_be_first" formatted="false">ابدأ المحادثة وكن أول من يعلّق</string>
+    <string name="u_shorts_reply_to" formatted="false">رد على</string>
+    <string name="u_shorts_edit_comment" formatted="false">تعديل تعليقك</string>
+    <string name="u_shorts_edit_placeholder" formatted="false">عدّل تعليقك…</string>
+    <string name="u_shorts_comment_placeholder" formatted="false">أضف تعليقًا…</string>
+    <string name="u_shorts_send" formatted="false">إرسال</string>
+    <string name="u_shorts_you" formatted="false">أنت</string>
+    <string name="u_shorts_edited" formatted="false">تم التعديل</string>
+    <string name="u_shorts_reply_btn" formatted="false">رد</string>
+    <string name="u_shorts_comment_options" formatted="false">خيارات التعليق</string>
+    <string name="u_shorts_now" formatted="false">الآن</string>
+    <string name="u_shorts_min" formatted="false"> د</string>
+    <string name="u_shorts_hour" formatted="false"> س</string>
+    <string name="u_shorts_day" formatted="false"> ي</string>
+    <string name="u_activate_device" formatted="false">فعّل جهازك</string>
+    <string name="u_activate_desc" formatted="false">اختر باقة من لوحة AnyTV أو استخدم رمز هدية. سيتفعّل الجهاز تلقائياً فور اعتماد الطلب.</string>
+    <string name="u_available_packages" formatted="false">الباقات المتاحة</string>
+    <string name="u_have_gift_code" formatted="false">لديك رمز هدية؟</string>
+    <string name="u_enter_code" formatted="false">أدخل الرمز</string>
+    <string name="u_use_code" formatted="false">استخدام الرمز</string>
+    <string name="u_auto_sync_active" formatted="false">المزامنة التلقائية مفعّلة</string>
+    <string name="u_device_address" formatted="false">عنوان الجهاز</string>
+    <string name="u_registering" formatted="false">جارٍ التسجيل…</string>
+    <string name="u_day_unit" formatted="false">يوم</string>
+    <string name="u_hub_sort_name" formatted="false">الاسم</string>
+    <string name="u_hub_sort_category" formatted="false">التصنيف</string>
+    <string name="u_hub_sort_year" formatted="false">السنة</string>
+    <string name="u_hub_sort_rating" formatted="false">التقييم</string>
+    <string name="u_hub_search_channels" formatted="false">ابحث في القنوات…</string>
+    <string name="u_hub_search_movies" formatted="false">ابحث في الأفلام…</string>
+    <string name="u_hub_search_series" formatted="false">ابحث في المسلسلات…</string>
+    <string name="u_hub_filter" formatted="false">فلتر</string>
+    <string name="u_hub_downloaded" formatted="false">تم التحميل</string>
+    <string name="u_hub_download" formatted="false">تحميل</string>
+    <string name="u_hub_no_prefix" formatted="false">لا يوجد</string>
+    <string name="u_hub_filter_content" formatted="false">فلتر المحتوى</string>
+    <string name="u_hub_no_options" formatted="false">لا توجد خيارات</string>
+    <string name="u_home_ad" formatted="false">إعلان</string>
+    <string name="u_home_choose_playlist" formatted="false">اختر قائمة</string>
+    <string name="u_home_change" formatted="false">تغيير</string>
+    <string name="u_home_trending" formatted="false">يعرض الآن</string>
+    <string name="u_home_live" formatted="false">البث المباشر</string>
+    <string name="u_home_latest_movies" formatted="false">أحدث الأفلام</string>
+    <string name="u_home_series" formatted="false">المسلسلات</string>
+    <string name="u_home_subscribe" formatted="false">اشترك الآن</string>
+    <string name="u_home_free_watch" formatted="false">مشاهدة مجانية</string>
+    <string name="u_home_start_now" formatted="false">ابدأ الآن</string>
+    <string name="u_home_add_playlist_prompt" formatted="false">أضف قائمة التشغيل واستمتع بمحتواك</string>
+    <string name="u_home_watch_now" formatted="false">شاهد الآن</string>
+    <string name="u_home_view_all" formatted="false">عرض الكل</string>
+    <string name="u_home_live_badge" formatted="false">مباشر</string>
+    <string name="u_home_connecting" formatted="false">جارٍ الاتصال…</string>
+    <string name="u_home_network_error" formatted="false">يبدو أنك غير متصل بالإنترنت. تأكد من الشبكة وحاول مجدداً.</string>
+    <string name="u_home_conn_failed" formatted="false">تعذر الاتصال</string>
+    <string name="u_home_retry" formatted="false">إعادة المحاولة</string>
+    <string name="u_home_no_content" formatted="false">لا يوجد محتوى في قائمة التشغيل</string>
+    <string name="u_home_add_admin" formatted="false">أضف قائمة للجهاز من لوحة الإدارة.</string>
+    <string name="u_home_view_playlists" formatted="false">عرض القوائم</string>
+    <string name="u_hub_live_broadcast" formatted="false">بث مباشر</string>
+    <string name="u_hub_clear" formatted="false">مسح</string>
+    <string name="u_hub_all" formatted="false">الكل</string>
+    <string name="u_hub_items_appear" formatted="false">ستظهر العناصر هنا بعد إضافة قائمة التشغيل</string>
+    <string name="u_my_library" formatted="false">مكتبتي</string>
+    <string name="u_continue_watching" formatted="false">أكمل المشاهدة</string>
+    <string name="u_my_subscriptions" formatted="false">اشتراكاتي</string>
+    <string name="u_add_to_library" formatted="false">إضافة إلى المكتبة</string>
+    <string name="u_library_empty" formatted="false">لا توجد عناصر محفوظة. أضف أفلاماً ومسلسلات من قسم VOD.</string>
+    <string name="u_continue_watching_empty" formatted="false">لا يوجد محتوى قيد المشاهدة.</string>
+    <string name="u_subscriptions_empty" formatted="false">لا توجد اشتراكات متاحة حالياً.</string>
+    <string name="u_dl_title" formatted="false">محفوظاتي</string>
+    <string name="u_back" formatted="false">رجوع</string>
+    <string name="u_dl_play" formatted="false">تشغيل</string>
+    <string name="u_dl_delete" formatted="false">حذف</string>
+    <string name="u_dl_empty" formatted="false">لا توجد تحميلات</string>
+    <string name="u_dl_empty_sub" formatted="false">ستظهر الأفلام والحلقات التي تحمّلها هنا</string>
+    <string name="u_dl_complete" formatted="false">تم التحميل</string>
+    <string name="u_dl_pending" formatted="false">بانتظار التحميل</string>
+    <string name="u_dl_downloading" formatted="false">جارٍ التحميل</string>
+    <string name="u_dl_paused" formatted="false">متوقف مؤقتاً</string>
+    <string name="u_dl_failed" formatted="false">فشل التحميل</string>
+    <string name="u_dl_unknown" formatted="false">غير معروف</string>
+    <string name="u_setup_file" formatted="false">ملف</string>
+    <string name="u_setup_auto_label" formatted="false">رابط Server أو get.php</string>
+    <string name="u_setup_no_file" formatted="false">لم يتم اختيار ملف</string>
+    <string name="u_setup_choose_file" formatted="false">اختيار ملف M3U / M3U8</string>
+    <string name="nav_home" formatted="false">الرئيسية</string>
+    <string name="nav_watch" formatted="false">شاهد</string>
+    <string name="nav_twiti" formatted="false">تويتي</string>
+    <string name="nav_profile" formatted="false">حسابي</string>
+    <string name="u_vm_conn_fail" formatted="false">فشل الاتصال</string>
+    <string name="u_vm_conn_fail_detail" formatted="false">فشل الاتصال:\nXtream: %1s\nM3U: %2s</string>
+    <string name="u_vm_invalid_file_link" formatted="false">رابط الملف غير صالح</string>
+    <string name="u_vm_cannot_read_m3u" formatted="false">تعذر قراءة ملف M3U</string>
+    <string name="u_vm_stalker_unsupported" formatted="false">Stalker / MAG Portal غير مدعوم في هذا الإصدار</string>
+    <string name="u_vm_xtream_hint" formatted="false">\n\nإذا كان هذا رابط Xtream، جرب وضع Auto Detect أو Xtream Codes</string>
+    <string name="u_vm_register_fail" formatted="false">تعذر تسجيل الجهاز</string>
+    <string name="u_vm_no_device_key" formatted="false">لم يُرجع الخادم مفتاح الجهاز</string>
+    <string name="u_vm_admin_unavailable" formatted="false">الاتصال بلوحة الإدارة غير متاح</string>
+    <string name="u_vm_activate_first" formatted="false">يجب تفعيل التطبيق أولاً قبل إضافة قائمة خارجية</string>
+    <string name="u_vm_invalid_name_url" formatted="false">أدخل اسمًا ورابط M3U صالحًا</string>
+    <string name="u_vm_add_fail" formatted="false">تعذرت إضافة القائمة</string>
+    <string name="u_vm_add_success" formatted="false">تمت إضافة قائمة التشغيل</string>
+    <string name="u_vm_del_fail" formatted="false">تعذر حذف القائمة</string>
+    <string name="u_vm_del_success" formatted="false">تم حذف قائمة التشغيل</string>
+    <string name="u_vm_invalid_url" formatted="false">رابط القائمة غير صالح</string>
+    <string name="u_vm_load_fail" formatted="false">تعذر تحميل محتوى القائمة</string>
+    <string name="u_vm_default_cat" formatted="false">متنوع</string>
+    <string name="u_vm_gift_invalid" formatted="false">أدخل كود صالحًا</string>
+    <string name="u_vm_gift_success" formatted="false">تم تفعيل الاشتراك بنجاح</string>
+    <string name="u_vm_gift_fail" formatted="false">فشل التحقق من الكود</string>
+    <string name="u_vm_file_too_big" formatted="false">الرجاء اختيار ملف لا يزيد حجمه عن 5 MB</string>
+    <string name="u_vm_file_read_fail" formatted="false">تعذر قراءة الملف المحدد</string>
+    <string name="u_vm_support_unavailable" formatted="false">الاتصال بلوحة الإدارة غير متاح</string>
+    <string name="u_vm_support_need_activate" formatted="false">يجب تفعيل التطبيق للإرسال</string>
+    <string name="u_vm_support_no_msg" formatted="false">أدخل رسالة الشكوى. حاولت إضافة رسالة فارغة دون كتابة أي شيء</string>
+    <string name="u_vm_support_sent" formatted="false">تم إرسال الشكوى بنجاح وسيتم الرد عليها</string>
+    <string name="u_vm_support_fail" formatted="false">تعذر إرسال الشكوى</string>
+    <string name="u_vm_support_error" formatted="false">تعذر إرسال الشكوى</string>
+    <string name="u_auth_firebase_err" formatted="false">Firebase غير مُعدّ. تأكد من ملف google-services.json في مجلد app/</string>
+    <string name="u_auth_invalid_phone" formatted="false">أدخل رقم هاتف صالح</string>
+    <string name="u_auth_sms_fail" formatted="false">فشل التحقق من الرمز</string>
+    <string name="u_auth_firebase_down" formatted="false">Firebase غير مُتاح.</string>
+    <string name="u_auth_verify_fail" formatted="false">حدث خطأ أثناء التحقق</string>
+    <string name="u_auth_code_fail" formatted="false">فشل التحقق من الكود</string>
+    <string name="u_auth_wait_resend" formatted="false">انتظر قليلاً لإعادة الإرسال</string>
+    <string name="u_auth_conn_err" formatted="false">خطأ اتصال في التحقق</string>
+    <string name="u_auth_token_fail" formatted="false">فشل إرسال الرمز</string>
+    <string name="u_auth_token_err" formatted="false">خطأ اتصال في التحقق</string>
+    <string name="u_auth_token_missing" formatted="false">أضف WHATSAPP_TOKEN و WHATSAPP_PHONE_NUMBER_ID في local.properties</string>
+    <string name="u_auth_verify_code" formatted="false">رمز التحقق لديك هو:</string>
+    <string name="u_auth_whatsapp_fail" formatted="false">فشل الإرسال</string>
+    <string name="u_auth_whatsapp_err" formatted="false">خطأ في الاتصال بالواتساب</string>
+    <string name="u_auth_firebase_url_err" formatted="false">FIREBASE_FUNCTIONS_BASE_URL غير موجود</string>
+    <string name="u_auth_server_err" formatted="false">خطأ في الخادم</string>
+    <string name="u_auth_default_name" formatted="false">مستخدم</string>
+    <string name="u_api_gift_err" formatted="false">تعذر الاتصال بخادم الهدايا</string>
+    <string name="u_api_server_err" formatted="false">خطأ في الخادم</string>
+    <string name="u_api_empty_body" formatted="false">استجابة فارغة من الخادم</string>
+    <string name="u_api_invalid_url" formatted="false">رابط الخادم غير صالح</string>
+    <string name="u_xtream_err" formatted="false">خطأ Xtream</string>
+    <string name="u_xtream_empty" formatted="false">استجابة Xtream فارغة</string>
+    <string name="nav_live" formatted="false">مباشر</string>
+    <string name="nav_movies" formatted="false">أفلام</string>
+    <string name="nav_series" formatted="false">مسلسلات</string>
+    <string name="nav_notifications" formatted="false">الإشعارات</string>
+    <string name="nav_live_tv" formatted="false">البث المباشر</string>
+    <string name="nav_vod" formatted="false">VOD</string>
+    <string name="u_shorts_copy_link" formatted="false">نسخ رابط الفيديو</string>
+    <string name="u_shorts_link_copied" formatted="false">تم نسخ رابط الفيديو</string>
+    <string name="u_shorts_copy_title" formatted="false">نسخ العنوان</string>
+    <string name="u_shorts_title_copied" formatted="false">تم نسخ العنوان</string>
+    <string name="u_plot" formatted="false">القصة</string>
+    <string name="u_cast" formatted="false">الممثلون</string>
+    <string name="u_director" formatted="false">المخرج</string>
+    <string name="u_genre" formatted="false">التصنيف</string>
+    <string name="u_play" formatted="false">تشغيل</string>
+</resources>
