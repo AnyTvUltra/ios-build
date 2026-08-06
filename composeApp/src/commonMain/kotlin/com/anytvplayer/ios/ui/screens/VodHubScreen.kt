@@ -43,7 +43,7 @@ object VodHubScreen : Screen {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Movies & Series") },
+                    title = { Text("Movies & Series (${filteredCategories.size})") },
                     actions = {
                         TextButton(onClick = { navigator.push(SearchScreen) }) {
                             Text("Search")
