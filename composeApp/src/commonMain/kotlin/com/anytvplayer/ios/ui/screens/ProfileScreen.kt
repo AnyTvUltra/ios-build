@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
+import coil3.compose.AsyncImage
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.user.UserAccount
 
@@ -60,14 +61,19 @@ object ProfileScreen : Screen {
                     contentAlignment = Alignment.Center
                 ) {
                     if (viewModel.profileAvatarUri.isNotBlank()) {
-                        // coil avatar
+                        AsyncImage(
+                            model = viewModel.profileAvatarUri,
+                            contentDescription = "Profile",
+                            modifier = Modifier.fillMaxSize()
+                        )
+                    } else {
+                        Icon(
+                            imageVector = Icons.Filled.Person,
+                            contentDescription = "Profile",
+                            modifier = Modifier.size(64.dp),
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
-                    Icon(
-                        imageVector = Icons.Filled.Person,
-                        contentDescription = "Profile",
-                        modifier = Modifier.size(64.dp),
-                        tint = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
                 }
 
                 Spacer(Modifier.height(12.dp))
@@ -132,12 +138,12 @@ object ProfileScreen : Screen {
 
                 Spacer(Modifier.height(24.dp))
 
-                Button(
-                    onClick = { navigator.push(UserContentListScreen("favorites")) },
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Text("My Library")
-                }
+                UserContentSections(
+                    navigator = navigator,
+                    libraryCount = viewModel.libraryItems.size,
+                    watchingCount = viewModel.watchProgressItems.size,
+                    subscriptionsCount = viewModel.subscriptions.size
+                )
 
                 Spacer(Modifier.height(8.dp))
 
