@@ -52,24 +52,39 @@ data class IptvChannelsScreen(val type: String, val categoryId: String) : Screen
                 )
             }
         ) { padding ->
-            LazyVerticalGrid(
-                columns = GridCells.Adaptive(minSize = 140.dp),
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(padding)
-                    .padding(horizontal = 16.dp),
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp),
-                contentPadding = PaddingValues(bottom = 80.dp)
-            ) {
-                items(channels, key = { it.id }) { channel ->
-                    ContentCard(
-                        title = channel.name,
-                        subtitle = channel.categoryName,
-                        imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
-                        gradient = channel.gradientForType(),
-                        onClick = { openChannel(navigator, viewModel, channel) }
+            if (channels.isEmpty() && !viewModel.isLoading) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding),
+                    contentAlignment = androidx.compose.ui.Alignment.Center
+                ) {
+                    Text(
+                        "No channels in this category.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                }
+            } else {
+                LazyVerticalGrid(
+                    columns = GridCells.Adaptive(minSize = 140.dp),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding)
+                        .padding(horizontal = 16.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                    contentPadding = PaddingValues(bottom = 80.dp)
+                ) {
+                    items(channels, key = { it.id }) { channel ->
+                        ContentCard(
+                            title = channel.name,
+                            subtitle = channel.categoryName,
+                            imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
+                            gradient = channel.gradientForType(),
+                            onClick = { openChannel(navigator, viewModel, channel) }
+                        )
+                    }
                 }
             }
         }
