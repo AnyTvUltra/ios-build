@@ -82,11 +82,6 @@ object HomeScreen : Screen {
                     item { SectionHeader("Trending") }
                     item { TrendingRow(SampleData.trendingMovies) }
 
-                    if (viewModel.watchProgressItems.isNotEmpty()) {
-                        item { SectionHeader("Continue Watching") }
-                        item { ChannelRow(viewModel.watchProgressItems, viewModel) { openChannel(navigator, viewModel, it) } }
-                    }
-
                     item { Spacer(modifier = Modifier.height(100.dp)) }
                 }
             }

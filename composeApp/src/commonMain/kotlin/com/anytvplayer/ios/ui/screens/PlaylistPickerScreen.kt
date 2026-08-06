@@ -16,7 +16,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
-import com.anytvplayer.ios.data.iptv.IptvServer
+import com.anytvplayer.ios.data.admin.PlaylistInfo
 
 object PlaylistPickerScreen : Screen {
     override val key = "playlist_picker"
@@ -26,9 +26,7 @@ object PlaylistPickerScreen : Screen {
         val navigator = LocalNavigator.currentOrThrow
         val viewModel = LocalIptvViewModel.current
 
-        val playlists = remember(viewModel.savedServer, viewModel.currentPlaylist) {
-            listOfNotNull(viewModel.savedServer, viewModel.currentPlaylist).distinctBy { it.serverUrl }
-        }
+        val playlists = viewModel.availablePlaylists
 
         Scaffold(
             topBar = {
@@ -60,7 +58,7 @@ object PlaylistPickerScreen : Screen {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Text(
-                                "No playlists saved yet.",
+                                "No playlists available.",
                                 style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -71,9 +69,9 @@ object PlaylistPickerScreen : Screen {
                 items(playlists) { playlist ->
                     PlaylistRow(
                         playlist = playlist,
-                        isActive = viewModel.currentPlaylist?.serverUrl == playlist.serverUrl,
+                        isActive = viewModel.currentPlaylist?.id == playlist.id,
                         onSelect = {
-                            viewModel.connectToServer(playlist)
+                            viewModel.selectPlaylist(playlist)
                             navigator.replaceAll(HomeScreen)
                         },
                         onDelete = {
@@ -91,7 +89,7 @@ object PlaylistPickerScreen : Screen {
 
 @Composable
 private fun PlaylistRow(
-    playlist: IptvServer,
+    playlist: PlaylistInfo,
     isActive: Boolean,
     onSelect: () -> Unit,
     onDelete: () -> Unit
@@ -109,11 +107,11 @@ private fun PlaylistRow(
         ) {
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    playlist.name.ifBlank { playlist.serverUrl },
+                    playlist.name.ifBlank { playlist.url },
                     style = MaterialTheme.typography.titleSmall
                 )
                 Text(
-                    playlist.serverUrl,
+                    playlist.url,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

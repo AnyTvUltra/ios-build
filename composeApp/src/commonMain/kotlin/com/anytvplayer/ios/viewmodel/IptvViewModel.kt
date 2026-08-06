@@ -8,14 +8,9 @@ import com.anytvplayer.ios.data.AppSettings
 import com.anytvplayer.ios.data.WatchProgressStore
 import com.anytvplayer.ios.data.admin.*
 import com.anytvplayer.ios.data.iptv.*
-import com.anytvplayer.ios.data.network.appHttpClient
 import com.anytvplayer.ios.data.user.NotificationItem
 import com.anytvplayer.ios.data.user.UserAccount
 import com.anytvplayer.ios.ui.theme.TwitiMint
-import io.ktor.client.request.get
-import io.ktor.client.request.header
-import io.ktor.client.statement.bodyAsText
-import io.ktor.http.isSuccess
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -45,8 +40,6 @@ class IptvViewModel(
     private val watchProgressStore = WatchProgressStore()
     private val deviceIdentity = DeviceIdentity()
     private val playlistCache = PlaylistCache()
-
-    private val playlistHttpClient = appHttpClient
 
     // Admin state
     private var adminApiClient: AdminApiClient? = null
@@ -799,7 +792,7 @@ class IptvViewModel(
         if (!recordedShortViews.add(clipId)) return
         coroutineScope.launch {
             runCatching {
-                api.setShortAction(clipId, deviceMac, deviceKey, action = "view")
+                api.setShortAction(clipId, deviceMac, deviceKey, action = "view", enabled = null)
             }.getOrNull()?.takeIf { it.success }?.let { state ->
                 shortSocialStates = shortSocialStates + (clipId to state)
             }
@@ -1101,7 +1094,7 @@ class IptvViewModel(
                 if (client != null && deviceMac.isNotBlank() && deviceKey.isNotBlank()) {
                     libraryItems = client.getLibrary(deviceMac, deviceKey).items
                     subscriptions = client.getSubscriptions(deviceMac, deviceKey).items
-                    val cloudProgress = client.getWatchProgress(deviceMac, deviceKey).items
+                    val cloudProgress = client.getWatchProgress(deviceMac, deviceKey, null).items
                     watchProgressItems = mergeWatchProgress(cloudProgress, localWatchProgress())
                 } else {
                     watchProgressItems = localWatchProgress()
@@ -1207,7 +1200,7 @@ class IptvViewModel(
         }
     }
 
-    fun removeWatchProgress(streamUrl: String) {
+    fun removeWatchProgressByUrl(streamUrl: String) {
         val channel = findChannelByUrl(streamUrl)
         if (channel != null) {
             removeWatchProgress(channel.userContentId())
@@ -1334,39 +1327,6 @@ class IptvViewModel(
         if (userAccount.isLoggedIn) {
             userAccount = userAccount.copy(name = profileName)
             appSettings.userAccount = userAccount
-        }
-        if (avatarUri.startsWith("https://")) {
-            coroutineScope.launch {
-                uploadProfileAvatarFromUrl(avatarUri)
-            }
-        }
-    }
-
-    private suspend fun uploadProfileAvatarFromUrl(url: String) {
-        val api = adminApiClient ?: return
-        try {
-            val bytes = withContext(Dispatchers.Default) {
-                val response = playlistHttpClient.get(url) {
-                    header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
-                }
-                if (response.status.isSuccess()) {
-                    response.bodyAsText().toByteArray()
-                } else {
-                    throw Exception("Download failed")
-                }
-            }
-            val contentType = when {
-                url.endsWith(".png", ignoreCase = true) -> "image/png"
-                url.endsWith(".webp", ignoreCase = true) -> "image/webp"
-                else -> "image/jpeg"
-            }
-            val uploaded = api.uploadProfileAvatar(deviceMac, deviceKey, bytes, contentType)
-            if (uploaded.startsWith("https://")) {
-                profileAvatarUri = uploaded
-                appSettings.profileAvatarUri = uploaded
-            }
-        } catch (_: Exception) {
-            // Keep the provided URL if upload fails
         }
     }
 
