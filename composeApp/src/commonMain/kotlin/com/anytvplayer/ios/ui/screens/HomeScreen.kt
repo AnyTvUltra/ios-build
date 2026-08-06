@@ -68,34 +68,34 @@ object HomeScreen : Screen {
                     }
 
                     if (categories.isNotEmpty()) {
-                        item { SectionHeader("Categories") }
+                        item { SectionHeader("Categories", count = categories.size) }
                         item { CategoryRow(categories) { category ->
                             navigator.push(IptvChannelsScreen(category.type.name, category.id))
                         } }
                     }
 
                     if (live.isNotEmpty()) {
-                        item { SectionHeader("Live Channels", onSeeAll = { navigator.push(LiveHubScreen) }) }
+                        item { SectionHeader("Live Channels", count = live.size, onSeeAll = { navigator.push(LiveHubScreen) }) }
                         item { ChannelRow(live, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
                     if (vod.isNotEmpty()) {
-                        item { SectionHeader("Movies", onSeeAll = { navigator.push(VodHubScreen) }) }
+                        item { SectionHeader("Movies", count = vod.size, onSeeAll = { navigator.push(VodHubScreen) }) }
                         item { ChannelRow(vod, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
                     if (series.isNotEmpty()) {
-                        item { SectionHeader("Series", onSeeAll = { navigator.push(VodHubScreen) }) }
+                        item { SectionHeader("Series", count = series.size, onSeeAll = { navigator.push(VodHubScreen) }) }
                         item { ChannelRow(series, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
                     val continueWatching = viewModel.watchProgressItems.map { it.toIptvChannel() }
                     if (continueWatching.isNotEmpty()) {
-                        item { SectionHeader("Continue Watching") }
+                        item { SectionHeader("Continue Watching", count = continueWatching.size) }
                         item { ChannelRow(continueWatching, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
-                    item { SectionHeader("Trending") }
+                    item { SectionHeader("Trending", count = SampleData.trendingMovies.size) }
                     item { TrendingRow(SampleData.trendingMovies) }
 
                     item { Spacer(modifier = Modifier.height(100.dp)) }

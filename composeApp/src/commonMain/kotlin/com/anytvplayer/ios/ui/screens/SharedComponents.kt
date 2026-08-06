@@ -35,7 +35,7 @@ import com.anytvplayer.ios.viewmodel.IptvViewModel
 import com.anytvplayer.ios.viewmodel.gradientForType
 
 @Composable
-internal fun SectionHeader(title: String, onSeeAll: (() -> Unit)? = null) {
+internal fun SectionHeader(title: String, count: Int = 0, onSeeAll: (() -> Unit)? = null) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -44,7 +44,7 @@ internal fun SectionHeader(title: String, onSeeAll: (() -> Unit)? = null) {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
-            text = title,
+            text = if (count > 0) "$title ($count)" else title,
             style = MaterialTheme.typography.titleLarge,
             color = MaterialTheme.colorScheme.onBackground
         )
