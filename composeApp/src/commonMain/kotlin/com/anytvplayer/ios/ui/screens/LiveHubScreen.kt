@@ -76,7 +76,10 @@ object LiveHubScreen : Screen {
 
                     items(liveCategories) { category ->
                         Column {
-                            SectionHeader(category.name)
+                            SectionHeader(
+                                title = category.name,
+                                onSeeAll = { navigator.push(IptvChannelsScreen(category.type.name, category.id)) }
+                            )
                             val channels = viewModel.allLiveChannels.filter { it.categoryId == category.id }
                             ChannelRow(channels, viewModel) { openChannel(navigator, viewModel, it) }
                         }

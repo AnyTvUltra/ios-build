@@ -74,18 +74,18 @@ object HomeScreen : Screen {
                     }
 
                     if (live.isNotEmpty()) {
-                        item { SectionHeader("Live Channels") }
+                        item { SectionHeader("Live Channels", onSeeAll = { navigator.push(LiveHubScreen) }) }
                         item { ChannelRow(live, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
                     if (vod.isNotEmpty()) {
-                        item { SectionHeader("Movies") }
+                        item { SectionHeader("Movies", onSeeAll = { navigator.push(VodHubScreen) }) }
                         item { ChannelRow(vod, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
                     val series = remember(viewModel.allSeriesChannels) { viewModel.allSeriesChannels.take(15) }
                     if (series.isNotEmpty()) {
-                        item { SectionHeader("Series") }
+                        item { SectionHeader("Series", onSeeAll = { navigator.push(VodHubScreen) }) }
                         item { ChannelRow(series, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 

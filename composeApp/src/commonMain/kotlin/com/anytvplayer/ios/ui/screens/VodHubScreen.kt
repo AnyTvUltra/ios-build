@@ -89,7 +89,10 @@ object VodHubScreen : Screen {
 
                     items(filteredCategories) { category ->
                         Column {
-                            SectionHeader(category.name)
+                            SectionHeader(
+                                title = category.name,
+                                onSeeAll = { navigator.push(IptvChannelsScreen(category.type.name, category.id)) }
+                            )
                             val channels = when (category.type) {
                                 ChannelType.VOD -> viewModel.allVodChannels.filter { it.categoryId == category.id }
                                 ChannelType.SERIES -> viewModel.allSeriesChannels.filter { it.categoryId == category.id }
