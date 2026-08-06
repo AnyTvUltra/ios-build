@@ -9,9 +9,11 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.outlined.BookmarkBorder
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -225,7 +227,7 @@ private fun ShortCard(
 
                 IconButton(onClick = onSave) {
                     Icon(
-                        imageVector = if (social.saved) Icons.Filled.Favorite else Icons.Filled.FavoriteBorder,
+                        imageVector = if (social.saved) Icons.Filled.Bookmark else Icons.Outlined.BookmarkBorder,
                         contentDescription = "Save",
                         tint = if (social.saved) TwitiMint else Color.White,
                         modifier = Modifier.size(32.dp)
