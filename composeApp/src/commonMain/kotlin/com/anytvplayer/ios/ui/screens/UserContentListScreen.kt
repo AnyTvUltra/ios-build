@@ -16,6 +16,8 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.admin.LibraryItem
+import com.anytvplayer.ios.data.admin.SubscriptionContact
+import com.anytvplayer.ios.data.admin.SubscriptionItem
 import com.anytvplayer.ios.data.admin.WatchProgressItem
 import com.anytvplayer.ios.data.admin.toIptvChannel
 import com.anytvplayer.ios.data.iptv.IptvChannel
@@ -33,13 +35,17 @@ data class UserContentListScreen(val type: String) : Screen {
                 "favorites" -> "Favorites"
                 "watchlist" -> "Watchlist"
                 "history", "continue" -> "Continue Watching"
+                "subscriptions" -> "Subscriptions"
                 else -> "My Content"
             }
         }
 
+        val isSubscriptions = type.lowercase() == "subscriptions"
+
         val rawItems = when (type.lowercase()) {
             "favorites", "watchlist" -> viewModel.libraryItems
             "history", "continue" -> viewModel.watchProgressItems
+            "subscriptions" -> viewModel.subscriptions
             else -> viewModel.libraryItems
         }
 
@@ -54,6 +60,7 @@ data class UserContentListScreen(val type: String) : Screen {
         val onRemove: (IptvChannel, Any) -> Unit = { channel, original ->
             when {
                 original is WatchProgressItem -> viewModel.removeWatchProgress(original.contentId)
+                original is LibraryItem -> viewModel.removeFromLibrary(channel)
                 else -> viewModel.removeFromLibrary(channel)
             }
         }
@@ -91,16 +98,31 @@ data class UserContentListScreen(val type: String) : Screen {
                     }
                 }
 
-                items(channels.size) { index ->
-                    val channel = channels[index]
-                    val original = rawItems[index]
-                    Column {
-                        LibraryRow(
-                            channel = channel,
-                            onClick = { openChannel(navigator, viewModel, channel) },
-                            onRemove = { onRemove(channel, original) }
-                        )
-                        Spacer(Modifier.height(12.dp))
+                if (isSubscriptions) {
+                    items(rawItems.size) { index ->
+                        val item = rawItems[index] as? SubscriptionItem ?: return@items
+                        Column {
+                            SubscriptionCard(
+                                item = item,
+                                onContactClick = { contact ->
+                                    // Platform links not implemented for iOS yet
+                                }
+                            )
+                            Spacer(Modifier.height(12.dp))
+                        }
+                    }
+                } else {
+                    items(channels.size) { index ->
+                        val channel = channels[index]
+                        val original = rawItems[index]
+                        Column {
+                            LibraryRow(
+                                channel = channel,
+                                onClick = { openChannel(navigator, viewModel, channel) },
+                                onRemove = { onRemove(channel, original) }
+                            )
+                            Spacer(Modifier.height(12.dp))
+                        }
                     }
                 }
 
