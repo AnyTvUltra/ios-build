@@ -37,6 +37,9 @@ object LiveHubScreen : Screen {
                 TopAppBar(
                     title = { Text("Live TV") },
                     actions = {
+                        TextButton(onClick = { navigator.push(SportsScreen) }) {
+                            Text("Sports")
+                        }
                         TextButton(onClick = { navigator.push(SearchScreen) }) {
                             Text("Search")
                         }
