@@ -27,6 +27,7 @@ import coil3.compose.AsyncImage
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.ContentItem
 import com.anytvplayer.ios.data.SampleData
+import com.anytvplayer.ios.data.admin.toIptvChannel
 import com.anytvplayer.ios.data.iptv.ChannelType
 import com.anytvplayer.ios.data.iptv.ConnectionState
 import com.anytvplayer.ios.data.iptv.IptvChannel
@@ -51,7 +52,10 @@ object HomeScreen : Screen {
         LazyColumn(
             modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)
         ) {
-            item { HomeTopBar(onSearch = { navigator.push(SearchScreen) }) }
+            item { HomeTopBar(
+                onSearch = { navigator.push(SearchScreen) },
+                onProfile = { navigator.push(ProfileScreen) }
+            ) }
 
             when (val state = viewModel.connectionState) {
                 ConnectionState.Disconnected,
@@ -79,6 +83,12 @@ object HomeScreen : Screen {
                         item { ChannelRow(vod, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
+                    val continueWatching = viewModel.watchProgressItems.map { it.toIptvChannel() }
+                    if (continueWatching.isNotEmpty()) {
+                        item { SectionHeader("Continue Watching") }
+                        item { ChannelRow(continueWatching, viewModel) { openChannel(navigator, viewModel, it) } }
+                    }
+
                     item { SectionHeader("Trending") }
                     item { TrendingRow(SampleData.trendingMovies) }
 
@@ -90,7 +100,10 @@ object HomeScreen : Screen {
 }
 
 @Composable
-private fun HomeTopBar(onSearch: () -> Unit) {
+private fun HomeTopBar(
+    onSearch: () -> Unit,
+    onProfile: () -> Unit
+) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -107,7 +120,7 @@ private fun HomeTopBar(onSearch: () -> Unit) {
             IconButton(onClick = onSearch) {
                 Icon(Icons.Filled.Search, contentDescription = "Search")
             }
-            IconButton(onClick = { }) {
+            IconButton(onClick = onProfile) {
                 Icon(Icons.Filled.Person, contentDescription = "Profile")
             }
         }
