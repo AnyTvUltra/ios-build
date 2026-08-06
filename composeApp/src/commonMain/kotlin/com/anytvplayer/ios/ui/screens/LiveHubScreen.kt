@@ -47,39 +47,43 @@ object LiveHubScreen : Screen {
                 )
             }
         ) { padding ->
-            LazyColumn(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(padding)
-            ) {
-                if (viewModel.isLoading) {
-                    item {
-                        Box(modifier = Modifier.fillMaxWidth().padding(32.dp), contentAlignment = androidx.compose.ui.Alignment.Center) {
-                            CircularProgressIndicator()
+            if (liveCategories.isEmpty() && !viewModel.isLoading) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding),
+                    contentAlignment = androidx.compose.ui.Alignment.Center
+                ) {
+                    Text(
+                        "No live categories found.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            } else {
+                LazyColumn(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding)
+                ) {
+                    if (viewModel.isLoading) {
+                        item {
+                            Box(modifier = Modifier.fillMaxWidth().padding(32.dp), contentAlignment = androidx.compose.ui.Alignment.Center) {
+                                CircularProgressIndicator()
+                            }
                         }
                     }
-                }
 
-                if (liveCategories.isEmpty() && !viewModel.isLoading) {
-                    item {
-                        Text(
-                            "No live categories found.",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.padding(16.dp)
-                        )
+                    items(liveCategories) { category ->
+                        Column {
+                            SectionHeader(category.name)
+                            val channels = viewModel.allLiveChannels.filter { it.categoryId == category.id }
+                            ChannelRow(channels, viewModel) { openChannel(navigator, viewModel, it) }
+                        }
                     }
-                }
 
-                items(liveCategories) { category ->
-                    Column {
-                        SectionHeader(category.name)
-                        val channels = viewModel.allLiveChannels.filter { it.categoryId == category.id }
-                        ChannelRow(channels, viewModel) { openChannel(navigator, viewModel, it) }
-                    }
+                    item { Spacer(Modifier.height(100.dp)) }
                 }
-
-                item { Spacer(Modifier.height(100.dp)) }
             }
         }
     }
