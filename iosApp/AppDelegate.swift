@@ -10,6 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
+        installObjCCrashHandler()
         registerForNotifications(application)
 
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -18,15 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return true
     }
 
+    private func installObjCCrashHandler() {
+        NSSetUncaughtExceptionHandler { exception in
+            let details = """
+            ObjC \(exception.name.rawValue): \(exception.reason ?? "no reason")
+
+            \(exception.callStackSymbols.joined(separator: "\n"))
+            """
+            let defaults = UserDefaults.standard
+            defaults.set(details, forKey: "anytv.last_crash")
+            defaults.synchronize()
+        }
+    }
+
     private func registerForNotifications(_ application: UIApplication) {
         UNUserNotificationCenter.current().delegate = self
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, _ in
-            DispatchQueue.main.async {
-                if granted {
-                    application.registerForRemoteNotifications()
-                }
-            }
-        }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { _, _ in }
     }
 
     func application(
