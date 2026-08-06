@@ -16,6 +16,7 @@ targets:
       - path: .
         includes:
           - "AppDelegate.swift"
+          - "BootTrail.swift"
           - "LaunchScreen.storyboard"
     resources:
       - path: Assets.xcassets

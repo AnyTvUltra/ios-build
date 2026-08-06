@@ -17,7 +17,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun CrashScreen(details: String, onDismiss: () -> Unit) {
+fun CrashScreen(
+    trail: String?,
+    details: String?,
+    onDismiss: () -> Unit
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -26,7 +30,7 @@ fun CrashScreen(details: String, onDismiss: () -> Unit) {
             .verticalScroll(rememberScrollState())
     ) {
         Text(
-            text = "Previous launch crashed",
+            text = "Previous launch did not finish",
             color = Color(0xFFFF5252),
             style = MaterialTheme.typography.titleMedium
         )
@@ -36,8 +40,27 @@ fun CrashScreen(details: String, onDismiss: () -> Unit) {
         ) {
             Text("Continue to app")
         }
+
         Text(
-            text = details,
+            text = "LAST STAGE REACHED",
+            color = Color(0xFFFFD54F),
+            fontSize = 12.sp
+        )
+        Text(
+            text = trail ?: "(no stages recorded)",
+            color = Color(0xFF80D8FF),
+            fontSize = 11.sp,
+            lineHeight = 15.sp,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
+
+        Text(
+            text = "CRASH DETAILS",
+            color = Color(0xFFFFD54F),
+            fontSize = 12.sp
+        )
+        Text(
+            text = details ?: "(none captured)",
             color = Color(0xFFE0E0E0),
             fontSize = 10.sp,
             lineHeight = 13.sp

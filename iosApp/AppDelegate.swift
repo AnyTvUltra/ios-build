@@ -10,26 +10,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
-        installObjCCrashHandler()
+        BootTrailSwift.rotate()
+        BootTrailSwift.mark("swift:didFinishLaunching")
+        BootTrailSwift.installExceptionHandler()
+        BootTrailSwift.installSignalHandlers()
+
         registerForNotifications(application)
+        BootTrailSwift.mark("swift:notificationsRequested")
 
         window = UIWindow(frame: UIScreen.main.bounds)
+        BootTrailSwift.mark("swift:windowCreated")
+
         window?.rootViewController = MainViewControllerKt.MainViewController()
+        BootTrailSwift.mark("swift:rootViewControllerSet")
+
         window?.makeKeyAndVisible()
+        BootTrailSwift.mark("swift:windowVisible")
         return true
-    }
-
-    private func installObjCCrashHandler() {
-        NSSetUncaughtExceptionHandler { exception in
-            let details = """
-            ObjC \(exception.name.rawValue): \(exception.reason ?? "no reason")
-
-            \(exception.callStackSymbols.joined(separator: "\n"))
-            """
-            let defaults = UserDefaults.standard
-            defaults.set(details, forKey: "anytv.last_crash")
-            defaults.synchronize()
-        }
     }
 
     private func registerForNotifications(_ application: UIApplication) {
