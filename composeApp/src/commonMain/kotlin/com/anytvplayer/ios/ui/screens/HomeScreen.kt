@@ -43,6 +43,7 @@ object HomeScreen : Screen {
         val categories = remember(viewModel.allCategories) { viewModel.allCategories }
         val live = remember(viewModel.allLiveChannels) { viewModel.allLiveChannels.take(15) }
         val vod = remember(viewModel.allVodChannels) { viewModel.allVodChannels.take(15) }
+        val series = remember(viewModel.allSeriesChannels) { viewModel.allSeriesChannels.take(15) }
 
         if (viewModel.isAdminPanel && viewModel.activationState != null && viewModel.activationState?.isActivated == false) {
             ActivationPrompt()
@@ -83,7 +84,6 @@ object HomeScreen : Screen {
                         item { ChannelRow(vod, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
-                    val series = remember(viewModel.allSeriesChannels) { viewModel.allSeriesChannels.take(15) }
                     if (series.isNotEmpty()) {
                         item { SectionHeader("Series", onSeeAll = { navigator.push(VodHubScreen) }) }
                         item { ChannelRow(series, viewModel) { openChannel(navigator, viewModel, it) } }
