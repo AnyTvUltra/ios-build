@@ -15,6 +15,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.iptv.IptvChannel
+import com.anytvplayer.ios.viewmodel.IptvViewModel
 import com.anytvplayer.ios.viewmodel.gradientForType
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.debounce
@@ -118,21 +119,15 @@ object SearchScreen : Screen {
 @Composable
 private fun SearchResultItem(
     channel: IptvChannel,
-    viewModel: com.anytvplayer.ios.viewmodel.IptvViewModel,
+    viewModel: IptvViewModel,
     onClick: () -> Unit
 ) {
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(80.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp)
-    ) {
-        ContentCard(
-            title = channel.name,
-            subtitle = channel.categoryName,
-            imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
-            gradient = channel.gradientForType(),
-            onClick = onClick
-        )
-    }
+    ContentCard(
+        title = channel.name,
+        subtitle = channel.categoryName,
+        imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
+        gradient = channel.gradientForType(),
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth()
+    )
 }

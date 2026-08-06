@@ -70,10 +70,11 @@ fun ContentCard(
     subtitle: String,
     imageUrl: String,
     gradient: List<androidx.compose.ui.graphics.Color> = emptyList(),
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .width(140.dp)
             .height(200.dp)
             .clip(RoundedCornerShape(12.dp))
