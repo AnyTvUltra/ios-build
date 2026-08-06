@@ -17,6 +17,7 @@ import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.admin.LibraryItem
 import com.anytvplayer.ios.data.admin.SubscriptionContact
+import com.anytvplayer.ios.viewmodel.gradientForType
 import com.anytvplayer.ios.data.admin.SubscriptionItem
 import com.anytvplayer.ios.data.admin.WatchProgressItem
 import com.anytvplayer.ios.data.admin.toIptvChannel
@@ -148,6 +149,7 @@ private fun LibraryRow(
                 title = channel.name,
                 subtitle = channel.categoryName,
                 imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
+                gradient = channel.gradientForType(),
                 onClick = onClick
             )
         }
