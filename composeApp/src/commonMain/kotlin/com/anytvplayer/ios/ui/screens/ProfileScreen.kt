@@ -6,9 +6,9 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Logout
 import androidx.compose.material.icons.filled.DarkMode
 import androidx.compose.material.icons.filled.Language
-import androidx.compose.material.icons.filled.Logout
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.*
@@ -173,7 +173,7 @@ object ProfileScreen : Screen {
                     },
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Icon(Icons.Filled.Logout, contentDescription = "Sign out", modifier = Modifier.padding(end = 8.dp))
+                    Icon(Icons.AutoMirrored.Filled.Logout, contentDescription = "Sign out", modifier = Modifier.padding(end = 8.dp))
                     Text("Disconnect")
                 }
             }

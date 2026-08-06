@@ -7,13 +7,13 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.Message
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Link
-import androidx.compose.material.icons.filled.Message
 import androidx.compose.material.icons.filled.PhotoCamera
 import androidx.compose.material.icons.filled.PlayCircle
-import androidx.compose.material.icons.filled.Send
 import androidx.compose.material.icons.filled.Subscriptions
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -310,11 +310,11 @@ fun SubscriptionCard(
 }
 
 fun platformIcon(platform: String): ImageVector = when (platform) {
-    "whatsapp", "facebook", "message" -> Icons.Default.Message
-    "telegram", "twitter" -> Icons.Default.Send
-    "instagram" -> Icons.Default.PhotoCamera
-    "url", "link", "website" -> Icons.Default.Link
-    else -> Icons.Default.Link
+    "whatsapp", "facebook", "message" -> Icons.AutoMirrored.Filled.Message
+    "telegram", "twitter" -> Icons.AutoMirrored.Filled.Send
+    "instagram" -> Icons.Filled.PhotoCamera
+    "url", "link", "website" -> Icons.Filled.Link
+    else -> Icons.Filled.Link
 }
 
 fun formatDuration(position: Long, duration: Long): String {
