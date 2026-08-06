@@ -14,6 +14,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.iptv.IptvChannel
+import com.anytvplayer.ios.viewmodel.gradientForType
 
 data class SeriesEpisodesScreen(val seriesId: Int) : Screen {
     override val key = "series_episodes/${seriesId}"
@@ -88,6 +89,7 @@ data class SeriesEpisodesScreen(val seriesId: Int) : Screen {
                                 title = episode.name,
                                 subtitle = episode.plot.take(80),
                                 imageUrl = episode.coverUrl.ifBlank { episode.streamIcon },
+                                gradient = episode.gradientForType(),
                                 onClick = { openChannel(navigator, viewModel, episode) }
                             )
                             Spacer(Modifier.height(12.dp))
