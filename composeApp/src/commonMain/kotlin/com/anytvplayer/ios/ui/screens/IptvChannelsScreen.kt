@@ -2,8 +2,9 @@ package com.anytvplayer.ios.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
@@ -50,24 +51,25 @@ data class IptvChannelsScreen(val type: String, val categoryId: String) : Screen
                 )
             }
         ) { padding ->
-            LazyColumn(
+            LazyVerticalGrid(
+                columns = GridCells.Adaptive(minSize = 140.dp),
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(padding)
-                    .padding(horizontal = 16.dp)
+                    .padding(horizontal = 16.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+                contentPadding = PaddingValues(bottom = 80.dp)
             ) {
-                items(channels) { channel ->
-                    Column {
-                        ContentCard(
-                            title = channel.name,
-                            subtitle = channel.categoryName,
-                            imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
-                            onClick = { openChannel(navigator, viewModel, channel) }
-                        )
-                        Spacer(Modifier.height(12.dp))
-                    }
+                items(channels, key = { it.id }) { channel ->
+                    ContentCard(
+                        title = channel.name,
+                        subtitle = channel.categoryName,
+                        imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
+                        gradient = channel.gradientForType(),
+                        onClick = { openChannel(navigator, viewModel, channel) }
+                    )
                 }
-                item { Spacer(Modifier.height(80.dp)) }
             }
         }
     }
