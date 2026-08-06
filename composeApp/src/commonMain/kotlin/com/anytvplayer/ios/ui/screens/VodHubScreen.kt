@@ -12,7 +12,6 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.iptv.ChannelType
-import com.anytvplayer.ios.data.iptv.IptvCategory
 
 object VodHubScreen : Screen {
     override val key = "vod"
@@ -33,6 +32,14 @@ object VodHubScreen : Screen {
         val vodCategories = viewModel.allCategories.filter { it.type == ChannelType.VOD }
         val seriesCategories = viewModel.allCategories.filter { it.type == ChannelType.SERIES }
 
+        var selectedTab by remember { mutableStateOf(0) }
+        val tabs = listOf("All", "Movies", "Series")
+        val filteredCategories = when (selectedTab) {
+            1 -> vodCategories
+            2 -> seriesCategories
+            else -> vodCategories + seriesCategories
+        }
+
         Scaffold(
             topBar = {
                 TopAppBar(
@@ -45,53 +52,55 @@ object VodHubScreen : Screen {
                 )
             }
         ) { padding ->
-            LazyColumn(
+            Column(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(padding)
             ) {
-                if (viewModel.isLoading) {
-                    item {
-                        Box(modifier = Modifier.fillMaxWidth().padding(32.dp), contentAlignment = androidx.compose.ui.Alignment.Center) {
-                            CircularProgressIndicator()
-                        }
-                    }
-                }
-
-                if (vodCategories.isEmpty() && seriesCategories.isEmpty() && !viewModel.isLoading) {
-                    item {
-                        Text(
-                            "No VOD or Series categories found.",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.padding(16.dp)
+                TabRow(selectedTabIndex = selectedTab) {
+                    tabs.forEachIndexed { index, title ->
+                        Tab(
+                            selected = selectedTab == index,
+                            onClick = { selectedTab = index },
+                            text = { Text(title) }
                         )
                     }
                 }
 
-                if (vodCategories.isNotEmpty()) {
-                    item { SectionHeader("Movies") }
-                    items(vodCategories) { category ->
+                LazyColumn {
+                    if (viewModel.isLoading) {
+                        item {
+                            Box(modifier = Modifier.fillMaxWidth().padding(32.dp), contentAlignment = androidx.compose.ui.Alignment.Center) {
+                                CircularProgressIndicator()
+                            }
+                        }
+                    }
+
+                    if (filteredCategories.isEmpty() && !viewModel.isLoading) {
+                        item {
+                            Text(
+                                "No content found for ${tabs[selectedTab]}.",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.padding(16.dp)
+                            )
+                        }
+                    }
+
+                    items(filteredCategories) { category ->
                         Column {
                             SectionHeader(category.name)
-                            val channels = viewModel.allVodChannels.filter { it.categoryId == category.id }
+                            val channels = when (category.type) {
+                                ChannelType.VOD -> viewModel.allVodChannels.filter { it.categoryId == category.id }
+                                ChannelType.SERIES -> viewModel.allSeriesChannels.filter { it.categoryId == category.id }
+                                else -> emptyList()
+                            }
                             ChannelRow(channels, viewModel) { openChannel(navigator, viewModel, it) }
                         }
                     }
-                }
 
-                if (seriesCategories.isNotEmpty()) {
-                    item { SectionHeader("Series") }
-                    items(seriesCategories) { category ->
-                        Column {
-                            SectionHeader(category.name)
-                            val channels = viewModel.allSeriesChannels.filter { it.categoryId == category.id }
-                            ChannelRow(channels, viewModel) { openChannel(navigator, viewModel, it) }
-                        }
-                    }
+                    item { Spacer(Modifier.height(100.dp)) }
                 }
-
-                item { Spacer(Modifier.height(100.dp)) }
             }
         }
     }
