@@ -35,7 +35,7 @@ object LiveHubScreen : Screen {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Live TV") },
+                    title = { Text("Live TV (${liveCategories.size})") },
                     actions = {
                         TextButton(onClick = { navigator.push(SportsScreen) }) {
                             Text("Sports")
