@@ -52,7 +52,7 @@ object SearchScreen : Screen {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("Search") },
+                    title = { Text("Search (${viewModel.searchResults.size})") },
                     navigationIcon = {
                         IconButton(onClick = { navigator.pop() }) {
                             Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
