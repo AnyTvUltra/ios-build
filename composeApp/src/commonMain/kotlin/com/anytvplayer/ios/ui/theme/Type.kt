@@ -1,17 +1,19 @@
 package com.anytvplayer.ios.ui.theme
 
 import androidx.compose.material3.Typography
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.anytvplayer.ios.resources.*
+import org.jetbrains.compose.resources.Font
 
-private val SpedaFont = FontFamily(Font(Res.font.speda_bold))
-
-fun twitiTypography(fontFamily: FontFamily = SpedaFont): Typography = Typography(
-    headlineLarge = TextStyle(
+@Composable
+fun twitiTypography(): Typography {
+    val fontFamily = FontFamily(Font(Res.font.speda_bold, FontWeight.Normal))
+    return Typography(
+        headlineLarge = TextStyle(
         fontFamily = fontFamily,
         fontWeight = FontWeight.ExtraBold,
         fontSize = 32.sp,
@@ -94,5 +96,4 @@ fun twitiTypography(fontFamily: FontFamily = SpedaFont): Typography = Typography
         letterSpacing = 0.5.sp
     )
 )
-
-val TwitiTypography = twitiTypography()
+}

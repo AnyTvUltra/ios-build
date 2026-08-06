@@ -17,6 +17,7 @@ import cafe.adriel.voyager.navigator.currentOrThrow
 import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.iptv.ChannelType
 import com.anytvplayer.ios.data.iptv.IptvChannel
+import com.anytvplayer.ios.viewmodel.gradientForType
 
 data class IptvChannelsScreen(val type: String, val categoryId: String) : Screen {
     override val key = "iptv_channels/${type}/${categoryId}"
