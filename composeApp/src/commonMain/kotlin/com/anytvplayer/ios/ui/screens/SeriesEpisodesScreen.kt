@@ -42,7 +42,7 @@ data class SeriesEpisodesScreen(val seriesId: Int) : Screen {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text("$seriesName (${episodes.size})") },
+                    title = { Text("Episodes (${episodes.size})") },
                     navigationIcon = {
                         IconButton(onClick = { navigator.pop() }) {
                             Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
