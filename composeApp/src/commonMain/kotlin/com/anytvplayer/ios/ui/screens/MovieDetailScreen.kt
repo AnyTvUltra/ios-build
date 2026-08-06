@@ -13,6 +13,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -25,6 +26,7 @@ import com.anytvplayer.ios.data.iptv.IptvChannel
 import com.anytvplayer.ios.data.iptv.TmdbApi
 import com.anytvplayer.ios.data.iptv.TmdbMovie
 import com.anytvplayer.ios.ui.theme.TwitiMint
+import com.anytvplayer.ios.viewmodel.gradientForType
 
 data class MovieDetailScreen(val encodedChannel: String) : Screen {
     override val key = "movie_detail/${encodedChannel.hashCode()}"
@@ -69,7 +71,7 @@ data class MovieDetailScreen(val encodedChannel: String) : Screen {
                         .fillMaxWidth()
                         .height(220.dp)
                         .clip(RoundedCornerShape(16.dp))
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
+                        .background(Brush.linearGradient(channel.gradientForType()))
                 ) {
                     AsyncImage(
                         model = tmdb?.backdropUrl?.ifBlank { channel.coverUrl.ifBlank { channel.streamIcon } } ?: channel.coverUrl.ifBlank { channel.streamIcon },
