@@ -37,6 +37,7 @@ import com.anytvplayer.ios.LocalIptvViewModel
 import com.anytvplayer.ios.data.iptv.IptvChannel
 import com.anytvplayer.ios.ui.theme.LiveRed
 import com.anytvplayer.ios.ui.theme.TwitiMint
+import com.anytvplayer.ios.viewmodel.gradientForType
 
 object SportsScreen : Screen {
     override val key = "sports"
@@ -242,7 +243,7 @@ private fun LiveChannelTile(
                 .fillMaxWidth()
                 .aspectRatio(16f / 10f)
                 .clip(RoundedCornerShape(13.dp))
-                .background(Color(0xFF20232A)),
+                .background(Brush.linearGradient(channel.gradientForType())),
             contentAlignment = Alignment.Center
         ) {
             if (channel.streamIcon.isNotBlank()) {
