@@ -43,7 +43,7 @@ data class IptvChannelsScreen(val type: String, val categoryId: String) : Screen
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text(categoryName) },
+                    title = { Text("$categoryName (${channels.size})") },
                     navigationIcon = {
                         IconButton(onClick = { navigator.pop() }) {
                             Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
