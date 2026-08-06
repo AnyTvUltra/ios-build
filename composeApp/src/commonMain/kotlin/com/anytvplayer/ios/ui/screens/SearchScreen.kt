@@ -1,13 +1,15 @@
 package com.anytvplayer.ios.ui.screens
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
@@ -81,31 +83,43 @@ object SearchScreen : Screen {
                     Spacer(Modifier.height(8.dp))
                 }
 
-                LazyColumn(
-                    verticalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    items(viewModel.searchResults) { channel ->
-                        SearchResultItem(channel) {
-                            openChannel(navigator, viewModel, channel)
-                        }
+                if (!viewModel.isLoading && query.isBlank()) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            "Start typing to search your content.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
-
-                    if (!viewModel.isLoading && query.isBlank()) {
-                        item {
-                            Text(
-                                "Start typing to search your content.",
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                        }
+                } else if (!viewModel.isLoading && query.isNotBlank() && viewModel.searchResults.isEmpty()) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            "No results found.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
-
-                    if (!viewModel.isLoading && query.isNotBlank() && viewModel.searchResults.isEmpty()) {
-                        item {
-                            Text(
-                                "No results found.",
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                } else {
+                    LazyVerticalGrid(
+                        columns = GridCells.Adaptive(minSize = 140.dp),
+                        modifier = Modifier.fillMaxSize(),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp),
+                        contentPadding = PaddingValues(bottom = 80.dp)
+                    ) {
+                        items(viewModel.searchResults, key = { it.id }) { channel ->
+                            ContentCard(
+                                title = channel.name,
+                                subtitle = channel.categoryName,
+                                imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
+                                gradient = channel.gradientForType(),
+                                onClick = { openChannel(navigator, viewModel, channel) }
                             )
                         }
                     }
@@ -113,18 +127,4 @@ object SearchScreen : Screen {
             }
         }
     }
-}
-
-@Composable
-private fun SearchResultItem(
-    channel: IptvChannel,
-    onClick: () -> Unit
-) {
-    ContentCard(
-        title = channel.name,
-        subtitle = channel.categoryName,
-        imageUrl = channel.coverUrl.ifBlank { channel.streamIcon },
-        gradient = channel.gradientForType(),
-        onClick = onClick
-    )
 }
