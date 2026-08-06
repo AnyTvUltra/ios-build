@@ -83,6 +83,12 @@ object HomeScreen : Screen {
                         item { ChannelRow(vod, viewModel) { openChannel(navigator, viewModel, it) } }
                     }
 
+                    val series = remember(viewModel.allSeriesChannels) { viewModel.allSeriesChannels.take(15) }
+                    if (series.isNotEmpty()) {
+                        item { SectionHeader("Series") }
+                        item { ChannelRow(series, viewModel) { openChannel(navigator, viewModel, it) } }
+                    }
+
                     val continueWatching = viewModel.watchProgressItems.map { it.toIptvChannel() }
                     if (continueWatching.isNotEmpty()) {
                         item { SectionHeader("Continue Watching") }
