@@ -1373,9 +1373,21 @@ class IptvViewModel(
         userAccount = UserAccount()
     }
 
-    fun toggleDarkTheme() {
-        isDarkTheme = !isDarkTheme
+    fun toggleDarkTheme(dark: Boolean = !isDarkTheme) {
+        isDarkTheme = dark
         appSettings.isDarkTheme = isDarkTheme
+    }
+
+    fun deleteAccount(onSuccess: () -> Unit = {}, onError: (String) -> Unit = {}) {
+        coroutineScope.launch {
+            try {
+                adminApiClient?.deleteAccount()
+                signOut()
+                onSuccess()
+            } catch (e: Exception) {
+                onError(e.message ?: "Failed to delete account")
+            }
+        }
     }
 
     // ── Navigation helpers ──

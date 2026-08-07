@@ -461,6 +461,13 @@ class AdminApiClient(private val config: AdminPanelConfig) {
         parseShortSocial(requestJson(Method.DELETE, endpoint("/api/v1/shorts/comment"), deviceKey, body, false))
     }
 
+    // ── Account ──
+
+    suspend fun deleteAccount(): Unit = withContext(Dispatchers.Default) {
+        // Account deletion is handled server-side; for now this is a no-op stub.
+        // When the admin API supports it, send a DELETE request here.
+    }
+
     // ── Config ──
 
     suspend fun getConfig(): ConfigResponse = withContext(Dispatchers.Default) {

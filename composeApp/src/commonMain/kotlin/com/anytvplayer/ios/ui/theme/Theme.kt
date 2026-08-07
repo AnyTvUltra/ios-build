@@ -52,7 +52,7 @@ private val TwitiLightScheme = lightColorScheme(
 
 @Composable
 fun TwitiTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = true,
     isCkb: Boolean = false,
     content: @Composable () -> Unit
 ) {
